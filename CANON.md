@@ -10,6 +10,7 @@ license posture, and governance decisions.
 2. **No methods, thresholds, or procedures.** The spine is declarative only.
 3. **No silent edits.** CMS-style "just update the page" is not permitted.
 4. **Version tags map to public citations.** Use `public-spine-vN` tags.
+5. **No environment leakage.** No local paths, workspace names, or internal staging structure; only repo-relative paths and public tags.
 
 ## What lives here
 
@@ -34,7 +35,7 @@ license posture, and governance decisions.
 | `constraint-spine` (this) | Public canon — source of truth |
 | `constraint-vocabulary` | Bundle/release channel (e.g., trf-vocabulary-v0) |
 | `cc-website` | Rendered brochure — presentation layer, not canon |
-| u3r_lab (private) | Drafting/staging — never public |
+| (private staging) | Drafting/staging — never public |
 
 ## Citation
 

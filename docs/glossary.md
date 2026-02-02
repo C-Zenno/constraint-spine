@@ -41,13 +41,13 @@ The allowance to remain within a declared regime without expanding scope. Contin
 A permitted outcome where the system declines to produce an output or declines to extend claims beyond allowed scope.
 
 8) **Identity claim** — **[PUBLIC]**
-A continuation claim: it asserts that a system's structure is carried across admissible evolution, not merely matched at an instant. Identity is a property of persistence over observation windows, not proximity at a single time.
+A continuation claim: it asserts that a declared distinction remains repeatable across an observation window under admissible evolution (within declared bounds and view perturbations), rather than being matched at a single index. Identity is persistence under bounds, not proximity at an instant.
 
 9) **Snapshot** — **[PUBLIC]**
-An instant claim. A snapshot may resemble the system at a time index, but it does not, by itself, carry continuation. Pointwise resemblance is not sufficient to establish identity.
+An instant claim. A snapshot may exhibit pointwise resemblance at a time index under a particular view, but it does not, by itself, carry continuation across a window.
 
 10) **Snapshot-to-identity prohibition** — **[PUBLIC]**
-The program refuses any interpretation that upgrades snapshot similarity into identity, continuity, or persistence. When continuation cannot be carried, snapshot fidelity is treated as undefined for identity purposes.
+The program refuses any interpretation that upgrades snapshot resemblance into identity, continuity, or persistence. When continuation cannot be carried (or cannot be made receiptable within declared bounds), snapshot resemblance is undefined for identity purposes.
 
 11) **Regime** — **[PUBLIC]**
 A region of behavior or stability defined by what remains coherent under finite resolution, without specifying the underlying mechanism.

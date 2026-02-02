@@ -7,12 +7,12 @@ reading order, controlled vocabulary, and governance decisions.
 
 ## Start here
 
-1. [Reading Order](docs/reading-order.md) — Paper VI first
-2. [Papers Index](docs/papers.md) — Zenodo records with DOIs
-3. [Glossary](docs/glossary.md) — 20 controlled terms
-4. [License Posture: CRL-0](docs/licenses/CRL-0.md) / [OEL-1](docs/licenses/OEL-1.md)
-5. [FAQ](docs/faq.md) — boundary-first answers
-6. [Spine Index](docs/index.md) — full document map
+1. [Spine Index](docs/index.md) — full document map
+2. [Reading Order](docs/reading-order.md) — Paper VI first
+3. [Papers Index](docs/papers.md) — Zenodo records with DOIs
+4. [Glossary](docs/glossary.md) — 21 controlled terms
+5. [License Posture: CRL-0](docs/licenses/CRL-0.md) / [OEL-1](docs/licenses/OEL-1.md)
+6. [FAQ](docs/faq.md) — boundary-first answers
 
 ## What this is not
 
@@ -25,7 +25,7 @@ reading order, controlled vocabulary, and governance decisions.
 Every edit to this repository is a governance event:
 reviewed, diffable, and version-tagged.
 
-See [ADR-0008](registry/DECISIONS/ADR-0008.md) for the rationale.
+See [CANON.md](CANON.md) for the full policy and [ADR-0008](registry/DECISIONS/ADR-0008.md) for the rationale.
 
 ## License
 

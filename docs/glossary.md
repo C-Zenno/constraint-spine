@@ -26,16 +26,16 @@ A condition that restricts what can be asserted or continued under finite resolu
 A posture in which outputs do not prescribe actions, optimize outcomes, or escalate authority. Outputs may be descriptive or structural, but not directive.
 
 3) **Non-authoritative** — **[PUBLIC]**
-A constraint on interpretation: outputs are not claims of truth, correctness, or ground reality—only bounded descriptions under stated limits.
+Outputs are not warrants for action, correctness, or ground truth—only bounded descriptions under stated limits.
 
 4) **Finite resolution** — **[PUBLIC]**
 A statement that observation and representation occur with limited granularity (time, bandwidth, sampling, precision). This limits what can be concluded.
 
 5) **Boundary** — **[PUBLIC]**
-A declared exclusion region: what the system refuses to infer, output, or operationalize.
+A declared exclusion region: what claims are forbidden, what is refused, and what cannot be upgraded.
 
 6) **Continuation** — **[PUBLIC]**
-The decision to proceed within a regime without escalating scope. Continuation is not guaranteed; refusal is permitted.
+The allowance to remain within a declared regime without expanding scope. Continuation is not guaranteed; refusal is permitted.
 
 7) **Refusal** — **[PUBLIC]**
 A permitted outcome where the system declines to produce an output or declines to extend claims beyond allowed scope.
@@ -52,29 +52,32 @@ A categorical notion of drift relative to a reference structure. No computation 
 11) **Curvature (stability basin)** — **[CONTROLLED]**
 A geometric metaphor for local robustness/fragility. This surface does not provide formulas or estimation procedures.
 
-12) **Return-time** — **[CONTROLLED]**
-A qualitative notion of recovery latency after perturbation. No detector or estimator is defined here.
-
-13) **Marker** — **[CONTROLLED]**
+12) **Marker** — **[CONTROLLED]**
 A non-directive indicator that something is changing. Markers are not triggers and must not be mapped into actions.
 
-14) **Threshold** — **[PUBLIC — PROHIBITED AS METHOD]**
+13) **Threshold** — **[PUBLIC]** (prohibited in Stage-0 doctrine)
 A numeric trigger boundary. This program explicitly avoids threshold-driven control surfaces in public doctrine.
 
-15) **Instrumentation** — **[PUBLIC]**
-Any process that turns observations into actionable signals. Instrumentation is excluded from declarative surfaces.
+14) **Instrumentation** — **[PUBLIC]**
+Any process that turns observations into action-authorizing signals. Instrumentation is excluded from declarative surfaces.
 
-16) **Optimization** — **[PUBLIC]**
+15) **Optimization** — **[PUBLIC]**
 A process that selects actions to maximize an objective. Optimization is excluded from observer-only posture.
 
-17) **Control** — **[PUBLIC]**
+16) **Control** — **[PUBLIC]**
 Any closed-loop action selection that modifies a system to achieve a target. Control is excluded from observer-only posture.
 
-18) **Operationalization** — **[PUBLIC]**
+17) **Operationalization** — **[PUBLIC]**
 The act of turning a concept into a procedure, implementation, or recipe. Operationalization is out of scope here.
 
-19) **Jurisdiction** — **[PUBLIC]**
+18) **Jurisdiction** — **[PUBLIC]**
 The declared boundary of what a document or system claims authority over (and what it refuses).
 
-20) **Governance event** — **[PUBLIC]**
+19) **Receipt / Receiptable** — **[PUBLIC]**
+A minimal provenance record that ties a claim to declared view families, bounds, and window semantics, sufficient for audit and refusal.
+
+20) **Claimability** — **[PUBLIC]**
+A classification of what may be asserted under declared bounds: only repeatable structure under bounded perturbation is claimable in Stage-0.
+
+21) **Governance event** — **[PUBLIC]**
 Any change that could expand scope, weaken exclusions, or enable operational inference. Governance events require review and explicit rationale.

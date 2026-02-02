@@ -25,35 +25,30 @@ Do not treat summaries as instructions.
 
 ### Paper V — Thermodynamic Irreversibility & Closure
 - **Status:** Public
-- **Published:** January 1, 2026
-- **Record:** [https://doi.org/10.5281/zenodo.18118446](https://doi.org/10.5281/zenodo.18118446)
+- **Record:** [https://doi.org/10.5281/zenodo.18370252](https://doi.org/10.5281/zenodo.18370252)
 - **Description:** Declarative surface only.
 
 ### Paper IV — Admissibility Under Constraint
 - **Status:** Public
-- **Published:** January 2, 2026
-- **Record:** [https://doi.org/10.5281/zenodo.18133213](https://doi.org/10.5281/zenodo.18133213)
+- **Record:** [https://doi.org/10.5281/zenodo.18370414](https://doi.org/10.5281/zenodo.18370414)
 - **Description:** Declarative surface only.
 
 ### Paper III — Finite Resolution, Finite Bandwidth
 - **Status:** Public
-- **Published:** January 4, 2026
-- **Record:** [https://doi.org/10.5281/zenodo.18146926](https://doi.org/10.5281/zenodo.18146926)
+- **Record:** [https://doi.org/10.5281/zenodo.18370424](https://doi.org/10.5281/zenodo.18370424)
 - **Description:** Declarative surface only.
 
 ### Paper II — Constraint Geometry & Admissible Manifolds
 - **Status:** Public
-- **Published:** January 7, 2026
-- **Record:** [https://doi.org/10.5281/zenodo.18174121](https://doi.org/10.5281/zenodo.18174121)
+- **Record:** [https://doi.org/10.5281/zenodo.18370438](https://doi.org/10.5281/zenodo.18370438)
 - **Description:** Declarative surface only.
 
 ### Paper I — Prime Hamiltonian & Bounded Dynamics
 - **Status:** Public
-- **Published:** January 10, 2026
-- **Record:** [https://doi.org/10.5281/zenodo.18209182](https://doi.org/10.5281/zenodo.18209182)
+- **Record:** [https://doi.org/10.5281/zenodo.18370441](https://doi.org/10.5281/zenodo.18370441)
 - **Description:** Declarative surface only.
 
-### Paper 0 — Time as a Constrained Substrate: Admissibility, Relativity, and the Schwarzschild Lesson
+### Paper 0 — Time as a Constrained Substrate
 - **Status:** Public
 - **Record:** [https://doi.org/10.5281/zenodo.18370452](https://doi.org/10.5281/zenodo.18370452)
 - **Description:** Program-level declaration only.

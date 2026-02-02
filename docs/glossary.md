@@ -40,44 +40,53 @@ The allowance to remain within a declared regime without expanding scope. Contin
 7) **Refusal** — **[PUBLIC]**
 A permitted outcome where the system declines to produce an output or declines to extend claims beyond allowed scope.
 
-8) **Regime** — **[PUBLIC]**
+8) **Identity claim** — **[PUBLIC]**
+A continuation claim: it asserts that a system's structure is carried across admissible evolution, not merely matched at an instant. Identity is a property of persistence over observation windows, not proximity at a single time.
+
+9) **Snapshot** — **[PUBLIC]**
+An instant claim. A snapshot may resemble the system at a time index, but it does not, by itself, carry continuation. Pointwise resemblance is not sufficient to establish identity.
+
+10) **Snapshot-to-identity prohibition** — **[PUBLIC]**
+The program refuses any interpretation that upgrades snapshot similarity into identity, continuity, or persistence. When continuation cannot be carried, snapshot fidelity is treated as undefined for identity purposes.
+
+11) **Regime** — **[PUBLIC]**
 A region of behavior or stability defined by what remains coherent under finite resolution, without specifying the underlying mechanism.
 
-9) **Coherence** — **[CONTROLLED]**
+12) **Coherence** — **[CONTROLLED]**
 A structural property describing how strongly a system holds together under perturbation and limited observation. No operational measure is defined here.
 
-10) **Deviation** — **[CONTROLLED]**
+13) **Deviation** — **[CONTROLLED]**
 A categorical notion of drift relative to a reference structure. No computation rules are defined here.
 
-11) **Curvature (stability basin)** — **[CONTROLLED]**
+14) **Curvature (stability basin)** — **[CONTROLLED]**
 A geometric metaphor for local robustness/fragility. This surface does not provide formulas or estimation procedures.
 
-12) **Marker** — **[CONTROLLED]**
+15) **Marker** — **[CONTROLLED]**
 A non-directive indicator that something is changing. Markers are not triggers and must not be mapped into actions.
 
-13) **Threshold** — **[PUBLIC]** (prohibited in Stage-0 doctrine)
+16) **Threshold** — **[PUBLIC]** (prohibited in Stage-0 doctrine)
 A numeric trigger boundary. This program explicitly avoids threshold-driven control surfaces in public doctrine.
 
-14) **Instrumentation** — **[PUBLIC]**
+17) **Instrumentation** — **[PUBLIC]**
 Any process that turns observations into action-authorizing signals. Instrumentation is excluded from declarative surfaces.
 
-15) **Optimization** — **[PUBLIC]**
+18) **Optimization** — **[PUBLIC]**
 A process that selects actions to maximize an objective. Optimization is excluded from observer-only posture.
 
-16) **Control** — **[PUBLIC]**
+19) **Control** — **[PUBLIC]**
 Any closed-loop action selection that modifies a system to achieve a target. Control is excluded from observer-only posture.
 
-17) **Operationalization** — **[PUBLIC]**
+20) **Operationalization** — **[PUBLIC]**
 The act of turning a concept into a procedure, implementation, or recipe. Operationalization is out of scope here.
 
-18) **Jurisdiction** — **[PUBLIC]**
+21) **Jurisdiction** — **[PUBLIC]**
 The declared boundary of what a document or system claims authority over (and what it refuses).
 
-19) **Receipt / Receiptable** — **[PUBLIC]**
+22) **Receipt / Receiptable** — **[PUBLIC]**
 A minimal provenance record that ties a claim to declared view families, bounds, and window semantics, sufficient for audit and refusal.
 
-20) **Claimability** — **[PUBLIC]**
+23) **Claimability** — **[PUBLIC]**
 A classification of what may be asserted under declared bounds: only repeatable structure under bounded perturbation is claimable in Stage-0.
 
-21) **Governance event** — **[PUBLIC]**
+24) **Governance event** — **[PUBLIC]**
 Any change that could expand scope, weaken exclusions, or enable operational inference. Governance events require review and explicit rationale.

@@ -40,13 +40,13 @@ The allowance to remain within a declared regime without expanding scope. Contin
 7) **Refusal** — **[PUBLIC]**
 A permitted outcome where the system declines to produce an output or declines to extend claims beyond allowed scope.
 
-8) **Identity claim** — **[PUBLIC]**
+8) **Identity claim** — **[PUBLIC]** *(see CG-PN-2.5)*
 A continuation claim: it asserts that a declared distinction remains repeatable across an observation window under admissible evolution (within declared bounds and view perturbations), rather than being matched at a single index. Identity is persistence under bounds, not proximity at an instant.
 
-9) **Snapshot** — **[PUBLIC]**
+9) **Snapshot** — **[PUBLIC]** *(see CG-PN-2.5)*
 An instant claim. A snapshot may exhibit pointwise resemblance at a time index under a particular view, but it does not, by itself, carry continuation across a window.
 
-10) **Snapshot-to-identity prohibition** — **[PUBLIC]**
+10) **Snapshot-to-identity prohibition** — **[PUBLIC]** *(see CG-PN-2.5)*
 The program refuses any interpretation that upgrades snapshot resemblance into identity, continuity, or persistence. When continuation cannot be carried (or cannot be made receiptable within declared bounds), snapshot resemblance is undefined for identity purposes.
 
 11) **Regime** — **[PUBLIC]**
@@ -90,3 +90,15 @@ A classification of what may be asserted under declared bounds: only repeatable 
 
 24) **Governance event** — **[PUBLIC]**
 Any change that could expand scope, weaken exclusions, or enable operational inference. Governance events require review and explicit rationale.
+
+25) **Admissible evolution** — **[PUBLIC]** *(see CG-PN-2.5)*
+Evolution of a system that remains within declared admissibility constraints. Identity and persistence are defined with respect to admissible evolution, not arbitrary state change.
+
+26) **Persistence** — **[PUBLIC]** *(see CG-PN-2.5)*
+The structural property of being carried across admissible evolution over an observation window. Persistence is what distinguishes an identity claim from a snapshot claim. It is not proximity, similarity, or matching at an instant.
+
+27) **Observation window** — **[PUBLIC]** *(see CG-PN-2.5)*
+A declared interval (temporal, sequential, or parametric) over which continuation and persistence are evaluated. Identity claims are characterized at the level of observation windows, not at single time indices.
+
+28) **Pointwise resemblance** — **[PUBLIC]** *(see CG-PN-2.5)*
+Resemblance at a single time index or instant. Pointwise resemblance may preserve apparent structure but does not, by itself, carry continuation. Synonym: snapshot resemblance. See *Snapshot* (#9) and *Snapshot-to-identity prohibition* (#10).

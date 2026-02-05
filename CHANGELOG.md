@@ -2,6 +2,18 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.2] — 2026-02-05
+
+### Added
+- `docs/glossary.md` — 4 new terms from Program Note #2.5: admissible evolution (#25), persistence (#26), observation window (#27), pointwise resemblance (#28)
+- Provenance markers `(see CG-PN-2.5)` on existing glossary entries #8 (identity claim), #9 (snapshot), #10 (snapshot-to-identity prohibition)
+
+## [public-spine-v0.1] — 2026-02-03
+
+### Changed
+- `docs/glossary.md` — neutralized internal labels, tightened definitions, added env leakage rule
+- `docs/papers.md` — updated to v1.2 consolidated Zenodo DOIs
+
 ## [public-spine-v0] — 2026-02-02
 
 ### Added

@@ -40,13 +40,13 @@ The allowance to remain within a declared regime without expanding scope. Contin
 7) **Refusal** — **[PUBLIC]**
 A permitted outcome where the system declines to produce an output or declines to extend claims beyond allowed scope.
 
-8) **Identity claim** — **[PUBLIC]** *(see CG-PN-2.5)*
+8) **Identity claim** — **[PUBLIC]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
 A continuation claim: it asserts that a declared distinction remains repeatable across an observation window under admissible evolution (within declared bounds and view perturbations), rather than being matched at a single index. Identity is persistence under bounds, not proximity at an instant.
 
-9) **Snapshot** — **[PUBLIC]** *(see CG-PN-2.5)*
+9) **Snapshot** — **[PUBLIC]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
 An instant claim. A snapshot may exhibit pointwise resemblance at a time index under a particular view, but it does not, by itself, carry continuation across a window.
 
-10) **Snapshot-to-identity prohibition** — **[PUBLIC]** *(see CG-PN-2.5)*
+10) **Snapshot-to-identity prohibition** — **[PUBLIC]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
 The program refuses any interpretation that upgrades snapshot resemblance into identity, continuity, or persistence. When continuation cannot be carried (or cannot be made receiptable within declared bounds), snapshot resemblance is undefined for identity purposes.
 
 11) **Regime** — **[PUBLIC]**
@@ -102,3 +102,15 @@ A declared interval (temporal, sequential, or parametric) over which continuatio
 
 28) **Pointwise resemblance** — **[PUBLIC]** *(see CG-PN-2.5)*
 Resemblance at a single time index or instant. Pointwise resemblance may preserve apparent structure but does not, by itself, carry continuation. Synonym: snapshot resemblance. See *Snapshot* (#9) and *Snapshot-to-identity prohibition* (#10).
+
+29) **Continuation regime** — **[PUBLIC]** *(see CG-FN-1)*
+A declared region of behavior within which continuation is permitted. Regimes are characterized by what remains coherent, not by what is computed or optimized.
+
+30) **Closure (under admissible iteration)** — **[PUBLIC]** *(see CG-FN-1)*
+The property that repeated application of admissible evolution does not exit the declared regime. Closure is a structural constraint, not a verification procedure.
+
+31) **Admissible iteration** — **[PUBLIC]** *(see CG-FN-1)*
+A single step of evolution that remains within declared admissibility bounds. Iterated admissible steps may or may not preserve continuation; this depends on closure.
+
+32) **Anchor ladder** — **[PUBLIC]** *(see CG-FN-1)*
+A taxonomic ordering of receiptable weight classes (e.g., snapshot < window < regime). The ladder describes categorical distinctions, not scoring rules or numeric thresholds.

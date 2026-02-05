@@ -18,6 +18,7 @@ This is not a product, not a control system, and not an operational playbook.
 2) **LICENSE POSTURE** — what is permitted and what is forbidden.
 3) **GLOSSARY** — controlled vocabulary (definitions without methods).
 4) **PAPERS** — paper index linking to records (not rehosting instructions).
+5) **FOUNDATION NOTES** — jurisdictional clarifications (vocabulary + refusals only).
 
 ## What this repo is
 
@@ -32,11 +33,24 @@ This is not a product, not a control system, and not an operational playbook.
 - Not an optimizer, controller, or predictor.
 - Not an evaluation harness that escalates to action.
 
+## Foundation Notes
+
+Jurisdictional clarifications that define vocabulary and interpretive boundaries. No procedures, thresholds, or authority upgrades.
+
+| ID | Title | Status |
+|----|-------|--------|
+| CG-FN-0 | Claimability, Admissible Time, Identity + Snapshot Refusal | Implied (terms in glossary) |
+| CG-FN-1 | Continuation Regimes and Closure | RESERVED |
+| CG-FN-2 | Mass–Energy as Constraint Load | RESERVED |
+
+See `docs/foundation-notes/` for placeholder files.
+
 ## Spine map
 
 - `docs/reading-order.md`
 - `docs/glossary.md`
 - `docs/papers.md`
+- `docs/foundation-notes/` — Foundation Note placeholders
 - `docs/licenses/CRL-0.md`
 - `docs/licenses/OEL-1.md`
 - `docs/faq.md`

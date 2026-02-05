@@ -2,6 +2,16 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.3] — 2026-02-05
+
+### Added
+- `docs/foundation-notes/` — new directory for Foundation Notes
+- `docs/foundation-notes/CG-FN-1_CONTINUATION_REGIMES_AND_CLOSURE.md` — placeholder (RESERVED)
+- `docs/foundation-notes/CG-FN-2_MASS_ENERGY_AS_CONSTRAINT.md` — placeholder (RESERVED)
+- `docs/index.md` — Foundation Notes section with FN-0/1/2 catalog
+- `docs/glossary.md` — 4 new terms for CG-FN-1: continuation regime (#29), closure (#30), admissible iteration (#31), anchor ladder (#32)
+- Cross-references `(see also CG-FN-1)` on glossary entries #8-10 (identity/snapshot cluster)
+
 ## [public-spine-v0.2] — 2026-02-05
 
 ### Added

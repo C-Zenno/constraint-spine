@@ -6,7 +6,7 @@ Authority: Observer-only | Non-authoritative | No directives
 Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes
 ---
 
-# CG-FN-2 — Mass–Energy as Constraint Load
+# CG-FN-2 — Constraint Load and Persistence Bounds
 
 **Status:** RESERVED — slot claimed, content pending.
 

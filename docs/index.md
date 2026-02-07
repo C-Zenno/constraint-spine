@@ -41,7 +41,7 @@ Jurisdictional clarifications that define vocabulary and interpretive boundaries
 |----|-------|--------|
 | CG-FN-0 | Claimability, Admissible Time, Identity + Snapshot Refusal | Implied (terms in glossary) |
 | CG-FN-1 | Continuation Regimes and Closure | RESERVED |
-| CG-FN-2 | Mass–Energy as Constraint Load | RESERVED |
+| CG-FN-2 | Constraint Load and Persistence Bounds | RESERVED |
 
 See `docs/foundation-notes/` for placeholder files.
 

@@ -1,5 +1,7 @@
 # Constraint Spine
 
+Constraint Physics canon / standards surface (CRL-0).
+
 Versioned, auditable canon for a boundary-first program.
 
 This repository is the **public source of truth** for scope, exclusions,
@@ -26,6 +28,11 @@ Every edit to this repository is a governance event:
 reviewed, diffable, and version-tagged.
 
 See [CANON.md](CANON.md) for the full policy and [ADR-0008](registry/DECISIONS/ADR-0008.md) for the rationale.
+
+## Field front door
+
+For orientation, community framing, and navigation, see the
+[constraint-physics](https://github.com/C-Zenno/constraint-physics) repository.
 
 ## License
 

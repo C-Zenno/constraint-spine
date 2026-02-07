@@ -2,6 +2,12 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.4] — 2026-02-06
+
+### Added
+- `README.md` — field label: "Constraint Physics canon / standards surface (CRL-0)"
+- `README.md` — "Field front door" section linking to `constraint-physics` repository
+
 ## [public-spine-v0.3] — 2026-02-05
 
 ### Added

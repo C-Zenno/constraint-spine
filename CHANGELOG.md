@@ -7,7 +7,7 @@ All notable changes to the public spine are documented here.
 ### Added
 - `docs/foundation-notes/` — new directory for Foundation Notes
 - `docs/foundation-notes/CG-FN-1_CONTINUATION_REGIMES_AND_CLOSURE.md` — placeholder (RESERVED)
-- `docs/foundation-notes/CG-FN-2_MASS_ENERGY_AS_CONSTRAINT.md` — placeholder (RESERVED)
+- `docs/foundation-notes/CG-FN-2_MASS_ENERGY_AS_CONSTRAINT.md` — placeholder (RESERVED); internal title updated to "Constraint Load and Persistence Bounds"
 - `docs/index.md` — Foundation Notes section with FN-0/1/2 catalog
 - `docs/glossary.md` — 4 new terms for CG-FN-1: continuation regime (#29), closure (#30), admissible iteration (#31), anchor ladder (#32)
 - Cross-references `(see also CG-FN-1)` on glossary entries #8-10 (identity/snapshot cluster)

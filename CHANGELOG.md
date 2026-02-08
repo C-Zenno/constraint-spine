@@ -2,6 +2,14 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.5] — 2026-02-06
+
+### Added
+- `docs/CLAIM_RULES.md` — 7 CRL-0 speech constraints (canonical home for claim rules)
+- `docs/SIGNATURE_MAP.md` — Claim → Receipt → Refusal → Continuation legibility map
+- `docs/glossary.md` — 8 new terms (#33–40): bounded observability, irreversibility, claim, stop condition, narrative, record, governance primitive, archive edition
+- `docs/index.md` — Claim Rules + Signature Map in start-here list and spine map
+
 ## [public-spine-v0.4] — 2026-02-06
 
 ### Added

@@ -114,3 +114,27 @@ A single step of evolution that remains within declared admissibility bounds. It
 
 32) **Anchor ladder** — **[PUBLIC]** *(see CG-FN-1)*
 A taxonomic ordering of receiptable weight classes (e.g., snapshot < window < regime). The ladder describes categorical distinctions, not scoring rules or numeric thresholds.
+
+33) **Bounded observability** — **[PUBLIC]** *(see Claim Rules)*
+The declared limits of what is observable within a statement, including explicit unknowns and explicit out-of-scope regions.
+
+34) **Irreversibility** — **[PUBLIC]** *(see Claim Rules)*
+A one-way commitment created by continuation, disclosure, or action, named when plausible without asserting mechanism or mitigation.
+
+35) **Claim** — **[PUBLIC]** *(see Claim Rules)*
+A statement that hardens into implied authority or downstream dependence. Claims are treated as expensive under CRL-0 posture.
+
+36) **Stop condition** — **[PUBLIC]** *(see Claim Rules)*
+The explicit point at which claims must stop. Stop conditions are required language, not optional caution.
+
+37) **Narrative** — **[PUBLIC]** *(see Signature Map)*
+Interpretation offered around a record. Narrative may exist, but governance does not depend on it.
+
+38) **Record** — **[PUBLIC]** *(see Signature Map)*
+A bounded trace attached to a claim, preserving scope and absences without persuasion.
+
+39) **Governance primitive** — **[PUBLIC]** *(see Claim Rules)*
+A first-class boundary behavior (e.g., refusal, stop condition, receipts) that constrains continuation without asserting control.
+
+40) **Archive edition** — **[PUBLIC]**
+A reissued citable record with a short preface stating scope, refusals, and version pin.

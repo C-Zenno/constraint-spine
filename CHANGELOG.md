@@ -2,6 +2,13 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.6] — 2026-02-10
+
+### Added
+- `docs/HIERARCHY.md` — claim-discipline ordering of primitives and dependent terms (CRL-0; vocabulary, not derivation)
+- `docs/glossary.md` — new term #41: "Hierarchy (Constraint Physics)"
+- `docs/index.md` — Hierarchy in start-here list and spine map
+
 ## [public-spine-v0.5] — 2026-02-06
 
 ### Added

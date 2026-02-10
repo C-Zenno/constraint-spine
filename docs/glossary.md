@@ -138,3 +138,13 @@ A first-class boundary behavior (e.g., refusal, stop condition, receipts) that c
 
 40) **Archive edition** — **[PUBLIC]**
 A reissued citable record with a short preface stating scope, refusals, and version pin.
+
+41) **Hierarchy (Constraint Physics)** — **[PUBLIC]** *(see docs/HIERARCHY.md)*
+A field-level ordering of primitives and dependent terms used to discipline claims. Not a derivation. Not a mechanism. Not a model. The ordering:
+- **Time** (ordering substrate)
+- **Space / geometry** (relational structure)
+- **Boundary + admissibility** (constraints on persistence/change under finite resolution)
+- **Energy** (cost label for admissible change)
+- **Mass** (stable persistence mode; non-primitive label)
+- **Gravity / curvature** (effective geometric response associated with stable persistence)
+- **Measurement / record** (boundary-coupling event; finite resolution; irreversibility of record)

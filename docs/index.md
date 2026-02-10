@@ -19,8 +19,9 @@ This is not a product, not a control system, and not an operational playbook.
 3) **GLOSSARY** — controlled vocabulary (definitions without methods).
 4) **CLAIM RULES** — CRL-0 speech constraints governing what this channel will and will not publish.
 5) **SIGNATURE MAP** — the recurring legibility map (Claim → Receipt → Refusal → Continuation).
-6) **PAPERS** — paper index linking to records (not rehosting instructions).
-7) **FOUNDATION NOTES** — jurisdictional clarifications (vocabulary + refusals only).
+6) **HIERARCHY** — claim-discipline ordering of primitives and dependent terms (vocabulary, not derivation).
+7) **PAPERS** — paper index linking to records (not rehosting instructions).
+8) **FOUNDATION NOTES** — jurisdictional clarifications (vocabulary + refusals only).
 
 ## What this repo is
 
@@ -53,6 +54,7 @@ See `docs/foundation-notes/` for placeholder files.
 - `docs/glossary.md`
 - `docs/CLAIM_RULES.md`
 - `docs/SIGNATURE_MAP.md`
+- `docs/HIERARCHY.md`
 - `docs/papers.md`
 - `docs/foundation-notes/` — Foundation Note placeholders
 - `docs/licenses/CRL-0.md`

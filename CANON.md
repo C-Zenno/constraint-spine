@@ -37,6 +37,22 @@ license posture, and governance decisions.
 | `cc-website` | Rendered brochure — presentation layer, not canon |
 | (private staging) | Drafting/staging — never public |
 
+## Tagging policy (all znt_public repos)
+
+Every repo under `znt_public` must be tag-pinned before pushing to its
+protected branch (master or main).
+
+| Tier | Enforcement | Repos |
+|------|-------------|-------|
+| Strict (CI blocks) | GitHub Actions + local pre-push | constraint-spine, constraint-physics, constraint-vocabulary, zoa-contracts, cyber-observer-sdk, tam-observer-sdk, zoa-pack-releases |
+| Lightweight (tag milestones) | Manual tagging, no CI block | cc-website, constraintphysics-website, zoa-website, urbaseline-website, zoa-form-worker |
+
+**New repo checklist:** any repo added to `znt_public` must receive:
+1. A tag prefix convention (documented here)
+2. `.github/workflows/require-head-tag.yml` if strict
+3. `.githooks/pre-push` + `scripts/install_githooks.sh`
+4. A baseline tag on the initial commit
+
 ## Citation
 
 To cite a specific version of the spine:

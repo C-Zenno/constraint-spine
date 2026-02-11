@@ -2,6 +2,11 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.13] — 2026-02-11
+
+### Added
+- `CANON.md` — tagging policy section: tier classification (strict / lightweight), new repo checklist
+
 ## [public-spine-v0.12] — 2026-02-11
 
 ### Added

@@ -2,11 +2,17 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.11] — 2026-02-11
+
+### Fixed
+- `README.md` — glossary term count 41 → 42 (Continuity added at v0.8)
+- `CHANGELOG.md` — v0.10 entry: "Mermaid flowchart" → "PNG diagram" (shipped artifact is rendered PNG, not inline Mermaid)
+
 ## [public-spine-v0.10] — 2026-02-11
 
 ### Added
-- `docs/SPINE_MAP.md` — full structural map with Mermaid flowchart, subgraph legend, and dependency rule (CRL-0; navigation only)
-- `README.md` — reader-flow Mermaid diagram (LR: README → index → posture/vocabulary/speech → ordering/canon)
+- `docs/SPINE_MAP.md` — full structural map with PNG diagrams (rendered from Mermaid; source not included), subgraph legend, and dependency rule (CRL-0; navigation only)
+- `README.md` — reader-flow PNG diagram (LR: README → index → posture/vocabulary/speech → ordering/canon)
 - `docs/index.md` — Spine Map added to start-here list (#7) and spine map file list
 
 ## [public-spine-v0.9] — 2026-02-11

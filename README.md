@@ -4,6 +4,10 @@ Constraint Physics canon / standards surface (CRL-0).
 
 Versioned, auditable canon for a boundary-first program.
 
+### Reader flow
+
+![Reader flow](docs/images/reader-flow.png)
+
 This repository is the **public source of truth** for scope, exclusions,
 reading order, controlled vocabulary, and governance decisions.
 

@@ -2,6 +2,13 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.10] — 2026-02-11
+
+### Added
+- `docs/SPINE_MAP.md` — full structural map with Mermaid flowchart, subgraph legend, and dependency rule (CRL-0; navigation only)
+- `README.md` — reader-flow Mermaid diagram (LR: README → index → posture/vocabulary/speech → ordering/canon)
+- `docs/index.md` — Spine Map added to start-here list (#7) and spine map file list
+
 ## [public-spine-v0.9] — 2026-02-11
 
 ### Fixed

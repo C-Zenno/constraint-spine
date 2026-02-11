@@ -141,10 +141,14 @@ A reissued citable record with a short preface stating scope, refusals, and vers
 
 41) **Hierarchy (Constraint Physics)** — **[PUBLIC]** *(see docs/HIERARCHY.md)*
 A field-level ordering of primitives and dependent terms used to discipline claims. Not a derivation. Not a mechanism. Not a model. The ordering:
-- **Time** (ordering substrate)
+- **Time** (constrained substrate; bookkeeps admissible ordering under finite resolution)
 - **Space / geometry** (relational structure)
 - **Boundary + admissibility** (constraints on persistence/change under finite resolution)
+- **Continuity** (minimal persistence condition under which ordering remains composable across admissible evolution)
 - **Energy** (cost label for admissible change)
 - **Mass** (stable persistence mode; non-primitive label)
 - **Gravity / curvature** (effective geometric response associated with stable persistence)
 - **Measurement / record** (boundary-coupling event; finite resolution; irreversibility of record)
+
+42) **Continuity** — **[PUBLIC]** *(see docs/HIERARCHY.md)*
+The minimal persistence condition under which admissible ordering remains composable across admissible evolution. Continuity is a claim condition on composability, not a smoothness assumption or a mechanism.

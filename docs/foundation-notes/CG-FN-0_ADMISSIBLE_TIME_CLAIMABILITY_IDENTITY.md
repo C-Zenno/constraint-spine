@@ -68,7 +68,10 @@ In this framework, "information" denotes the smallest receiptable distinction an
 Information is not treated as substance and is not equated with mass or energy.
 
 ### Admissible time
-Admissible time is a coordinate choice in which repeatable structure can be stated and compared without importing mechanisms or thresholds. It is not a claim that "time is information." It is a claim that time-like coordinates often support receiptable repeatability statements.
+Time is treated as a constrained substrate used to bookkeep admissible ordering (sequence/compare) under finite resolution. Admissible time is a coordinate choice in which repeatable structure can be stated and compared without importing mechanisms or thresholds. It is not a claim that "time is information." It is a claim that time-like coordinates often support receiptable repeatability statements.
+
+### Continuity
+Continuity is the minimal persistence condition under which admissible ordering remains composable across admissible evolution. It is a claim condition on composability, not a smoothness assumption or a mechanism.
 
 ---
 

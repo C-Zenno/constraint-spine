@@ -7,6 +7,10 @@ All notable changes to the public spine are documented here.
 ### Added
 - `docs/foundation-notes/CG-FN-0_ADMISSIBLE_TIME_CLAIMABILITY_IDENTITY.md` — Foundation Note v0.2-final: admissible time, claimability, identity/snapshot refusal (Stage-0)
 - `docs/index.md` — CG-FN-0 status updated from "Implied" to "v0.2-final"
+- `docs/glossary.md` — new term #42: "Continuity" (minimal persistence condition for composable ordering)
+- `docs/glossary.md` — updated Time descriptor in #41 to "constrained substrate" phrasing
+- `docs/HIERARCHY.md` — inserted Continuity after Boundary+admissibility; updated Time descriptor
+- CG-FN-0 — added Continuity definition; aligned Admissible time with locked "constrained substrate" phrasing
 
 ## [public-spine-v0.6] — 2026-02-10
 

@@ -22,9 +22,10 @@ A field-level ordering of primitives and dependent terms used to keep statements
 - Not a proof
 
 ## The ordering
-- **Time** (ordering substrate)
+- **Time** (constrained substrate; bookkeeps admissible ordering under finite resolution)
 - **Space / geometry** (relational structure)
 - **Boundary + admissibility** (constraints on persistence/change under finite resolution)
+- **Continuity** (minimal persistence condition under which ordering remains composable across admissible evolution)
 - **Energy** (cost label for admissible change)
 - **Mass** (stable persistence mode; non-primitive label)
 - **Gravity / curvature** (treated as an effective geometric response **associated with** stable persistence)
@@ -36,4 +37,4 @@ We refuse causal or mechanistic language at CRL-0 (e.g., "X causes Y," "Y arises
 Use dependency-ordering language only: **treated as**, **associated with**, **depends on**, **scoped by**.
 
 ## Version pin
-This document is version-pinned by tag: `public-spine-v0.6`.
+This document is version-pinned by tag: `public-spine-v0.7`.

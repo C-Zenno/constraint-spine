@@ -42,7 +42,7 @@ Jurisdictional clarifications that define vocabulary and interpretive boundaries
 
 | ID | Title | Status |
 |----|-------|--------|
-| CG-FN-0 | Claimability, Admissible Time, Identity + Snapshot Refusal | Implied (terms in glossary) |
+| CG-FN-0 | Admissible Time, Claimability, and Identity Under Bounded Evolution | v0.2-final |
 | CG-FN-1 | Continuation Regimes and Closure | RESERVED |
 | CG-FN-2 | Constraint Load and Persistence Bounds | RESERVED |
 

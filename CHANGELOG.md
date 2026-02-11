@@ -2,6 +2,12 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.7] — 2026-02-11
+
+### Added
+- `docs/foundation-notes/CG-FN-0_ADMISSIBLE_TIME_CLAIMABILITY_IDENTITY.md` — Foundation Note v0.2-final: admissible time, claimability, identity/snapshot refusal (Stage-0)
+- `docs/index.md` — CG-FN-0 status updated from "Implied" to "v0.2-final"
+
 ## [public-spine-v0.6] — 2026-02-10
 
 ### Added

@@ -2,6 +2,13 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.12] — 2026-02-11
+
+### Added
+- `.github/workflows/require-head-tag.yml` — CI guardrail: blocks untagged pushes to master
+- `.githooks/pre-push` — local guardrail: blocks untagged pushes before CI
+- `scripts/install_githooks.sh` — one-line hook installer
+
 ## [public-spine-v0.11] — 2026-02-11
 
 ### Fixed

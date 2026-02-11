@@ -11,10 +11,13 @@ reading order, controlled vocabulary, and governance decisions.
 
 1. [Spine Index](docs/index.md) — full document map
 2. [Reading Order](docs/reading-order.md) — Paper VI first
-3. [Papers Index](docs/papers.md) — Zenodo records with DOIs
-4. [Glossary](docs/glossary.md) — 21 controlled terms
-5. [License Posture: CRL-0](docs/licenses/CRL-0.md) / [OEL-1](docs/licenses/OEL-1.md)
-6. [FAQ](docs/faq.md) — boundary-first answers
+3. [Glossary](docs/glossary.md) — 41 controlled terms
+4. [Claim Rules](docs/CLAIM_RULES.md) — CRL-0 speech constraints
+5. [Signature Map](docs/SIGNATURE_MAP.md) — Claim → Receipt → Refusal → Continuation
+6. [Hierarchy](docs/HIERARCHY.md) — claim-discipline ordering (vocabulary, not derivation)
+7. [Papers Index](docs/papers.md) — Zenodo records with DOIs
+8. [License Posture: CRL-0](docs/licenses/CRL-0.md) / [OEL-1](docs/licenses/OEL-1.md)
+9. [FAQ](docs/faq.md) — boundary-first answers
 
 ## What this is not
 

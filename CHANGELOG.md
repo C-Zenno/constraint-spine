@@ -8,6 +8,7 @@ All notable changes to the public spine are documented here.
 - `docs/HIERARCHY.md` — claim-discipline ordering of primitives and dependent terms (CRL-0; vocabulary, not derivation)
 - `docs/glossary.md` — new term #41: "Hierarchy (Constraint Physics)"
 - `docs/index.md` — Hierarchy in start-here list and spine map
+- `README.md` — updated start-here list (9 items; added Claim Rules, Signature Map, Hierarchy; term count 21 → 41)
 
 ## [public-spine-v0.5] — 2026-02-06
 

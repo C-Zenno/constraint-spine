@@ -184,6 +184,6 @@ Foundation Notes use CG-FN identifiers.
 
 ---
 
-## Related Documents (Optional)
+## Related Documents
 
-If published, the Temporal Regime Framework (TRF) provides a domain instantiation of these claimability classes for temporal regime descriptions. This Foundation Note stands alone and does not require TRF for interpretation.
+No related documents are referenced here. This Foundation Note stands alone.

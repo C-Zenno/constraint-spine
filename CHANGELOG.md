@@ -2,6 +2,11 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.9] — 2026-02-11
+
+### Fixed
+- CG-FN-0 — redacted named TRF reference (CRL-0 surface hardening; no unpublished artifacts named)
+
 ## [public-spine-v0.8] — 2026-02-11
 
 ### Added

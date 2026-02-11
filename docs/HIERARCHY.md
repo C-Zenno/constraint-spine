@@ -37,4 +37,4 @@ We refuse causal or mechanistic language at CRL-0 (e.g., "X causes Y," "Y arises
 Use dependency-ordering language only: **treated as**, **associated with**, **depends on**, **scoped by**.
 
 ## Version pin
-This document is version-pinned by tag: `public-spine-v0.7`.
+This document is version-pinned by tag: `public-spine-v0.8`.

@@ -2,6 +2,15 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.14] — 2026-02-18
+
+### Changed
+- `docs/foundation-notes/CG-FN-1` — upgraded from RESERVED placeholder to v0.1-draft (full vocabulary: continuation regimes, closure, resolution, anchoring)
+- `docs/index.md` — FN-1 status RESERVED → v0.1-draft, title updated
+
+### Removed
+- `docs/foundation-notes/CG-FN-1_CONTINUATION_REGIMES_AND_CLOSURE.md` — replaced by renamed v0.1-draft
+
 ## [public-spine-v0.13] — 2026-02-11
 
 ### Added

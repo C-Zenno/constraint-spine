@@ -195,7 +195,7 @@ This note defines admissibility classes and refusal boundaries only.
 
 ---
 
-## Related Documents (Optional)
+## Related Documents
 
 - CG-FN-0 — Admissible Time, Claimability, Identity
 - CG-PN (Surface Separation) — CC ↔ ZOA boundary note (if/when referenced on the spine)

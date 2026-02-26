@@ -1,0 +1,232 @@
+# CANON_INDEX.yml — Machine-Readable Canon Index
+# Surface Readability Layer (SRL) v0
+# Posture: CRL-0 / Stage-0 / observer-only / non-authoritative
+# This file is navigational. It does not introduce claims, methods, or authority.
+# If this index conflicts with canonical documents, canonical documents prevail.
+
+srl_version: v0
+spine_tag: public-spine-v0.17
+scope: CRL-0
+posture: observer-only / non-authoritative
+exclusions:
+  - methods
+  - algorithms
+  - thresholds
+  - calibration
+  - procedures
+  - recipes
+  - enforcement
+
+# ============================================================
+# Canonical Documents
+# ============================================================
+
+documents:
+
+  papers:
+    - id: Paper-0
+      title: "Time as a Constrained Substrate"
+      type: paper
+      status: published
+      source_path: null
+      record: "https://doi.org/10.5281/zenodo.18370452"
+      scope: CRL-0
+      anchors: [time, constrained-substrate, finite-resolution]
+
+    - id: Paper-I
+      title: "Prime Hamiltonian & Bounded Dynamics"
+      type: paper
+      status: published
+      source_path: null
+      record: "https://doi.org/10.5281/zenodo.18370441"
+      scope: CRL-0
+      anchors: [hamiltonian, bounded-dynamics]
+
+    - id: Paper-II
+      title: "Constraint Geometry & Admissible Manifolds"
+      type: paper
+      status: published
+      source_path: null
+      record: "https://doi.org/10.5281/zenodo.18370438"
+      scope: CRL-0
+      anchors: [constraint-geometry, admissible-manifolds]
+
+    - id: Paper-III
+      title: "Finite Resolution, Finite Bandwidth"
+      type: paper
+      status: published
+      source_path: null
+      record: "https://doi.org/10.5281/zenodo.18370424"
+      scope: CRL-0
+      anchors: [finite-resolution, finite-bandwidth]
+
+    - id: Paper-IV
+      title: "Admissibility Under Constraint"
+      type: paper
+      status: published
+      source_path: null
+      record: "https://doi.org/10.5281/zenodo.18370414"
+      scope: CRL-0
+      anchors: [admissibility, constraint]
+
+    - id: Paper-V
+      title: "Thermodynamic Irreversibility & Closure"
+      type: paper
+      status: published
+      source_path: null
+      record: "https://doi.org/10.5281/zenodo.18370252"
+      scope: CRL-0
+      anchors: [irreversibility, closure, thermodynamic]
+
+    - id: Paper-VI
+      title: "On the Limits of Flow and Transport Metrics Under Admissibility"
+      type: paper
+      status: published
+      role: boundary
+      source_path: null
+      record: "https://doi.org/10.5281/zenodo.18446867"
+      scope: CRL-0
+      anchors: [boundary, scope, exclusions, flow-metrics, transport-metrics]
+      notes: "Boundary paper. Start here. Establishes reading posture."
+
+    - id: Paper-VII
+      title: "Continuity as a Structural Condition in Constraint Geometry"
+      type: paper
+      status: published
+      source_path: null
+      record: "https://doi.org/10.5281/zenodo.18766848"
+      scope: CRL-0
+      anchors: [continuity, identity, recoverability, persistence, admissible-extension]
+      sequencing: "Must precede Kernel in all index projections."
+
+  foundation_notes:
+    - id: CG-FN-0
+      title: "Admissible Time, Claimability, and Identity Under Bounded Evolution"
+      type: fn
+      status: published
+      source_path: docs/foundation-notes/CG-FN-0_ADMISSIBLE_TIME_CLAIMABILITY_IDENTITY.md
+      scope: CRL-0
+      anchors: [admissible-time, claimability, identity, bounded-evolution]
+
+    - id: CG-FN-1
+      title: "Continuation Regimes and Closure Under Admissible Evolution"
+      type: fn
+      status: draft
+      source_path: docs/foundation-notes/CG-FN-1_CONTINUATION_REGIMES_CLOSURE_UNDER_ADMISSIBLE_EVOLUTION.md
+      scope: CRL-0
+      anchors: [continuation-regime, closure, admissible-iteration, anchor-ladder]
+
+    - id: CG-FN-2
+      title: "Constraint Load and Persistence Bounds"
+      type: fn
+      status: reserved
+      source_path: docs/foundation-notes/CG-FN-2_MASS_ENERGY_AS_CONSTRAINT.md
+      scope: CRL-0
+      anchors: [constraint-load, persistence-bounds, mass, energy]
+
+  program_notes:
+    - id: PN-2.5
+      title: "Program Note 2.5"
+      type: pn
+      status: published
+      source_path: null
+      scope: CRL-0
+      anchors: [identity-claim, snapshot, persistence, observation-window]
+
+  spine_documents:
+    - id: GLOSSARY
+      title: "Glossary (Controlled Vocabulary)"
+      type: spine
+      source_path: docs/glossary.md
+      anchors: [42 terms]
+
+    - id: CLAIM_RULES
+      title: "Claim Rules (CRL-0)"
+      type: spine
+      source_path: docs/CLAIM_RULES.md
+      anchors: [7 rules]
+
+    - id: SIGNATURE_MAP
+      title: "Signature Map"
+      type: spine
+      source_path: docs/SIGNATURE_MAP.md
+      anchors: [claim, receipt, refusal, continuation]
+
+    - id: HIERARCHY
+      title: "Hierarchy (Constraint Physics)"
+      type: spine
+      source_path: docs/HIERARCHY.md
+      anchors: [time, space, boundary, continuity, energy, mass, gravity, measurement]
+
+    - id: READING_ORDER
+      title: "Reading Order"
+      type: spine
+      source_path: docs/reading-order.md
+
+    - id: SPINE_MAP
+      title: "Spine Map"
+      type: spine
+      source_path: docs/SPINE_MAP.md
+
+# ============================================================
+# SRL Units
+# ============================================================
+
+srl_units:
+
+  definitions:
+    - id: DEF_CONTINUITY
+      type: definition
+      status: published
+      source_path: docs/srl/DEFINITIONS/DEF_CONTINUITY.md
+      source_refs: [Paper-VII, GLOSSARY, HIERARCHY]
+
+    - id: DEF_RECORD
+      type: definition
+      status: published
+      source_path: docs/srl/DEFINITIONS/DEF_RECORD.md
+      source_refs: [SIGNATURE_MAP, GLOSSARY, CLAIM_RULES]
+
+    - id: DEF_ADMISSIBILITY
+      type: definition
+      status: published
+      source_path: docs/srl/DEFINITIONS/DEF_ADMISSIBILITY.md
+      source_refs: [Paper-IV, GLOSSARY, HIERARCHY]
+
+  invariants:
+    - id: INV_NON_EQUIVALENCE
+      type: invariant
+      status: published
+      source_path: docs/srl/INVARIANTS/INV_NON_EQUIVALENCE_IDENTITY_MEMORY_RECORD_CONTINUITY.md
+      source_refs: [Paper-VII, CG-FN-0, GLOSSARY]
+
+    - id: INV_CONTINUITY_EXTENSION
+      type: invariant
+      status: published
+      source_path: docs/srl/INVARIANTS/INV_CONTINUITY_AS_ADMISSIBLE_EXTENSION.md
+      source_refs: [Paper-VII, CG-FN-1, HIERARCHY]
+
+  refusals:
+    - id: REF_NO_METHODS
+      type: refusal
+      status: published
+      source_path: docs/srl/REFUSALS/REF_STAGE0_NO_METHODS.md
+      source_refs: [CLAIM_RULES]
+
+    - id: REF_NO_EVALUATORS
+      type: refusal
+      status: published
+      source_path: docs/srl/REFUSALS/REF_NO_EVALUATORS_NO_THRESHOLDS.md
+      source_refs: [CLAIM_RULES, GLOSSARY]
+
+    - id: REF_NO_OPTIMIZATION
+      type: refusal
+      status: published
+      source_path: docs/srl/REFUSALS/REF_NO_OPTIMIZATION_PREDICTION_CONTROL.md
+      source_refs: [CLAIM_RULES, GLOSSARY]
+
+    - id: REF_NO_SEMANTIC_AUTHORITY
+      type: refusal
+      status: published
+      source_path: docs/srl/REFUSALS/REF_NO_SEMANTIC_AUTHORITY.md
+      source_refs: [CLAIM_RULES, GLOSSARY]

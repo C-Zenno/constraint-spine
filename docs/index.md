@@ -23,6 +23,7 @@ This is not a product, not a control system, and not an operational playbook.
 7) **SPINE MAP** — full structural map with document relationships and dependency edges.
 8) **PAPERS** — paper index linking to records (not rehosting instructions).
 9) **FOUNDATION NOTES** — jurisdictional clarifications (vocabulary + refusals only).
+10) **[SRL (Surface Readability Layer)](srl/README.md)** — machine-indexable canon overlay (definitions, invariants, refusals). Representation-only.
 
 ## What this repo is
 
@@ -62,6 +63,7 @@ See `docs/foundation-notes/` for placeholder files.
 - `docs/licenses/CRL-0.md`
 - `docs/licenses/OEL-1.md`
 - `docs/faq.md`
+- `docs/srl/` — Surface Readability Layer (machine-indexable canon overlay)
 - `registry/DECISIONS/ADR-0008.md`
 
 ## Change policy

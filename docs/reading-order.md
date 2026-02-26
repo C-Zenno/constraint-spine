@@ -29,3 +29,4 @@ This program is jurisdictional before it is explanatory.
 3) This repo's LICENSE posture pages (CRL-0, OEL-1)
 4) Glossary (controlled vocabulary; no method definitions)
 5) Papers index (follow links only; no operational extraction)
+6) [SRL Reference Layer](srl/README.md) (optional — machine-indexable structural projections; representation-only)

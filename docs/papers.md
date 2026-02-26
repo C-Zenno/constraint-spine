@@ -70,3 +70,9 @@ Do not treat summaries as instructions.
   - version tag
   - public status
 - This repo must not evolve into "expanded methods notes."
+
+---
+
+## SRL (Machine Index)
+
+Atomic structural projections of paper concepts (definitions, invariants, refusals) are available in the [Surface Readability Layer](srl/README.md). SRL is representation-only and does not alter paper content.

@@ -2,6 +2,7 @@
 Status: DRAFT
 Surface: CC (Declarative)
 Claim Ceiling: paper existence + reading order + links only
+Last Updated: 2026-02-26
 Authority: Observer-only | Non-authoritative | No directives
 Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes
 ---
@@ -22,6 +23,11 @@ Do not treat summaries as instructions.
 ---
 
 ## Paper list (reverse reading order)
+
+### Paper VII — Continuity as a Structural Condition in Constraint Geometry
+- **Status:** Public
+- **Record:** [https://doi.org/10.5281/zenodo.18766848](https://doi.org/10.5281/zenodo.18766848)
+- **Description:** Declarative surface only.
 
 ### Paper V — Thermodynamic Irreversibility & Closure
 - **Status:** Public

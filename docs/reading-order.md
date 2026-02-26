@@ -25,6 +25,7 @@ This program is jurisdictional before it is explanatory.
 ## Minimal reading path
 
 1) Paper VI (Boundary / Scope / Exclusions)
-2) This repo's LICENSE posture pages (CRL-0, OEL-1)
-3) Glossary (controlled vocabulary; no method definitions)
-4) Papers index (follow links only; no operational extraction)
+2) Paper VII (Continuity — structural condition, not operational)
+3) This repo's LICENSE posture pages (CRL-0, OEL-1)
+4) Glossary (controlled vocabulary; no method definitions)
+5) Papers index (follow links only; no operational extraction)

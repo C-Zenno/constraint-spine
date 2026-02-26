@@ -39,19 +39,16 @@ git tag --sort=-version:refname | head -1
 Increment the minor version by 1. Example:
 - `public-spine-v0.15` → `public-spine-v0.16`
 
-Create and push the tag:
+Create the tag, then push both commit and tag explicitly:
 
 ```bash
 git tag public-spine-v<NEXT>
-git push origin master --follow-tags
-```
-
-Or push commit first, then push tag:
-
-```bash
 git push origin master
 git push origin public-spine-v<NEXT>
 ```
+
+Do NOT use `--follow-tags` — it only pushes annotated tags.
+Lightweight tags (created by `git tag` without `-a`) require explicit push.
 
 3. **After push — verify CI:**
 

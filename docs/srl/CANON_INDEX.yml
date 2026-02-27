@@ -125,13 +125,29 @@ documents:
       anchors: [constraint-load, persistence-bounds, mass, energy]
 
   program_notes:
-    - id: PN-2.5
-      title: "Program Note 2.5"
+    - id: PN-2
+      title: "Hidden Structure, Projection, and Observable Boundaries"
       type: pn
       status: published
-      source_path: null
+      source_path: docs/program-notes/CG-PN-2_HIDDEN_STRUCTURE_PROJECTION_OBSERVABLE_BOUNDARIES.md
+      scope: CRL-0
+      anchors: [projection, boundary-events, compression, irreversibility, observables]
+
+    - id: PN-2.5
+      title: "Snapshot Resemblance, Persistence, and Identity Claims"
+      type: pn
+      status: published
+      source_path: docs/program-notes/CG-PN-2.5_SNAPSHOT_RESEMBLANCE_PERSISTENCE_IDENTITY_CLAIMS.md
       scope: CRL-0
       anchors: [identity-claim, snapshot, persistence, observation-window]
+
+    - id: PN-SS
+      title: "Surface Separation (CC ↔ ZOA)"
+      type: pn
+      status: published
+      source_path: docs/program-notes/CG-PN-SS_SURFACE_SEPARATION.md
+      scope: CRL-0
+      anchors: [jurisdiction, surface-separation, cc, zoa, routing]
 
   spine_documents:
     - id: GLOSSARY

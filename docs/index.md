@@ -38,6 +38,18 @@ This is not a product, not a control system, and not an operational playbook.
 - Not an optimizer, controller, or predictor.
 - Not an evaluation harness that escalates to action.
 
+## Program Notes
+
+Jurisdictional clarifications and interpretive constraints. No procedures, thresholds, or authority upgrades.
+
+| ID | Title | Status |
+|----|-------|--------|
+| CG-PN-2 | Hidden Structure, Projection, and Observable Boundaries | Published |
+| CG-PN-2.5 | Snapshot Resemblance, Persistence, and Identity Claims | Published |
+| CG-PN-SS | Surface Separation (CC ↔ ZOA) | Published |
+
+See `docs/program-notes/` for full text.
+
 ## Foundation Notes
 
 Jurisdictional clarifications that define vocabulary and interpretive boundaries. No procedures, thresholds, or authority upgrades.
@@ -59,6 +71,7 @@ See `docs/foundation-notes/` for placeholder files.
 - `docs/HIERARCHY.md`
 - `docs/SPINE_MAP.md`
 - `docs/papers.md`
+- `docs/program-notes/` — Program Notes (jurisdictional clarifications)
 - `docs/foundation-notes/` — Foundation Note placeholders
 - `docs/licenses/CRL-0.md`
 - `docs/licenses/OEL-1.md`

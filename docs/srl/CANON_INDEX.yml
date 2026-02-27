@@ -5,7 +5,7 @@
 # If this index conflicts with canonical documents, canonical documents prevail.
 
 srl_version: v0
-spine_tag: public-spine-v0.17
+spine_tag: public-spine-v0.20
 scope: CRL-0
 posture: observer-only / non-authoritative
 exclusions:

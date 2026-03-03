@@ -5,7 +5,7 @@
 # If this index conflicts with canonical documents, canonical documents prevail.
 
 srl_version: v0
-spine_tag: public-spine-v0.20
+spine_tag: public-spine-v0.22
 scope: CRL-0
 posture: observer-only / non-authoritative
 exclusions:
@@ -117,12 +117,12 @@ documents:
       anchors: [continuation-regime, closure, admissible-iteration, anchor-ladder]
 
     - id: CG-FN-2
-      title: "Constraint Load and Persistence Bounds"
+      title: "Constraint Load and Bounded Persistence"
       type: fn
-      status: reserved
-      source_path: docs/foundation-notes/CG-FN-2_MASS_ENERGY_AS_CONSTRAINT.md
+      status: published
+      source_path: docs/foundation-notes/CG-FN-2_CONSTRAINT_LOAD_AND_BOUNDED_PERSISTENCE.md
       scope: CRL-0
-      anchors: [constraint-load, persistence-bounds, mass, energy]
+      anchors: [constraint-load, bounded-persistence, capacity, burden, geometric-response]
 
   program_notes:
     - id: PN-2

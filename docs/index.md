@@ -58,9 +58,9 @@ Jurisdictional clarifications that define vocabulary and interpretive boundaries
 |----|-------|--------|
 | CG-FN-0 | Admissible Time, Claimability, and Identity Under Bounded Evolution | v0.2-final |
 | CG-FN-1 | Continuation Regimes and Closure Under Admissible Evolution | v0.1-draft |
-| CG-FN-2 | Constraint Load and Persistence Bounds | RESERVED |
+| CG-FN-2 | Constraint Load and Bounded Persistence | v0.2 |
 
-See `docs/foundation-notes/` for placeholder files.
+See `docs/foundation-notes/` for full text.
 
 ## Spine map
 

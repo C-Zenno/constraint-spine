@@ -62,6 +62,16 @@ Jurisdictional clarifications that define vocabulary and interpretive boundaries
 
 See `docs/foundation-notes/` for full text.
 
+## Schema
+
+Citeable claim forms and receipt requirements. No methods, no thresholds, no evaluators.
+
+| ID | Title | Status |
+|----|-------|--------|
+| CG-SR-0 | Descriptive Claim Schema | v0.1 |
+
+See `docs/schema/` for full text.
+
 ## Spine map
 
 - `docs/reading-order.md`

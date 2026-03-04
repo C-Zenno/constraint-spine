@@ -184,6 +184,15 @@ documents:
       type: spine
       source_path: docs/SPINE_MAP.md
 
+  schema_documents:
+    - id: CG-SR-0
+      title: "Descriptive Claim Schema"
+      type: schema
+      status: published
+      source_path: docs/schema/CG-SR-0_DESCRIPTIVE_CLAIM_SCHEMA.md
+      scope: CRL-0
+      anchors: [claim-form, regime-label, clarity-envelope, view-family, refusal, receipt, spectrum]
+
 # ============================================================
 # SRL Units
 # ============================================================

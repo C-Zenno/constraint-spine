@@ -154,7 +154,7 @@ documents:
       title: "Glossary (Controlled Vocabulary)"
       type: spine
       source_path: docs/glossary.md
-      anchors: [42 terms]
+      anchors: [44 terms, boundary-fixture, calibration-anchor]
 
     - id: CLAIM_RULES
       title: "Claim Rules (CRL-0)"

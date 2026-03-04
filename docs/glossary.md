@@ -152,3 +152,9 @@ A field-level ordering of primitives and dependent terms used to discipline clai
 
 42) **Continuity** — **[PUBLIC]** *(see docs/HIERARCHY.md)*
 The minimal persistence condition under which admissible ordering remains composable across admissible evolution. Continuity is a claim condition on composability, not a smoothness assumption or a mechanism.
+
+43) **Boundary Fixture** — **[PUBLIC]**
+A domain where admissibility boundaries are known to exist, used as a structural stress test for claim language. No solving posture. Not a target; a reference fixture.
+
+44) **Calibration Anchor** — **[PUBLIC]**
+A boundary fixture used specifically to stabilize admissibility vocabulary. Reference landmarks for claim discipline. Not an optimization objective.

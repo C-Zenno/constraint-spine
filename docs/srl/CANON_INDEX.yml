@@ -191,7 +191,7 @@ documents:
       status: published
       source_path: docs/schema/CG-SR-0_DESCRIPTIVE_CLAIM_SCHEMA.md
       scope: CRL-0
-      anchors: [claim-form, regime-label, clarity-envelope, view-family, refusal, receipt, spectrum]
+      anchors: [claim-form, regime-label, clarity-envelope, view-family, refusal, receipt, descriptive-coordinate-space]
 
 # ============================================================
 # SRL Units

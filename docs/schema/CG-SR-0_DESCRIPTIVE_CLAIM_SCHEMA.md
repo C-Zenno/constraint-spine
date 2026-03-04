@@ -31,17 +31,11 @@ It does not define how claims are produced.
 
 ---
 
-## 1. What "Spectrum" Means Here
+## 1. Terms
 
-"Spectrum" denotes a bounded descriptive coordinate space used for labeling observational artifacts under declared constraints.
+**Descriptive coordinate space:** a bounded descriptive coordinate space used to label observational artifacts under declared constraints.
 
-It does not denote:
-
-* A classifier
-* A consciousness scale
-* A ranking
-* A diagnostic system
-* A policy instrument
+This is a claim-form schema only. It does not authorize classification, diagnosis, ranking, or policy use.
 
 ---
 

@@ -1,10 +1,10 @@
 """Generate The Admissibility Stack flowchart in spine style.
 
-v1.1 changes:
-- Macro Freedom appears only once (Bounded Subsystems).
-- Resolution Effects: Projection/Coarse-Graining, Epistemic Non-Uniqueness, Apparent Irreversibility.
-- Layer 2 renamed to "Relations Governing Primitives" (Continuity, Encoded Persistence, Boundary Coupling).
-- Final layer renamed to "Cost of Remaining Defined" and adds "Affordability (CA-0)" label-only.
+v1.2 changes:
+- Insert Domain Invariants layer between Relations and Claim Class Structure.
+- Encoded Persistence → Encoded Persistence (Memory).
+- Boundary Coupling → Boundary Coupling (Record).
+- Affordability (CA-0) → Constraint Affordability (CA-0).
 """
 from PIL import Image, ImageDraw, ImageFont
 import os
@@ -17,7 +17,7 @@ CREAM = (244, 241, 232)     # #f4f1e8
 GRAY_SUB = (168, 168, 168)  # #a8a8a8
 
 # --- Layout constants ---
-W, H = 1200, 1500
+W, H = 1200, 1800
 MARGIN_X = 80
 HEADER_H = 60
 PILL_H = 60
@@ -31,11 +31,12 @@ HEADER_RADIUS = 6
 # --- Layers ---
 layers = [
     ("Primitive Distinctions", ["Identity", "Memory", "Record"]),
-    ("Relations Governing Primitives", ["Continuity", "Encoded Persistence", "Boundary Coupling"]),
-    ("Claim Class Structure", ["Continuation (Binary)", "Unitarity", "Ontic vs Epistemic"]),
+    ("Relations Governing Primitives", ["Continuity", "Encoded Persistence (Memory)", "Boundary Coupling (Record)"]),
+    ("Domain Invariants", ["Universal Coupling Constraint", "Resolution-Depth Constraint"]),
+    ("Claim Class Structure", ["Continuation (Binary)", "Unitarity", "Ontic vs Epistemic Order"]),
     ("Resolution Effects", ["Projection / Coarse-Graining", "Epistemic Non-Uniqueness", "Apparent Irreversibility"]),
     ("Bounded Subsystems", ["Agency", "Macro Freedom"]),
-    ("Cost of Remaining Defined", ["Ledger Cost", "Boundary Rent", "Affordability (CA-0)"]),
+    ("Cost of Remaining Defined", ["Ledger Cost", "Boundary Rent", "Constraint Affordability (CA-0)"]),
 ]
 
 # --- Font setup ---

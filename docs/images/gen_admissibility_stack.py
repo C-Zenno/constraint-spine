@@ -152,9 +152,16 @@ y += 10
 footer = "Stage-0 / CRL-0 / observer-only / non-authoritative"
 fw, fh = text_size(draw, footer, font_pill)
 draw.text((cx - fw // 2, y), footer, fill=GRAY_SUB, font=font_pill)
+y += fh + 16
+
+# --- Non-claim invariant ---
+font_nonclaim = get_font(15)
+nonclaim = "Consequence map, not definition source. Primitives live in Papers / FN."
+nw, nh = text_size(draw, nonclaim, font_nonclaim)
+draw.text((cx - nw // 2, y), nonclaim, fill=GRAY_SUB, font=font_nonclaim)
 
 # --- Crop to content ---
-final_h = y + fh + 50
+final_h = y + nh + 50
 img = img.crop((0, 0, W, final_h))
 
 out_path = os.path.join(os.path.dirname(__file__), "admissibility-stack.png")

@@ -48,6 +48,7 @@ Jurisdictional clarifications and interpretive constraints. No procedures, thres
 | CG-PN-2.5 | Snapshot Resemblance, Persistence, and Identity Claims | Published |
 | CG-PN-SS | Surface Separation (CC ↔ ZOA) | Published |
 | CG-PN-3 | The Admissibility Stack | Published |
+| CG-PN-3.5 | Constraint Load and Multiplicity | Published |
 
 See `docs/program-notes/` for full text.
 

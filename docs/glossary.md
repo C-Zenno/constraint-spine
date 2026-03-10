@@ -13,133 +13,138 @@ Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes
 - **[CONTROLLED]** Name may be public; definition must stay non-operational.
 - **[INTERNAL]** Term may be referenced but not defined here.
 
-**Rule:** Definitions describe **what a term *means*** at a categorical level, not **how to compute, detect, calibrate, or act**.
+**Tier classification:**
+- **[P]** Primitive — smallest terms the rest of the framework depends on. Change rarely, only through governance.
+- **[D]** Derived — structural consequences of primitives. May reference the primitive they derive from.
+- **[G]** Governance — usage constraints, publication posture, drift protection. May be updated more often than primitives.
+
+**Rule:** Definitions describe structural relations and claim boundaries. They do not provide measurement procedures, thresholds, or operational instructions.
 
 ---
 
 ## Terms
 
-1) **Admissibility** — **[PUBLIC]**
+1) **Admissibility** — **[PUBLIC]** **[P]**
 A condition that restricts what can be asserted or continued under finite resolution. It is a boundary concept, not a metric and not an instruction.
 
-2) **Observer-only** — **[PUBLIC]**
+2) **Observer-only** — **[PUBLIC]** **[G]**
 A posture in which outputs do not prescribe actions, optimize outcomes, or escalate authority. Outputs may be descriptive or structural, but not directive.
 
-3) **Non-authoritative** — **[PUBLIC]**
+3) **Non-authoritative** — **[PUBLIC]** **[G]**
 Outputs are not warrants for action, correctness, or ground truth—only bounded descriptions under stated limits.
 
-4) **Finite resolution** — **[PUBLIC]**
+4) **Finite resolution** — **[PUBLIC]** **[P]**
 A statement that observation and representation occur with limited granularity (time, bandwidth, sampling, precision). This limits what can be concluded.
 
-5) **Boundary** — **[PUBLIC]**
+5) **Boundary** — **[PUBLIC]** **[P]**
 A declared exclusion region: what claims are forbidden, what is refused, and what cannot be upgraded.
 
-6) **Continuation** — **[PUBLIC]**
-The allowance to remain within a declared regime without expanding scope. Continuation is not guaranteed; refusal is permitted.
+6) **Continuation** — **[PUBLIC]** **[P]**
+The binary allowance for a claim to remain within a declared regime without expanding scope. Continuation is permitted or refused.
 
-7) **Refusal** — **[PUBLIC]**
+7) **Refusal** — **[PUBLIC]** **[P]**
 A permitted outcome where the system declines to produce an output or declines to extend claims beyond allowed scope.
 
-8) **Identity claim** — **[PUBLIC]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
+8) **Identity claim** — **[PUBLIC]** **[D]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
 A continuation claim: it asserts that a declared distinction remains repeatable across an observation window under admissible evolution (within declared bounds and view perturbations), rather than being matched at a single index. Identity is persistence under bounds, not proximity at an instant.
 
-9) **Snapshot** — **[PUBLIC]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
+9) **Snapshot** — **[PUBLIC]** **[D]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
 An instant claim. A snapshot may exhibit pointwise resemblance at a time index under a particular view, but it does not, by itself, carry continuation across a window.
 
-10) **Snapshot-to-identity prohibition** — **[PUBLIC]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
+10) **Snapshot-to-identity prohibition** — **[PUBLIC]** **[D]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
 The program refuses any interpretation that upgrades snapshot resemblance into identity, continuity, or persistence. When continuation cannot be carried (or cannot be made receiptable within declared bounds), snapshot resemblance is undefined for identity purposes.
 
-11) **Regime** — **[PUBLIC]**
+11) **Regime** — **[PUBLIC]** **[P]**
 A region of behavior or stability defined by what remains coherent under finite resolution, without specifying the underlying mechanism.
 
-12) **Coherence** — **[CONTROLLED]**
-A structural property describing how strongly a system holds together under perturbation and limited observation. No operational measure is defined here.
+12) **Coherence** — **[CONTROLLED]** **[P]**
+A structural property describing how strongly a system holds together under perturbation and limited observation. Public surfaces use *structural continuity* as the non-operational synonym. No operational measure is defined here.
 
-13) **Deviation** — **[CONTROLLED]**
+13) **Deviation** — **[CONTROLLED]** **[D]**
 A categorical notion of drift relative to a reference structure. No computation rules are defined here.
 
-14) **Curvature (stability basin)** — **[CONTROLLED]**
+14) **Curvature (stability basin)** — **[CONTROLLED]** **[D]**
 A geometric metaphor for local robustness/fragility. This surface does not provide formulas or estimation procedures.
 
-15) **Marker** — **[CONTROLLED]**
+15) **Marker** — **[CONTROLLED]** **[D]**
 A non-directive indicator that something is changing. Markers are not triggers and must not be mapped into actions.
 
-16) **Threshold** — **[PUBLIC]** (prohibited in Stage-0 doctrine)
+16) **Threshold** — **[PUBLIC]** **[G]** (prohibited in Stage-0 doctrine)
 A numeric trigger boundary. This program explicitly avoids threshold-driven control surfaces in public doctrine.
 
-17) **Instrumentation** — **[PUBLIC]**
+17) **Instrumentation** — **[PUBLIC]** **[G]**
 Any process that turns observations into action-authorizing signals. Instrumentation is excluded from declarative surfaces.
 
-18) **Optimization** — **[PUBLIC]**
+18) **Optimization** — **[PUBLIC]** **[G]**
 A process that selects actions to maximize an objective. Optimization is excluded from observer-only posture.
 
-19) **Control** — **[PUBLIC]**
+19) **Control** — **[PUBLIC]** **[G]**
 Any closed-loop action selection that modifies a system to achieve a target. Control is excluded from observer-only posture.
 
-20) **Operationalization** — **[PUBLIC]**
+20) **Operationalization** — **[PUBLIC]** **[G]**
 The act of turning a concept into a procedure, implementation, or recipe. Operationalization is out of scope here.
 
-21) **Jurisdiction** — **[PUBLIC]**
+21) **Jurisdiction** — **[PUBLIC]** **[P]**
 The declared boundary of what a document or system claims authority over (and what it refuses).
 
-22) **Receipt / Receiptable** — **[PUBLIC]**
+22) **Receipt / Receiptable** — **[PUBLIC]** **[P]**
 A minimal provenance record that ties a claim to declared view families, bounds, and window semantics, sufficient for audit and refusal.
 
-23) **Claimability** — **[PUBLIC]**
+23) **Claimability** — **[PUBLIC]** **[D]**
 A classification of what may be asserted under declared bounds: only repeatable structure under bounded perturbation is claimable in Stage-0.
 
-24) **Governance event** — **[PUBLIC]**
+24) **Governance event** — **[PUBLIC]** **[G]**
 Any change that could expand scope, weaken exclusions, or enable operational inference. Governance events require review and explicit rationale.
 
-25) **Admissible evolution** — **[PUBLIC]** *(see CG-PN-2.5)*
+25) **Admissible evolution** — **[PUBLIC]** **[D]** *(see CG-PN-2.5)*
 Evolution of a system that remains within declared admissibility constraints. Identity and persistence are defined with respect to admissible evolution, not arbitrary state change.
 
-26) **Persistence** — **[PUBLIC]** *(see CG-PN-2.5)*
+26) **Persistence** — **[PUBLIC]** **[P]** *(see CG-PN-2.5)*
 The structural property of being carried across admissible evolution over an observation window. Persistence is what distinguishes an identity claim from a snapshot claim. It is not proximity, similarity, or matching at an instant.
 
-27) **Observation window** — **[PUBLIC]** *(see CG-PN-2.5)*
+27) **Observation window** — **[PUBLIC]** **[P]** *(see CG-PN-2.5)*
 A declared interval (temporal, sequential, or parametric) over which continuation and persistence are evaluated. Identity claims are characterized at the level of observation windows, not at single time indices.
 
-28) **Pointwise resemblance** — **[PUBLIC]** *(see CG-PN-2.5)*
+28) **Pointwise resemblance** — **[PUBLIC]** **[D]** *(see CG-PN-2.5)*
 Resemblance at a single time index or instant. Pointwise resemblance may preserve apparent structure but does not, by itself, carry continuation. Synonym: snapshot resemblance. See *Snapshot* (#9) and *Snapshot-to-identity prohibition* (#10).
 
-29) **Continuation regime** — **[PUBLIC]** *(see CG-FN-1)*
+29) **Continuation regime** — **[PUBLIC]** **[D]** *(see CG-FN-1)*
 A declared region of behavior within which continuation is permitted. Regimes are characterized by what remains coherent, not by what is computed or optimized.
 
-30) **Closure (under admissible iteration)** — **[PUBLIC]** *(see CG-FN-1)*
+30) **Closure (under admissible iteration)** — **[PUBLIC]** **[D]** *(see CG-FN-1)*
 The property that repeated application of admissible evolution does not exit the declared regime. Closure is a structural constraint, not a verification procedure.
 
-31) **Admissible iteration** — **[PUBLIC]** *(see CG-FN-1)*
+31) **Admissible iteration** — **[PUBLIC]** **[D]** *(see CG-FN-1)*
 A single step of evolution that remains within declared admissibility bounds. Iterated admissible steps may or may not preserve continuation; this depends on closure.
 
-32) **Anchor ladder** — **[PUBLIC]** *(see CG-FN-1)*
+32) **Anchor ladder** — **[PUBLIC]** **[D]** *(see CG-FN-1)*
 A taxonomic ordering of receiptable weight classes (e.g., snapshot < window < regime). The ladder describes categorical distinctions, not scoring rules or numeric thresholds.
 
-33) **Bounded observability** — **[PUBLIC]** *(see Claim Rules)*
+33) **Bounded observability** — **[PUBLIC]** **[D]** *(see Claim Rules)*
 The declared limits of what is observable within a statement, including explicit unknowns and explicit out-of-scope regions.
 
-34) **Irreversibility** — **[PUBLIC]** *(see Claim Rules)*
+34) **Irreversibility** — **[PUBLIC]** **[P]** *(see Claim Rules)*
 A one-way commitment created by continuation, disclosure, or action, named when plausible without asserting mechanism or mitigation.
 
-35) **Claim** — **[PUBLIC]** *(see Claim Rules)*
+35) **Claim** — **[PUBLIC]** **[P]** *(see Claim Rules)*
 A statement that hardens into implied authority or downstream dependence. Claims are treated as expensive under CRL-0 posture.
 
-36) **Stop condition** — **[PUBLIC]** *(see Claim Rules)*
+36) **Stop condition** — **[PUBLIC]** **[G]** *(see Claim Rules)*
 The explicit point at which claims must stop. Stop conditions are required language, not optional caution.
 
-37) **Narrative** — **[PUBLIC]** *(see Signature Map)*
+37) **Narrative** — **[PUBLIC]** **[D]** *(see Signature Map)*
 Interpretation offered around a record. Narrative may exist, but governance does not depend on it.
 
-38) **Record** — **[PUBLIC]** *(see Signature Map)*
+38) **Record** — **[PUBLIC]** **[P]** *(see Signature Map)*
 A bounded trace attached to a claim, preserving scope and absences without persuasion.
 
-39) **Governance primitive** — **[PUBLIC]** *(see Claim Rules)*
+39) **Governance primitive** — **[PUBLIC]** **[G]** *(see Claim Rules)*
 A first-class boundary behavior (e.g., refusal, stop condition, receipts) that constrains continuation without asserting control.
 
-40) **Archive edition** — **[PUBLIC]**
+40) **Archive edition** — **[PUBLIC]** **[G]**
 A reissued citable record with a short preface stating scope, refusals, and version pin.
 
-41) **Hierarchy (Constraint Physics)** — **[PUBLIC]** *(see docs/HIERARCHY.md)*
+41) **Hierarchy (Constraint Physics)** — **[PUBLIC]** **[D]** *(see docs/HIERARCHY.md)*
 A field-level ordering of primitives and dependent terms used to discipline claims. Not a derivation. Not a mechanism. Not a model. The ordering:
 - **Time** (constrained substrate; bookkeeps admissible ordering under finite resolution)
 - **Space / geometry** (relational structure)
@@ -150,11 +155,35 @@ A field-level ordering of primitives and dependent terms used to discipline clai
 - **Gravity / curvature** (effective geometric response associated with stable persistence)
 - **Measurement / record** (boundary-coupling event; finite resolution; irreversibility of record)
 
-42) **Continuity** — **[PUBLIC]** *(see docs/HIERARCHY.md)*
+42) **Continuity** — **[PUBLIC]** **[P]** *(see docs/HIERARCHY.md)*
 The minimal persistence condition under which admissible ordering remains composable across admissible evolution. Continuity is a claim condition on composability, not a smoothness assumption or a mechanism.
 
-43) **Boundary Fixture** — **[PUBLIC]**
+43) **Boundary Fixture** — **[PUBLIC]** **[D]**
 A domain where admissibility boundaries are known to exist, used as a structural stress test for claim language. No solving posture. Not a target; a reference fixture.
 
-44) **Calibration Anchor** — **[PUBLIC]**
+44) **Calibration Anchor** — **[PUBLIC]** **[D]**
 A boundary fixture used specifically to stabilize admissibility vocabulary. Reference landmarks for claim discipline. Not an optimization objective.
+
+45) **Multiplicity (pre-settlement)** — **[PUBLIC]** **[D]** *(see CG-PN-3.5)*
+The condition in which multiple admissible trajectories may exist prior to settlement within an observation window. Multiplicity describes the geometry of admissible continuation before a claim is finalized. Multiplicity does not alter the binary nature of continuation.
+
+46) **Settlement** — **[PUBLIC]** **[D]** *(see CG-PN-3.5)*
+The point at which a continuation decision resolves into a single receiptable claim. Settlement selects one trajectory within the admissible manifold. Only settled claims are receiptable.
+
+47) **Singular claim** — **[PUBLIC]** **[D]** *(see CG-PN-3.5)*
+A claim referring to one trajectory following settlement. Claims remain singular even when multiplicity exists prior to settlement.
+
+48) **Dynamic admissible space** — **[PUBLIC]** **[D]** *(see CG-PN-3.5)*
+The region of admissible continuation available under current constraints and bounded observability. This region may expand or contract as regimes, boundaries, or observation limits change. Admissible space is structural and time-dependent.
+
+49) **Constraint load** — **[PUBLIC]** **[D]** *(see CG-PN-3.5)*
+The accumulated structural demand placed on a boundary by constraints, interactions, or regime conditions. Constraint load may alter admissible continuation without specifying measurement or thresholds.
+
+50) **Disturbance projection** — **[PUBLIC]** **[D]** *(see CG-PN-3.5)*
+The mapping of a shared disturbance into subsystem-specific constraint violations. Local failures may represent projections of a common upstream disturbance. Errors occur when projected disturbance intersects subsystem constraints in an inadmissible way.
+
+51) **Settlement window** — **[PUBLIC]** **[D]** *(see CG-PN-3.5)*
+The portion of an observation window in which multiplicity must resolve into a singular claim or refusal.
+
+52) **Admissible manifold** — **[PUBLIC]** **[D]** *(see CG-PN-3.5)*
+The set of trajectories permitted under current admissibility constraints within an observation window. Multiplicity describes the geometry of this manifold prior to settlement.

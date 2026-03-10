@@ -2,7 +2,7 @@ name: Require tag on HEAD
 
 on:
   push:
-    branches: [ "master" ]
+    tags: [ "public-spine-v*" ]
 
 jobs:
   require_tag:
@@ -26,8 +26,9 @@ jobs:
             echo "ERROR: HEAD is not tagged. Push a tag matching: $TAG_REGEX"
             exit 1
           fi
-          if ! echo "$TAG" | grep -Eq "$TAG_REGEX"; then
+          if \! echo "$TAG" | grep -Eq "$TAG_REGEX"; then
             echo "ERROR: HEAD tag '$TAG' does not match required pattern: $TAG_REGEX"
             exit 1
           fi
           echo "OK: HEAD is tag-pinned -> $TAG"
+

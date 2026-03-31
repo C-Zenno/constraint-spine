@@ -2,6 +2,11 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.31] — 2026-03-31
+
+### Added
+- `docs/foundation-notes/CG-FN-3_ADMISSIBILITY_AS_CLAIM_DISCIPLINE.md` — Foundation Note 3: admissibility as claim discipline (continuation, settlement, refusal under bounded observation). Stage-0 / CRL-0.
+
 ## [public-spine-v0.14] — 2026-02-18
 
 ### Changed

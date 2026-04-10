@@ -26,7 +26,8 @@ This program is jurisdictional before it is explanatory.
 
 1) Paper VI (Boundary / Scope / Exclusions)
 2) Paper VII (Continuity — structural condition, not operational)
-3) This repo's LICENSE posture pages (CRL-0, OEL-1)
-4) Glossary (controlled vocabulary; no method definitions)
-5) Papers index (follow links only; no operational extraction)
-6) [SRL Reference Layer](srl/README.md) (optional — machine-indexable structural projections; representation-only)
+3) Paper VIII (Appearance — appearance, continuation, and contracted view; closes the sequence)
+4) This repo's LICENSE posture pages (CRL-0, OEL-1)
+5) Glossary (controlled vocabulary; no method definitions)
+6) Papers index (follow links only; no operational extraction)
+7) [SRL Reference Layer](srl/README.md) (optional — machine-indexable structural projections; representation-only)

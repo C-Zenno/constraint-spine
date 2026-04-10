@@ -2,7 +2,7 @@
 Status: DRAFT
 Surface: CC (Declarative)
 Claim Ceiling: paper existence + reading order + links only
-Last Updated: 2026-02-26
+Last Updated: 2026-04-09
 Authority: Observer-only | Non-authoritative | No directives
 Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes
 ---
@@ -23,6 +23,12 @@ Do not treat summaries as instructions.
 ---
 
 ## Paper list (reverse reading order)
+
+### Paper VIII — Appearance Under Bounded Resolution
+- **Subtitle:** Appearance, Continuation, and Contracted View
+- **Status:** Public
+- **Record:** [https://doi.org/10.5281/zenodo.19486536](https://doi.org/10.5281/zenodo.19486536)
+- **Description:** Declarative surface only. Completes the eight-paper Constraint Geometry sequence.
 
 ### Paper VII — Continuity as a Structural Condition in Constraint Geometry
 - **Status:** Public

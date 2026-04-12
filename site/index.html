@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Constraint Spine — Foundational Admissibility Sequence</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --gold:#c9a227;--gold-dim:rgba(201,162,39,0.25);--gold-faint:rgba(201,162,39,0.08);
+    --cream:#f4f1e8;--cream-dim:#d4d0c8;
+    --bg:#1a1d23;--surface:#1f222a;--surface-raised:#24272f;
+    --dim:#8c8c8c;--faint:#4a4a4a;--border:rgba(255,255,255,0.06);
+    --note:#8AA4BE;
+    --ease:cubic-bezier(0.25,1,0.5,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--cream);overflow:hidden;height:100%}
+  body{font-family:'Space Grotesk',system-ui,sans-serif;display:flex;flex-direction:column}
+  .mono{font-family:'JetBrains Mono',monospace}
+  .headline{font-family:'Manrope',sans-serif}
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 200,'GRAD' 0,'opsz' 24}
+  a{color:inherit;text-decoration:none}
+  a:visited{color:inherit}
+  ::-webkit-scrollbar{width:5px}
+  ::-webkit-scrollbar-track{background:var(--bg)}
+  ::-webkit-scrollbar-thumb{background:#2a2a2a}
+
+  /* ═══ ARCHIVE CARD — flat, rigid, no glow ═══ */
+  .entry{
+    position:relative;padding:16px 20px;background:var(--surface);
+    border:1px solid var(--border);transition:border-color 0.3s;
+    text-decoration:none;display:block;
+  }
+  .entry:hover{border-color:var(--gold-dim)}
+  .entry+.entry{margin-top:2px}
+
+  /* ═══ POSTURE STAMP — documentary, not app-like ═══ */
+  .stamp{
+    display:inline-block;padding:1px 6px;font-size:7px;letter-spacing:1.5px;
+    border:1px solid var(--border);color:var(--dim);
+    font-family:'JetBrains Mono',monospace;text-transform:uppercase;
+  }
+  .stamp.gold{border-color:var(--gold-dim);color:var(--gold)}
+  .stamp.track-cp{border-color:rgba(138,164,190,0.25);color:var(--note)}
+  .stamp.track-as{border-color:rgba(201,162,39,0.2);color:var(--gold)}
+
+  /* ═══ THIN CONNECTORS — registry lines, not neon ═══ */
+  .line-v{position:absolute;width:1px;pointer-events:none;background:var(--gold-dim)}
+  .line-h{position:absolute;height:1px;pointer-events:none;background:var(--gold-dim)}
+  .line-v.dashed{background:none;border-left:1px dashed var(--gold-dim)}
+  .line-h.dashed{background:none;border-top:1px dashed var(--gold-dim)}
+  /* Small arrow triangles for reading order flow */
+  .arrow-down{position:absolute;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:5px solid var(--gold);pointer-events:none;z-index:2}
+  .arrow-up{position:absolute;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-bottom:5px solid var(--gold-dim);pointer-events:none;z-index:2}
+
+  /* ═══ VIEW SYSTEM ═══ */
+  .view{position:absolute;inset:0;display:none;opacity:0;overflow-y:auto}
+  .view.active{display:block;opacity:1}
+
+  /* ═══ NAV TAB — understated ═══ */
+  .nav-tab{
+    font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:0.08em;
+    color:var(--faint);padding:10px 14px;cursor:pointer;white-space:nowrap;
+    border-bottom:1px solid transparent;transition:color 0.2s;
+  }
+  .nav-tab:hover{color:var(--dim)}
+  .nav-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+
+  /* ═══ DEPENDENCY NODE — flat, indexed ═══ */
+  .dep-node{
+    position:absolute;padding:10px 14px;background:var(--surface);
+    border:1px solid var(--border);z-index:1;
+  }
+  .dep-node.boundary{border-color:var(--gold-dim)}
+
+  /* ═══ SUBTLE ENTRY ANIMATION ═══ */
+  @keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+  .fade-in{opacity:0;animation:fadeUp 0.4s var(--ease) forwards}
+  .fade-in:nth-child(1){animation-delay:0.05s}
+  .fade-in:nth-child(2){animation-delay:0.1s}
+  .fade-in:nth-child(3){animation-delay:0.15s}
+  .fade-in:nth-child(4){animation-delay:0.2s}
+  .fade-in:nth-child(5){animation-delay:0.25s}
+  .fade-in:nth-child(6){animation-delay:0.3s}
+  .fade-in:nth-child(7){animation-delay:0.35s}
+  .fade-in:nth-child(8){animation-delay:0.4s}
+  .fade-in:nth-child(9){animation-delay:0.45s}
+  .fade-in:nth-child(10){animation-delay:0.5s}
+
+  /* ═══ VIEW TRANSITION — quiet ═══ */
+  .view-enter{animation:viewIn 0.3s var(--ease)}
+  @keyframes viewIn{from{opacity:0}to{opacity:1}}
+
+  /* ═══ READING STEP ═══ */
+  .step{padding:16px 0;position:relative}
+  .step .dot{
+    position:absolute;left:-18px;top:50%;width:7px;height:7px;
+    border:1px solid var(--gold-dim);transform:translateY(-50%);
+  }
+  .step.primary .dot{background:var(--gold);border-color:var(--gold)}
+
+  @media(max-width:768px){
+    html,body{overflow:auto}
+    .flowchart-wrap{transform:scale(0.55);transform-origin:top left;width:182%}
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER — quiet, institutional ═══ -->
+<header style="display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:40px;border-bottom:1px solid var(--border);flex-shrink:0;z-index:30">
+  <div style="display:flex;align-items:center;gap:10px">
+    <span class="mono" style="font-size:11px;font-weight:500;color:var(--cream);letter-spacing:1px">Constraint Spine</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px">
+    <span class="stamp gold">CRL-0</span>
+    <span class="mono" style="font-size:8px;color:var(--faint)">v0.32</span>
+  </div>
+</header>
+
+<!-- ═══ NAV — inline tabs, not floating dock ═══ -->
+<div style="display:flex;border-bottom:1px solid var(--border);padding:0 24px;flex-shrink:0">
+  <div class="nav-tab active" data-view="papers">Papers</div>
+  <div class="nav-tab" data-view="reading">Reading Order</div>
+  <div class="nav-tab" data-view="flow">Dependencies</div>
+  <div class="nav-tab" data-view="stack">Stack</div>
+  <div class="nav-tab" data-view="surfaces">Surfaces</div>
+  <div class="nav-tab" data-view="notes">Notes</div>
+  <div class="nav-tab" data-view="posture">Posture</div>
+</div>
+
+<!-- ═══ MAIN VIEWPORT ═══ -->
+<div id="viewport" style="flex:1;position:relative;overflow:hidden">
+
+  <!-- ═══ PAPERS VIEW ═══ -->
+  <div id="view-papers" class="view active" style="padding:32px 40px 80px">
+    <div style="max-width:800px;margin:0 auto">
+      <div style="margin-bottom:28px">
+        <h2 class="headline" style="font-size:22px;font-weight:700;letter-spacing:-0.3px">Foundational Admissibility Sequence</h2>
+        <p class="mono" style="font-size:9px;color:var(--dim);margin-top:6px">Eight papers · Declarative surface · Observer-only · Non-authoritative</p>
+      </div>
+
+      <!-- Boundary callout — quiet, left-border only -->
+      <div style="border-left:2px solid var(--gold-dim);padding:10px 16px;margin-bottom:16px">
+        <p style="font-size:12px;color:var(--cream-dim)">Start with <strong style="color:var(--cream)">Paper VI</strong>. Everything else inherits its exclusions.</p>
+      </div>
+
+      <!-- Classification rule -->
+      <div style="border-left:2px solid var(--border);padding:10px 16px;margin-bottom:24px">
+        <span class="mono" style="font-size:7px;color:var(--note);letter-spacing:1.5px">CLASSIFICATION RULE</span>
+        <p style="font-size:11px;color:var(--dim);margin-top:4px;line-height:1.6">The boundary is not chronological. It is grammatical. A paper enters <strong style="color:var(--cream-dim)">Admissibility Studies</strong> when its object becomes the legitimacy of claims under bounded observation — not merely admissible structure as such. Track assignment is per artifact by operative grammar, not by release position.</p>
+      </div>
+
+      <!-- Paper entries — flat archive rows -->
+
+      <a href="https://doi.org/10.5281/zenodo.19486536" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--gold);width:28px;flex-shrink:0">VIII</span>
+          <div style="flex:1;min-width:0">
+            <div class="headline" style="font-size:13px;font-weight:600">Appearance Under Bounded Resolution</div>
+            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Appearance, continuation, and contracted view. Closes the sequence.</p>
+          </div>
+          <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Apr 2026</span>
+          <span class="stamp track-as" style="flex-shrink:0">admissibility studies</span>
+          <span class="stamp gold" style="flex-shrink:0">closer</span>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.5281/zenodo.18766848" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--gold);width:28px;flex-shrink:0">VII</span>
+          <div style="flex:1;min-width:0">
+            <div class="headline" style="font-size:13px;font-weight:600">Continuity as a Structural Condition in Constraint Geometry</div>
+            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Structural conditions for persistence, identity, and recoverability.</p>
+          </div>
+          <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Feb 2026</span>
+          <span class="stamp track-cp" style="flex-shrink:0">constraint physics</span>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.5281/zenodo.18446867" target="_blank" class="entry fade-in" style="border-color:var(--gold-dim)">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--gold);width:28px;flex-shrink:0">VI</span>
+          <div style="flex:1;min-width:0">
+            <div class="headline" style="font-size:13px;font-weight:600">On the Limits of Flow and Transport Metrics Under Admissibility</div>
+            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Boundary paper. Establishes structural limits on claims under admissibility.</p>
+          </div>
+          <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Jan 2026</span>
+          <span class="stamp gold" style="flex-shrink:0">boundary</span>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.5281/zenodo.18370252" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--gold);width:28px;flex-shrink:0">V</span>
+          <div style="flex:1;min-width:0">
+            <div class="headline" style="font-size:13px;font-weight:600">Admissibility, Irreversibility, and Finite Resolution</div>
+            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Thermodynamic closure from admissibility enforcement.</p>
+          </div>
+          <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Jan 2026</span>
+          <span class="stamp track-cp" style="flex-shrink:0">constraint physics</span>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.5281/zenodo.18370414" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--gold);width:28px;flex-shrink:0">IV</span>
+          <div style="flex:1;min-width:0">
+            <div class="headline" style="font-size:13px;font-weight:600">Admissibility Under Constraint</div>
+            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Admissibility as an operator-level principle, not control or feedback.</p>
+          </div>
+          <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Jan 2026</span>
+          <span class="stamp track-cp" style="flex-shrink:0">constraint physics</span>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.5281/zenodo.18370424" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--gold);width:28px;flex-shrink:0">III</span>
+          <div style="flex:1;min-width:0">
+            <div class="headline" style="font-size:13px;font-weight:600">Finite Resolution, Finite Bandwidth</div>
+            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Coherence thickness as embedding-dependent structural condition.</p>
+          </div>
+          <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Jan 2026</span>
+          <span class="stamp track-cp" style="flex-shrink:0">constraint physics</span>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.5281/zenodo.18370438" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--gold);width:28px;flex-shrink:0">II</span>
+          <div style="flex:1;min-width:0">
+            <div class="headline" style="font-size:13px;font-weight:600">Constraint Geometry & Admissible Manifolds</div>
+            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Geometric substrate of admissible manifolds and critical loci.</p>
+          </div>
+          <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Jan 2026</span>
+          <span class="stamp track-cp" style="flex-shrink:0">constraint physics</span>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.5281/zenodo.18370441" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--gold);width:28px;flex-shrink:0">I</span>
+          <div style="flex:1;min-width:0">
+            <div class="headline" style="font-size:13px;font-weight:600">Prime Hamiltonian</div>
+            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Minimal Hamiltonian framework for admissibility and bounded continuation.</p>
+          </div>
+          <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Jan 2026</span>
+          <span class="stamp track-cp" style="flex-shrink:0">constraint physics</span>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.5281/zenodo.18370452" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--gold);width:28px;flex-shrink:0">0</span>
+          <div style="flex:1;min-width:0">
+            <div class="headline" style="font-size:13px;font-weight:600">Time as a Constrained Substrate</div>
+            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Time as observer-dependent substrate. Program-level declaration.</p>
+          </div>
+          <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Jan 2026</span>
+          <span class="stamp track-cp" style="flex-shrink:0">constraint physics</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ═══ READING ORDER VIEW ═══ -->
+  <div id="view-reading" class="view" style="padding:32px 40px 80px">
+    <div style="max-width:600px;margin:0 auto">
+      <h2 class="headline" style="font-size:22px;font-weight:700;margin-bottom:6px">Reading Order</h2>
+      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:28px">Start with Paper VI. Everything else inherits its exclusions.</p>
+
+      <div style="padding-left:24px;position:relative">
+        <div style="position:absolute;left:7px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--gold-dim),var(--gold-dim) 85%,transparent)"></div>
+
+        <div class="step primary fade-in">
+          <div class="dot"></div>
+          <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:1.5px">BOUNDARY</span>
+          <div class="headline" style="font-size:14px;font-weight:600;margin-top:3px">Paper VI — Scope & Exclusions</div>
+          <p class="mono" style="font-size:8px;color:var(--dim);margin-top:3px">Jurisdictional posture. Read first. Everything else inherits these exclusions.</p>
+        </div>
+
+        <div class="step primary fade-in">
+          <div class="dot"></div>
+          <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:1.5px">CONTINUITY</span>
+          <div class="headline" style="font-size:14px;font-weight:600;margin-top:3px">Paper VII — Structural Condition</div>
+          <p class="mono" style="font-size:8px;color:var(--dim);margin-top:3px">Continuity as admissible extension. Not operational.</p>
+        </div>
+
+        <div class="step primary fade-in">
+          <div class="dot"></div>
+          <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:1.5px">APPEARANCE</span>
+          <div class="headline" style="font-size:14px;font-weight:600;margin-top:3px">Paper VIII — Contracted View</div>
+          <p class="mono" style="font-size:8px;color:var(--dim);margin-top:3px">Closes the sequence. Appearance under bounded resolution.</p>
+        </div>
+
+        <div class="step fade-in">
+          <div class="dot"></div>
+          <span class="mono" style="font-size:8px;color:var(--faint);letter-spacing:1.5px">POSTURE</span>
+          <div class="headline" style="font-size:14px;font-weight:600;color:var(--dim);margin-top:3px">CRL-0 / OEL-1</div>
+          <p class="mono" style="font-size:8px;color:var(--faint);margin-top:3px">Controlled reading level and observer engagement. Defines what claims this surface makes.</p>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid var(--border);margin-top:32px;padding-top:16px">
+        <p class="mono" style="font-size:8px;color:var(--faint)">Papers 0–V are structural foundations. Read after the boundary sequence if needed — they are reference material, not the entry point.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ DEPENDENCY VIEW ═══ -->
+  <div id="view-flow" class="view" style="padding:32px 40px 80px">
+    <div style="max-width:1100px;margin:0 auto">
+      <h2 class="headline" style="font-size:22px;font-weight:700;margin-bottom:6px">Paper Dependencies</h2>
+      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:32px">Structural dependencies (centre) · Reading order (left, gold markers) · Side branches (right)</p>
+
+      <div class="flowchart-wrap" style="position:relative;min-height:1060px;padding-left:80px">
+
+        <!-- ═══ READING ORDER — dashed line, far left ═══ -->
+        <div style="position:absolute;left:4px;top:8px;z-index:2">
+          <span class="mono" style="font-size:7px;color:var(--note);letter-spacing:1px;writing-mode:vertical-lr;transform:rotate(180deg)">READING ORDER</span>
+        </div>
+
+        <!-- Down leg: VI → VII → VIII (primary, bright gold) -->
+        <div class="line-v dashed" style="left:22px;top:630px;height:310px"></div>
+        <!-- Arrows along down leg -->
+        <div class="arrow-down" style="left:19px;top:690px"></div>
+        <div class="arrow-down" style="left:19px;top:820px"></div>
+
+        <!-- Primary markers with numbers -->
+        <div style="position:absolute;left:18px;top:635px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VI"></div>
+        <div class="line-h dashed" style="left:27px;top:639px;width:53px"></div>
+
+        <div style="position:absolute;left:18px;top:765px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VII"></div>
+        <div class="line-h dashed" style="left:27px;top:769px;width:53px"></div>
+
+        <div style="position:absolute;left:18px;top:895px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VIII"></div>
+        <div class="line-h dashed" style="left:27px;top:899px;width:53px"></div>
+
+        <!-- Turn: bottom hook to up leg -->
+        <div class="line-h dashed" style="left:10px;top:940px;width:12px"></div>
+
+        <!-- Up leg: V → IV → III → II → I → 0 (reference, dim, no numbers) -->
+        <div class="line-v dashed" style="left:10px;top:60px;height:880px"></div>
+        <!-- Arrows along up leg -->
+        <div class="arrow-up" style="left:7px;top:440px"></div>
+        <div class="arrow-up" style="left:7px;top:250px"></div>
+        <div class="arrow-up" style="left:7px;top:100px"></div>
+
+        <!-- Dim markers, no numbers -->
+        <div style="position:absolute;left:6px;top:565px;width:9px;height:9px;background:var(--gold-dim);z-index:2" title="Paper V"></div>
+        <div class="line-h dashed" style="left:15px;top:569px;width:65px"></div>
+
+        <div style="position:absolute;left:6px;top:475px;width:9px;height:9px;background:var(--gold-dim);z-index:2" title="Paper IV"></div>
+        <div class="line-h dashed" style="left:15px;top:479px;width:65px"></div>
+
+        <div style="position:absolute;left:6px;top:325px;width:9px;height:9px;background:var(--gold-dim);z-index:2" title="Paper III"></div>
+        <div class="line-h dashed" style="left:15px;top:329px;width:65px"></div>
+
+        <div style="position:absolute;left:6px;top:245px;width:9px;height:9px;background:var(--gold-dim);z-index:2" title="Paper II"></div>
+        <div class="line-h dashed" style="left:15px;top:249px;width:65px"></div>
+
+        <div style="position:absolute;left:6px;top:165px;width:9px;height:9px;background:var(--gold-dim);z-index:2" title="Paper I"></div>
+        <div class="line-h dashed" style="left:15px;top:169px;width:65px"></div>
+
+        <div style="position:absolute;left:6px;top:60px;width:9px;height:9px;background:var(--gold-dim);z-index:2" title="Paper 0"></div>
+        <div class="line-h dashed" style="left:15px;top:64px;width:65px"></div>
+
+        <!-- ═══ MAIN SPINE — single column ═══ -->
+
+        <!-- Paper 0 -->
+        <div class="dep-node" style="left:80px;top:40px;width:260px">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER 0</span>
+          <div class="headline" style="font-size:12px;font-weight:600;margin-top:2px">Time as a Constrained Substrate</div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:3px">Program-level declaration</div>
+        </div>
+
+        <!-- 0 → grouped box -->
+        <div class="line-v" style="left:210px;top:95px;height:20px"></div>
+
+        <!-- Papers I, II, III — grouped box -->
+        <div style="position:absolute;left:74px;top:115px;width:280px;height:310px;border:1px dashed var(--gold-dim);z-index:0"></div>
+        <div style="position:absolute;left:84px;top:119px"><span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">STRUCTURAL PRIMITIVES</span></div>
+
+        <!-- Paper I -->
+        <div class="dep-node" style="left:90px;top:145px;width:250px">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER I</span>
+          <div class="headline" style="font-size:11px;font-weight:600;margin-top:2px">Prime Hamiltonian</div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:2px">Generative lens for admissibility</div>
+        </div>
+
+        <!-- Paper II -->
+        <div class="dep-node" style="left:90px;top:225px;width:250px">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER II</span>
+          <div class="headline" style="font-size:11px;font-weight:600;margin-top:2px">Constraint Geometry & Admissible Manifolds</div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:2px">Geometric substrate, critical loci</div>
+        </div>
+
+        <!-- Paper III -->
+        <div class="dep-node" style="left:90px;top:305px;width:250px">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER III</span>
+          <div class="headline" style="font-size:11px;font-weight:600;margin-top:2px">Finite Resolution, Finite Bandwidth</div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:2px">Coherence thickness, embedding-dependent</div>
+        </div>
+
+        <!-- Grouped box → IV -->
+        <div class="line-v" style="left:210px;top:425px;height:30px"></div>
+
+        <!-- Paper IV -->
+        <div class="dep-node" style="left:80px;top:455px;width:260px">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER IV</span>
+          <div class="headline" style="font-size:12px;font-weight:600;margin-top:2px">Admissibility Under Constraint</div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:3px">Operator-level principle</div>
+        </div>
+
+        <!-- IV → V -->
+        <div class="line-v" style="left:210px;top:515px;height:30px"></div>
+
+        <!-- Paper V -->
+        <div class="dep-node" style="left:80px;top:545px;width:260px">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER V</span>
+          <div class="headline" style="font-size:12px;font-weight:600;margin-top:2px">Irreversibility & Closure</div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:3px">Thermodynamic closure</div>
+        </div>
+
+        <!-- V → VI -->
+        <div class="line-v" style="left:210px;top:605px;height:30px"></div>
+
+        <!-- Paper VI — boundary -->
+        <div class="dep-node boundary" style="left:80px;top:635px;width:260px">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER VI · BOUNDARY</span>
+          <div class="headline" style="font-size:12px;font-weight:600;margin-top:2px">Limits of Flow & Transport</div>
+          <div class="mono" style="font-size:7px;color:var(--gold);margin-top:3px">reading entry point</div>
+        </div>
+
+        <!-- VI → VII -->
+        <div class="line-v" style="left:210px;top:705px;height:30px"></div>
+
+        <!-- Paper VII -->
+        <div class="dep-node" style="left:80px;top:735px;width:260px">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER VII</span>
+          <div class="headline" style="font-size:12px;font-weight:600;margin-top:2px">Continuity</div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:3px">Structural condition for persistence</div>
+        </div>
+
+        <!-- VII → VIII -->
+        <div class="line-v" style="left:210px;top:805px;height:30px"></div>
+
+        <!-- Paper VIII — closer -->
+        <div class="dep-node" style="left:80px;top:835px;width:260px">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER VIII · CLOSER</span>
+          <div class="headline" style="font-size:12px;font-weight:600;margin-top:2px">Appearance Under Bounded Resolution</div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:3px">Sequence complete</div>
+        </div>
+
+        <!-- ═══ RIGHT SIDE BRANCHES ═══ -->
+
+        <!-- P-0 → P-0-A sub-lineage -->
+        <div class="line-h dashed" style="left:340px;top:60px;width:80px"></div>
+        <div class="dep-node" style="left:420px;top:44px;width:210px;border-color:rgba(255,255,255,0.04)">
+          <span class="mono" style="font-size:7px;color:var(--faint);letter-spacing:1.5px">PAPER 0-A · DRAFT</span>
+          <div class="headline" style="font-size:10px;font-weight:600;color:var(--dim);margin-top:2px">Time Under Bounded Access</div>
+          <div class="mono" style="font-size:7px;color:var(--faint);margin-top:2px">sub-lineage · unpublished</div>
+        </div>
+
+        <!-- PN-3 / Admissibility Stack → off Paper IV -->
+        <div class="line-h dashed" style="left:340px;top:475px;width:80px"></div>
+        <div class="dep-node" style="left:420px;top:459px;width:210px;border-color:rgba(255,255,255,0.04)">
+          <span class="mono" style="font-size:7px;color:var(--note);letter-spacing:1.5px">PROGRAM NOTE 3</span>
+          <div class="headline" style="font-size:10px;font-weight:600;color:var(--dim);margin-top:2px">The Admissibility Stack</div>
+        </div>
+
+        <!-- PN-2.5 → off Paper VII -->
+        <div class="line-h dashed" style="left:340px;top:755px;width:80px"></div>
+        <div class="dep-node" style="left:420px;top:739px;width:210px;border-color:rgba(255,255,255,0.04)">
+          <span class="mono" style="font-size:7px;color:var(--note);letter-spacing:1.5px">PROGRAM NOTE 2.5</span>
+          <div class="headline" style="font-size:10px;font-weight:600;color:var(--dim);margin-top:2px">Snapshot Resemblance & Identity</div>
+        </div>
+
+        <!-- FN-3 feeds into VIII -->
+        <div class="line-h dashed" style="left:340px;top:855px;width:80px"></div>
+        <div class="dep-node" style="left:420px;top:839px;width:210px;border-color:rgba(255,255,255,0.04)">
+          <span class="mono" style="font-size:7px;color:var(--note);letter-spacing:1.5px">FOUNDATION NOTE 3</span>
+          <div class="headline" style="font-size:10px;font-weight:600;color:var(--dim);margin-top:2px">Admissibility as Claim Discipline</div>
+        </div>
+
+        <!-- ═══ LEGEND ═══ -->
+        <div style="position:absolute;left:80px;top:960px;display:flex;gap:24px">
+          <div style="display:flex;align-items:center;gap:6px">
+            <div style="width:20px;height:1px;background:var(--gold-dim)"></div>
+            <span class="mono" style="font-size:7px;color:var(--dim)">structural dependency</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <div style="width:20px;height:0;border-top:1px dashed var(--gold-dim)"></div>
+            <span class="mono" style="font-size:7px;color:var(--dim)">reading order / side branch</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <div style="width:9px;height:9px;background:var(--gold)"></div>
+            <span class="mono" style="font-size:7px;color:var(--dim)">primary reading (VI→VII→VIII)</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <div style="width:9px;height:9px;background:var(--gold-dim)"></div>
+            <span class="mono" style="font-size:7px;color:var(--dim)">reference reading (V→0)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ NOTES VIEW ═══ -->
+  <div id="view-notes" class="view" style="padding:32px 40px 80px">
+    <div style="max-width:800px;margin:0 auto">
+      <h2 class="headline" style="font-size:22px;font-weight:700;margin-bottom:6px">Foundation & Program Notes</h2>
+      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:28px">Jurisdictional clarifications · CRL-0 · Not methods</p>
+
+      <div style="margin-bottom:24px">
+        <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:1.5px">FOUNDATION NOTES</span>
+      </div>
+
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/foundation-notes/CG-FN-3_ADMISSIBILITY_AS_CLAIM_DISCIPLINE.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">FN-3</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Admissibility as Claim Discipline</div></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/foundation-notes/CG-FN-2_CONSTRAINT_LOAD_AND_BOUNDED_PERSISTENCE.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">FN-2</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Constraint Load and Bounded Persistence</div></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/foundation-notes/CG-FN-1_CONTINUATION_REGIMES_CLOSURE_UNDER_ADMISSIBLE_EVOLUTION.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">FN-1</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Continuation Regimes & Closure Under Admissible Evolution</div></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/foundation-notes/CG-FN-0_ADMISSIBLE_TIME_CLAIMABILITY_IDENTITY.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">FN-0</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Admissible Time, Claimability, Identity</div></div>
+        </div>
+      </a>
+
+      <div style="margin:28px 0 24px">
+        <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:1.5px">PROGRAM NOTES</span>
+      </div>
+
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/program-notes/CG-PN-3.5_CONSTRAINT_LOAD_AND_MULTIPLICITY.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">PN-3.5</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Constraint Load and Multiplicity</div></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/program-notes/CG-PN-3_THE_ADMISSIBILITY_STACK.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">PN-3</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">The Admissibility Stack</div></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/program-notes/CG-PN-2.5_SNAPSHOT_RESEMBLANCE_PERSISTENCE_IDENTITY_CLAIMS.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">PN-2.5</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Snapshot Resemblance, Persistence, and Identity Claims</div></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/program-notes/CG-PN-2_HIDDEN_STRUCTURE_PROJECTION_OBSERVABLE_BOUNDARIES.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">PN-2</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Hidden Structure, Projection, Observable Boundaries</div></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/program-notes/CG-PN-SS_SURFACE_SEPARATION.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">PN-SS</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Surface Separation</div></div>
+        </div>
+      </a>
+
+      <div style="margin:28px 0 24px">
+        <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:1.5px">REFERENCE</span>
+      </div>
+
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/glossary.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">GLO</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Glossary</div><p class="mono" style="font-size:8px;color:var(--dim);margin-top:2px">Controlled vocabulary · No method definitions</p></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/HIERARCHY.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">HIE</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Hierarchy</div><p class="mono" style="font-size:8px;color:var(--dim);margin-top:2px">Vocabulary ordering · Not a derivation</p></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/CLAIM_RULES.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">CLM</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Claim Rules</div><p class="mono" style="font-size:8px;color:var(--dim);margin-top:2px">What can be claimed and how</p></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/SIGNATURE_MAP.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">SIG</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Signature Map</div><p class="mono" style="font-size:8px;color:var(--dim);margin-top:2px">Claim → Receipt → Refusal → Continuation</p></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/schema/CG-SR-0_DESCRIPTIVE_CLAIM_SCHEMA.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">SR-0</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Descriptive Claim Schema</div><p class="mono" style="font-size:8px;color:var(--dim);margin-top:2px">Machine-readable claim structure</p></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/licenses/CRL-0.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--gold);width:48px;flex-shrink:0">CRL-0</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Controlled Reading Level 0</div><p class="mono" style="font-size:8px;color:var(--dim);margin-top:2px">Observer-only · Non-authoritative</p></div>
+        </div>
+      </a>
+      <a href="https://github.com/C-Zenno/constraint-spine/blob/public-spine-v0.33/docs/licenses/OEL-1.md" target="_blank" class="entry fade-in">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="mono" style="font-size:9px;color:var(--note);width:48px;flex-shrink:0">OEL-1</span>
+          <div style="flex:1"><div class="headline" style="font-size:13px;font-weight:600">Observer Engagement Level 1</div><p class="mono" style="font-size:8px;color:var(--dim);margin-top:2px">Downstream use posture</p></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ═══ SURFACE STRUCTURE VIEW ═══ -->
+  <div id="view-surfaces" class="view" style="padding:32px 40px 80px">
+    <div style="max-width:800px;margin:0 auto">
+      <h2 class="headline" style="font-size:22px;font-weight:700;margin-bottom:6px">Surface Structure</h2>
+      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:32px">Three surfaces · Arrow = reading/inheritance dependency · Not authority flow</p>
+
+      <div style="position:relative;min-height:700px">
+
+        <!-- CONSTRAINT PHYSICS — top tier -->
+        <div style="position:absolute;left:0;top:0;right:0;border:1px solid var(--border);padding:20px 24px">
+          <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:2px">CONSTRAINT PHYSICS</span>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:4px">Field front door · CRL-0 · Navigation pointers only</div>
+          <div style="display:flex;gap:8px;margin-top:14px">
+            <div class="entry" style="flex:1;padding:10px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">Versioning + receipts</span></div>
+            <div class="entry" style="flex:1;padding:10px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">Community framing</span></div>
+            <div class="entry" style="flex:1;padding:10px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">README + INDEX</span></div>
+          </div>
+        </div>
+
+        <!-- Arrow: CP → CC -->
+        <div class="line-v" style="left:50%;top:105px;height:24px"></div>
+        <div class="arrow-down" style="left:calc(50% - 3px);top:126px"></div>
+        <div style="position:absolute;left:calc(50% + 10px);top:110px"><span class="mono" style="font-size:7px;color:var(--faint)">points to</span></div>
+
+        <!-- COMPRESSED CONSCIOUSNESS LABORATORY — middle tier -->
+        <div style="position:absolute;left:0;top:140px;right:0;border:1px solid var(--gold-dim);padding:20px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline">
+            <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:2px">COMPRESSED CONSCIOUSNESS LABORATORY</span>
+            <span class="stamp gold">CRL-0</span>
+          </div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:4px">Upstream doctrine · Scope, exclusions, vocabulary, reading order, papers</div>
+
+          <!-- Constraint Spine sub-node -->
+          <div style="margin-top:16px;padding:12px 16px;border:1px solid var(--gold-dim);background:var(--surface-raised)">
+            <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">CONSTRAINT SPINE</span>
+            <div class="mono" style="font-size:8px;color:var(--cream-dim);margin-top:2px">canon repo</div>
+          </div>
+
+          <!-- CC children -->
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px">
+            <div class="entry" style="flex:1 1 120px;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">Glossary</span></div>
+            <div class="entry" style="flex:1 1 120px;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">Claim Rules</span></div>
+            <div class="entry" style="flex:1 1 120px;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">CRL-0 License</span></div>
+            <div class="entry" style="flex:1 1 120px;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">Reading Order</span></div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px">
+            <div class="entry" style="flex:1 1 120px;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">Hierarchy</span></div>
+            <div class="entry" style="flex:1 1 120px;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">Signature Map</span></div>
+            <div class="entry" style="flex:1 1 120px;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">Canon Policy</span></div>
+            <div class="entry" style="flex:1 1 120px;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--cream-dim)">Papers (DOIs)</span></div>
+          </div>
+          <div style="margin-top:8px">
+            <div class="entry" style="padding:8px 12px;margin:0;max-width:200px"><span class="mono" style="font-size:8px;color:var(--cream-dim)">Foundation Notes</span></div>
+          </div>
+        </div>
+
+        <!-- Arrow: CC → ZOA -->
+        <div class="line-v" style="left:70%;top:445px;height:24px"></div>
+        <div class="arrow-down" style="left:calc(70% - 3px);top:466px"></div>
+        <div style="position:absolute;left:calc(70% + 10px);top:450px"><span class="mono" style="font-size:7px;color:var(--faint)">inherits jurisdiction</span></div>
+
+        <!-- ZOA — bottom tier -->
+        <div style="position:absolute;left:30%;top:480px;right:0;border:1px solid var(--border);padding:20px 24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline">
+            <span class="mono" style="font-size:8px;color:var(--note);letter-spacing:2px">ZOA</span>
+            <span class="stamp">OEL-1</span>
+          </div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:4px">Downstream application · Use permissions, staged licensing, diagnostics</div>
+
+          <div style="margin-top:14px;padding:10px 14px;border:1px solid var(--border)">
+            <span class="mono" style="font-size:8px;color:var(--note)">OEL-1 License</span>
+          </div>
+          <div style="display:flex;gap:6px;margin-top:8px">
+            <div class="entry" style="flex:1;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--dim)">Receipt Envelope + Export Discipline</span></div>
+            <div class="entry" style="flex:1;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--dim)">Stage 0 / 1 / 2 Licensing</span></div>
+          </div>
+          <div style="display:flex;gap:6px;margin-top:6px">
+            <div class="entry" style="flex:1;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--dim)">Diagnostics + Flow Telemetry</span></div>
+            <div class="entry" style="flex:1;padding:8px 12px;margin:0"><span class="mono" style="font-size:8px;color:var(--dim)">Applied programs (in formation)</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ ADMISSIBILITY STACK VIEW ═══ -->
+  <div id="view-stack" class="view" style="padding:32px 40px 80px">
+    <div style="max-width:600px;margin:0 auto">
+      <h2 class="headline" style="font-size:22px;font-weight:700;margin-bottom:6px">The Admissibility Stack</h2>
+      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:32px">Conceptual map · Not a derivation · Vocabulary ordering only</p>
+
+      <!-- Stack sections -->
+      <div style="display:flex;flex-direction:column;gap:2px">
+
+        <!-- STRUCTURAL ONTOLOGY header -->
+        <div style="padding:10px 16px;background:var(--gold);text-align:center">
+          <span class="mono" style="font-size:8px;color:var(--bg);letter-spacing:2px;font-weight:700">STRUCTURAL ONTOLOGY</span>
+        </div>
+
+        <!-- Primitive Distinctions -->
+        <div style="padding:8px 16px;background:var(--surface-raised);text-align:center">
+          <span class="mono" style="font-size:7px;color:var(--dim);letter-spacing:1.5px">Primitive Distinctions</span>
+        </div>
+        <div style="display:flex;gap:2px">
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Identity</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Memory</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Record</span></div>
+        </div>
+
+        <!-- Arrow -->
+        <div style="text-align:center;padding:4px 0"><div class="arrow-down" style="display:inline-block;position:static"></div></div>
+
+        <!-- Relations Governing Primitives -->
+        <div style="padding:8px 16px;background:var(--surface-raised);text-align:center">
+          <span class="mono" style="font-size:7px;color:var(--dim);letter-spacing:1.5px">Relations Governing Primitives</span>
+        </div>
+        <div style="display:flex;gap:2px">
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Continuity</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Encoded Persistence</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Boundary Coupling</span></div>
+        </div>
+
+        <!-- Arrow -->
+        <div style="text-align:center;padding:4px 0"><div class="arrow-down" style="display:inline-block;position:static"></div></div>
+
+        <!-- Domain Invariants -->
+        <div style="padding:8px 16px;background:var(--surface-raised);text-align:center">
+          <span class="mono" style="font-size:7px;color:var(--dim);letter-spacing:1.5px">Domain Invariants</span>
+        </div>
+        <div style="display:flex;gap:2px">
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Universal Coupling Constraint</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Resolution-Depth Constraint</span></div>
+        </div>
+
+        <!-- Arrow -->
+        <div style="text-align:center;padding:4px 0"><div class="arrow-down" style="display:inline-block;position:static"></div></div>
+
+        <!-- Admissible Claim Classes -->
+        <div style="padding:8px 16px;background:var(--surface-raised);text-align:center">
+          <span class="mono" style="font-size:7px;color:var(--dim);letter-spacing:1.5px">Admissible Claim Classes</span>
+        </div>
+        <div style="display:flex;gap:2px">
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Continuation (Binary)</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Unitarity</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--cream)">Ordic vs Epistemic</span></div>
+        </div>
+
+        <!-- Divider: OBSERVATION LAYER -->
+        <div style="margin:16px 0;padding:8px 16px;border:1px solid var(--gold-dim);background:var(--gold-faint);text-align:center">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:2px">OBSERVATION LAYER</span>
+        </div>
+
+        <!-- Resolution Effects -->
+        <div style="padding:8px 16px;background:var(--surface-raised);text-align:center">
+          <span class="mono" style="font-size:7px;color:var(--dim);letter-spacing:1.5px">Resolution Effects</span>
+        </div>
+        <div style="display:flex;gap:2px">
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:8px;color:var(--dim)">Projection / Coarse-Graining</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:8px;color:var(--dim)">Epistemic Non-Uniqueness</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:8px;color:var(--dim)">Apparent Irreversibility</span></div>
+        </div>
+
+        <!-- Arrow -->
+        <div style="text-align:center;padding:4px 0"><div class="arrow-down" style="display:inline-block;position:static"></div></div>
+
+        <!-- Bounded Subsystems -->
+        <div style="padding:8px 16px;background:var(--surface-raised);text-align:center">
+          <span class="mono" style="font-size:7px;color:var(--dim);letter-spacing:1.5px">Bounded Subsystems</span>
+        </div>
+        <div style="display:flex;gap:2px">
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--dim)">Agency</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--dim)">Macro Freedom</span></div>
+        </div>
+
+        <!-- Arrow -->
+        <div style="text-align:center;padding:4px 0"><div class="arrow-down" style="display:inline-block;position:static"></div></div>
+
+        <!-- Cost of Remaining Defined -->
+        <div style="padding:8px 16px;background:var(--surface-raised);text-align:center">
+          <span class="mono" style="font-size:7px;color:var(--dim);letter-spacing:1.5px">Cost of Remaining Defined</span>
+        </div>
+        <div style="display:flex;gap:2px">
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--dim)">Ledger Cost</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--dim)">Boundary Rent</span></div>
+          <div class="entry" style="flex:1;text-align:center;margin:0;padding:10px"><span class="mono" style="font-size:9px;color:var(--dim)">Constraint Affordability</span></div>
+        </div>
+
+      </div>
+
+      <!-- Posture footer -->
+      <div style="margin-top:24px;padding-top:12px;border-top:1px solid var(--border)">
+        <span class="mono" style="font-size:7px;color:var(--faint)">Stage-0 / CRL-0 / observer-only / non-authoritative · Conceptual map, not definition source. Primitives live in Papers I / FN.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ POSTURE VIEW ═══ -->
+  <div id="view-posture" class="view" style="padding:32px 40px 80px">
+    <div style="max-width:560px;margin:60px auto">
+      <div style="border:1px solid var(--border);padding:32px;position:relative">
+        <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:2px">CRL-0 · OBSERVER-ONLY · NON-AUTHORITATIVE</span>
+        <h3 class="headline" style="font-size:20px;font-weight:700;margin-top:12px;margin-bottom:16px">Posture Disclosure</h3>
+        <div style="display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--border);padding-top:16px">
+          <p style="font-size:13px;color:var(--cream-dim);line-height:1.7">This repository is <strong style="color:var(--cream)">non-authoritative</strong>. It describes structural conditions. It does not introduce methods, procedures, or operational guidance.</p>
+          <p style="font-size:13px;color:var(--dim);line-height:1.7">No thresholds. No calibration. No algorithms. No recipes. No detection logic. No procedures.</p>
+          <p style="font-size:13px;color:var(--dim);line-height:1.7">Vocabulary is controlled. Claims are bounded. Refusals are explicit.</p>
+        </div>
+        <div style="margin-top:24px;padding-top:14px;border-top:1px solid var(--border)">
+          <span class="mono" style="font-size:8px;color:var(--faint)">Compressed Consciousness Laboratory · The Constraint Program</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══ STATUS BAR ═══ -->
+<div style="display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:20px;border-top:1px solid var(--border);flex-shrink:0">
+  <span class="mono" style="font-size:7px;color:var(--faint)">CRL-0 · observer-only</span>
+  <span class="mono" style="font-size:7px;color:var(--faint)">Compressed Consciousness · Constraint Program</span>
+</div>
+
+<script>
+(function(){
+  var VIEWS=['view-papers','view-reading','view-flow','view-stack','view-surfaces','view-notes','view-posture'];
+  var currentView='view-papers';
+
+  function showView(viewId){
+    VIEWS.forEach(function(v){
+      var el=document.getElementById(v);
+      if(el){el.style.display='none';el.style.opacity='0';el.classList.remove('active');}
+    });
+    var el=document.getElementById(viewId);
+    if(!el)return;
+    el.style.display='block';
+    el.style.opacity='0';el.classList.add('active');
+    setTimeout(function(){el.style.transition='opacity 0.25s';el.style.opacity='1';},20);
+    setTimeout(function(){el.style.transition='';},300);
+    currentView=viewId;
+  }
+
+  document.querySelectorAll('.nav-tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var viewId='view-'+this.dataset.view;
+      if(viewId===currentView)return;
+      document.querySelectorAll('.nav-tab').forEach(function(t){t.classList.remove('active')});
+      this.classList.add('active');
+      showView(viewId);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

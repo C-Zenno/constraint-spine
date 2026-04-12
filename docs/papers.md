@@ -2,7 +2,7 @@
 Status: DRAFT
 Surface: CC (Declarative)
 Claim Ceiling: paper existence + reading order + links only
-Last Updated: 2026-04-09
+Last Updated: 2026-04-12
 Authority: Observer-only | Non-authoritative | No directives
 Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes
 ---
@@ -64,6 +64,13 @@ Do not treat summaries as instructions.
 - **Status:** Public
 - **Record:** [https://doi.org/10.5281/zenodo.18370452](https://doi.org/10.5281/zenodo.18370452)
 - **Description:** Program-level declaration only.
+
+### Paper 0-A — Time Under Bounded Structural Access
+- **Status:** Public
+- **Sub-lineage:** Temporal Relational Substrate Series · child of CG-P-0
+- **Track:** Admissibility Studies
+- **Record:** [https://doi.org/10.5281/zenodo.19546450](https://doi.org/10.5281/zenodo.19546450)
+- **Description:** Declarative surface only. Applies CG-P-VIII appearance claim-discipline grammar to the temporal substrate.
 
 ---
 

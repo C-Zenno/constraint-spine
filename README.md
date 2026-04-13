@@ -1,6 +1,6 @@
 # Constraint Spine
 
-**→ [c-zenno.github.io/constraint-spine](https://c-zenno.github.io/constraint-spine/)** — interactive site (papers, reading order, dependencies, stack, surfaces, notes, posture)
+**→ [spine.constraintphysics.org](https://spine.constraintphysics.org/)** — interactive site (papers, reading order, dependencies, stack, surfaces, notes, posture)
 
 ---
 

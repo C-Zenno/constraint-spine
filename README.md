@@ -1,5 +1,9 @@
 # Constraint Spine
 
+**→ [c-zenno.github.io/constraint-spine](https://c-zenno.github.io/constraint-spine/)** — interactive site (papers, reading order, dependencies, stack, surfaces, notes, posture)
+
+---
+
 Constraint Physics canon / standards surface (CRL-0).
 
 Versioned, auditable canon for a boundary-first program.

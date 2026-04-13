@@ -69,7 +69,7 @@ Do not treat summaries as instructions.
 - **Status:** Public
 - **Sub-lineage:** Temporal Relational Substrate Series · child of CG-P-0
 - **Track:** Admissibility Studies
-- **Record:** [https://doi.org/10.5281/zenodo.19546450](https://doi.org/10.5281/zenodo.19546450)
+- **Record:** [https://doi.org/10.5281/zenodo.19546939](https://doi.org/10.5281/zenodo.19546939)
 - **Description:** Declarative surface only. Applies CG-P-VIII appearance claim-discipline grammar to the temporal substrate.
 
 ---

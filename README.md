@@ -42,7 +42,10 @@ See [CANON.md](CANON.md) for the full policy and [ADR-0008](registry/DECISIONS/A
 
 ## Field front door
 
-For orientation, community framing, and navigation, see the
+The public website is **[constraintphysics.org](https://constraintphysics.org)**
+(source repo: [constraintphysics-website](https://github.com/C-Zenno/constraintphysics-website)).
+
+For docs orientation and navigation across repositories, see the
 [constraint-physics](https://github.com/C-Zenno/constraint-physics) repository.
 
 ## License

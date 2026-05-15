@@ -16,6 +16,18 @@ Run before any public push.
 - [ ] Every push to `master` requires a tag matching `^public-spine-v[0-9]+(\.[0-9]+){1,2}$` (CI workflow at `.github/workflows/require-head-tag.yml` enforces this).
 - [ ] If updating tag pins in URLs (e.g., on cc-website), point to the latest spine tag.
 
+## Push primitives (admin operational discipline)
+
+- [ ] **Atomic push order** for any release: create the local tag at HEAD first, then push branch and tag together atomically.
+      Required form: `git tag <new-tag>; git push --atomic origin master <new-tag>`
+      Never branch-first. Without `--atomic`, the require-head-tag CI workflow can fail because master is observed on the remote before the matching tag exists.
+- [ ] If `git push --atomic` is unavailable or fails, **HALT and surface** — do NOT fall back to non-atomic or branch-first push.
+- [ ] **Spine live verification** should poll the Jekyll clean URL (no `.md` extension) for the docs file. GitHub Pages renders Markdown → clean URL; the `.md` URL is not the live reflection target.
+      Example: `curl -sS -o /dev/null -w "%{http_code}\n" https://spine.constraintphysics.org/docs/program-notes/<file-stem>` (no `.md`).
+- [ ] LF preservation and GH Pages auto-rebuild semantics are documented in admin feedback memory:
+      - `feedback_constraint_spine_lf_preservation.md` — staged blob SHA must equal on-disk LF SHA before commit; the autocrlf warning is benign IF working tree and index report LF.
+      - `feedback_github_pages_workflow_trigger_semantics.md` — `pages-build-deployment` workflow fires on EVERY push to master regardless of tag.
+
 ## Canonical posture
 
 - [ ] `<link rel="canonical">` on `index.html` is `https://constraintphysics.org/`.

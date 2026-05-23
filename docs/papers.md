@@ -72,6 +72,13 @@ Do not treat summaries as instructions.
 - **Record:** [https://doi.org/10.5281/zenodo.19546939](https://doi.org/10.5281/zenodo.19546939)
 - **Description:** Declarative surface only. Applies CG-P-VIII appearance claim-discipline grammar to the temporal substrate.
 
+### Paper 0-B — Object-First Learning Under Bounded Frames
+- **Status:** Public
+- **Sub-lineage:** child of CG-P-0
+- **Track:** Object-first learning / bounded-frame doctrine
+- **Record:** [https://doi.org/10.5281/zenodo.20357442](https://doi.org/10.5281/zenodo.20357442)
+- **Description:** Declarative surface only. Frames object-first learning as a bounded admission discipline; no methods, thresholds, or procedures are introduced here.
+
 ---
 
 ## Versioning policy (papers)

@@ -76,7 +76,8 @@ Do not treat summaries as instructions.
 - **Status:** Public
 - **Sub-lineage:** child of CG-P-0
 - **Track:** Object-first learning / bounded-frame doctrine
-- **Record:** [https://doi.org/10.5281/zenodo.20357442](https://doi.org/10.5281/zenodo.20357442)
+- **Record:** [https://doi.org/10.5281/zenodo.20357441](https://doi.org/10.5281/zenodo.20357441) (concept DOI; resolves to latest version)
+- **Latest version:** v1.1 (revised §11 to Bounded Transfer Distortion taxonomy; companion Program Note CG-PN-4.5)
 - **Description:** Declarative surface only. Frames object-first learning as a bounded admission discipline; no methods, thresholds, or procedures are introduced here.
 
 ---

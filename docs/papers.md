@@ -97,3 +97,9 @@ Do not treat summaries as instructions.
 ## SRL (Machine Index)
 
 Atomic structural projections of paper concepts (definitions, invariants, refusals) are available in the [Surface Readability Layer](srl/README.md). SRL is representation-only and does not alter paper content.
+
+---
+
+## License
+
+Text and documentation: [CC BY-ND 4.0](../LICENSE) -- verbatim share permitted, derivative redistribution not. The non-grant in [LICENSE](../LICENSE) excludes methods, algorithms, thresholds, calibration, procedures, and recipes from any permissive grant. Each paper's canonical license is set on its Zenodo record.

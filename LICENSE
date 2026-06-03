@@ -1,0 +1,40 @@
+Rights notice for this repository
+==================================
+
+Text and documentation in this repository
+-----------------------------------------
+
+The README, CHANGELOG, and all documentation under docs/ are released
+under the Creative Commons Attribution-NoDerivatives 4.0 International
+License (CC BY-ND 4.0):
+
+  https://creativecommons.org/licenses/by-nd/4.0/
+
+You are free to share (copy and redistribute) this material in any
+medium or format for any purpose, even commercially, provided
+appropriate attribution is given. For citation, use the canonical
+Zenodo deposit for the relevant paper; see docs/papers.md for the
+Constraint Geometry paper list and DOIs.
+
+If you remix, transform, or build upon the material, you may not
+distribute the modified material. Verbatim share is permitted;
+derivative redistribution is not.
+
+Non-grant
+---------
+
+This repository does NOT include, and does NOT grant any license to:
+
+  - methods, algorithms, or procedures for detection, estimation,
+    admission, or action selection;
+  - thresholds, coefficients, or calibration values;
+  - recipes for operational use, control, optimization, or prediction;
+  - any code or runtime artifact that would convert the declarative canon
+    into an executable system.
+
+These exclusions match the CRL-0 boundary posture
+(docs/licenses/CRL-0.md) and the OEL-1 evaluation posture
+(docs/licenses/OEL-1.md).
+
+Each paper on Zenodo is its own canonical citable artifact and carries
+its own license metadata as set on its Zenodo record.

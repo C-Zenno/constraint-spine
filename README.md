@@ -1,3 +1,11 @@
+---
+Status: Public
+Surface: CC (Declarative)
+Claim Ceiling: canon orientation, reading order, and surface index only
+Authority: Observer-only | Non-authoritative | No directives
+Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes
+---
+
 # Constraint Spine
 
 **→ [spine.constraintphysics.org](https://spine.constraintphysics.org/)** — interactive site (papers, reading order, dependencies, stack, surfaces, notes, posture)
@@ -52,3 +60,4 @@ For docs orientation and navigation across repositories, see the
 
 Observer-only. Non-authoritative. No directives.
 See license posture pages for details.
+Text and documentation: [CC BY-ND 4.0](LICENSE) (verbatim share permitted, derivatives not; with methods/algorithms/thresholds/calibration/procedures/recipes non-grant).

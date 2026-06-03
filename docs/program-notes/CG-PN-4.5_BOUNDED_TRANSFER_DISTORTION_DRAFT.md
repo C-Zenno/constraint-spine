@@ -291,3 +291,9 @@ Program Notes use **CG-PN** identifiers. Dotted sub-numbers (e.g., CG-PN-4.5) de
 | Version | Changes |
 |---------|---------|
 | v0.1 (Draft) | Initial draft. Defines bounded transfer distortion as §4.5 under Carry. Sub-numbered into CG-PN-4's canon node as CG-PN-4.5 to signal tight extension rather than new top-level peer. Names five axes (boundary direction, scope error, frame integrity, outcome severity, whole-from-few visibility) and five root subtypes (under-carried, mis-carried, over-carried, frozen, maladaptive). Treats over-applied transfer as an expression mode rather than a root subtype. Inherits refusal against whole-claim inflation from CG-PN-4. |
+
+---
+
+## License
+
+Text and documentation: [CC BY-ND 4.0](../../LICENSE) -- verbatim share permitted, derivative redistribution not. The non-grant in [LICENSE](../../LICENSE) excludes methods, algorithms, thresholds, calibration, procedures, and recipes from any permissive grant. The canonical citable record for this program note's parent paper is on Zenodo and carries its own license metadata.

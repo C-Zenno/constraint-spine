@@ -12,6 +12,7 @@ All notable changes to the public spine are documented here.
 - `docs/licenses/KINETICS-LABS-OEL-1.md` — added as plain-language posture pointer (not a legal license) for the Kinetics Labs downstream surface under OEL-1.
 - `index.html` — Kinetics Labs surface card wording tightened ("empirical research posture; no operational or capability license"); CRL-0 deep-link sublabel notes Stage-0; KL posture pointer surfaced in license deep-link list.
 - `README.md`, `docs/index.md` — KL posture pointer exposed in license posture line and docs file list.
+- `docs/glossary.md` — aligned glossary with public Stack view by adding standalone definitions for newly visible core (#53-66), controlled (#67-71), and Learning Studies side-branch (#72-78) terms. No existing terms renumbered. No methods, thresholds, or operational definitions introduced.
 
 ## [public-spine-v0.32-draft] — 2026-06-03
 

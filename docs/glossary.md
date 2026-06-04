@@ -55,10 +55,13 @@ An instant claim. A snapshot may exhibit pointwise resemblance at a time index u
 The program refuses any interpretation that upgrades snapshot resemblance into identity, continuity, or persistence. When continuation cannot be carried (or cannot be made receiptable within declared bounds), snapshot resemblance is undefined for identity purposes.
 
 11) **Regime** — **[PUBLIC]** **[P]**
-A region of behavior or stability defined by what remains coherent under finite resolution, without specifying the underlying mechanism.
+A region of behavior or stability defined by what remains structurally continuous under finite resolution, without specifying the underlying mechanism.
 
 12) **Coherence** — **[CONTROLLED]** **[P]**
-A structural property describing how strongly a system holds together under perturbation and limited observation. Public surfaces use *structural continuity* as the non-operational synonym. No operational measure is defined here.
+A controlled technical parent term for how strongly a system holds together under perturbation and limited observation. Public surfaces should generally use *structural continuity* as the non-operational synonym unless a bounded technical bridge is explicitly required. No operational measure is defined here.
+
+12a) **Structural continuity** — **[PUBLIC]** **[D]**
+The public, non-operational rendering of controlled coherence language. Structural continuity describes whether a structure remains held together, carryable, or persistence-compatible under perturbation and limited observation. It defines no metric, score, threshold, or measurement procedure. Use this term on public doctrine and ZOA framework surfaces when no operational definition is intended.
 
 13) **Deviation** — **[CONTROLLED]** **[D]**
 A categorical notion of drift relative to a reference structure. No computation rules are defined here.
@@ -109,7 +112,7 @@ A declared interval (temporal, sequential, or parametric) over which continuatio
 Resemblance at a single time index or instant. Pointwise resemblance may preserve apparent structure but does not, by itself, carry continuation. Synonym: snapshot resemblance. See *Snapshot* (#9) and *Snapshot-to-identity prohibition* (#10).
 
 29) **Continuation regime** — **[PUBLIC]** **[D]** *(see CG-FN-1)*
-A declared region of behavior within which continuation is permitted. Regimes are characterized by what remains coherent, not by what is computed or optimized.
+A declared region of behavior within which continuation is permitted. Regimes are characterized by what remains structurally continuous, not by what is computed or optimized.
 
 30) **Closure (under admissible iteration)** — **[PUBLIC]** **[D]** *(see CG-FN-1)*
 The property that repeated application of admissible evolution does not exit the declared regime. Closure is a structural constraint, not a verification procedure.

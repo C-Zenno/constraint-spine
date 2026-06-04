@@ -2,6 +2,11 @@
 
 All notable changes to the public spine are documented here.
 
+## [vNext]
+
+### Changed
+- `docs/glossary.md` — added Structural continuity (#12a) as the public non-operational rendering of controlled Coherence; tightened Regime (#11) and Continuation regime (#29) definitions to prefer structurally continuous language on public surfaces.
+
 ## [public-spine-v0.32-draft] — 2026-06-03
 
 ### Added

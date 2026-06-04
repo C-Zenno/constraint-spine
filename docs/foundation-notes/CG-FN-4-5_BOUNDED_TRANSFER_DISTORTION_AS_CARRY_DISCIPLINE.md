@@ -263,4 +263,4 @@ Foundation Notes use **CG-FN** identifiers.
 | Version | Changes |
 |---------|---------|
 | v0.1-draft | Initial draft |
-| v0.44 | tightened §0.5 non-claims to distinguish public artifact status from any private-to-public release procedure. |
+| v0.44 | clarified §0.5 non-claims for Stage-0 public reading. |

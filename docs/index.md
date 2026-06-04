@@ -90,6 +90,7 @@ See `docs/schema/` for full text.
 - `docs/foundation-notes/` — Foundation Note placeholders
 - `docs/licenses/CRL-0.md`
 - `docs/licenses/OEL-1.md`
+- `docs/licenses/KINETICS-LABS-OEL-1.md` — Kinetics Labs posture pointer (not a legal license)
 - `docs/faq.md`
 - `docs/srl/` — Surface Readability Layer (machine-indexable canon overlay)
 - `registry/DECISIONS/ADR-0008.md`

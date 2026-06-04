@@ -32,7 +32,7 @@ reading order, controlled vocabulary, and governance decisions.
 5. [Signature Map](docs/SIGNATURE_MAP.md) — Claim → Receipt → Refusal → Continuation
 6. [Hierarchy](docs/HIERARCHY.md) — claim-discipline ordering (vocabulary, not derivation)
 7. [Papers Index](docs/papers.md) — Zenodo records with DOIs
-8. [License Posture: CRL-0](docs/licenses/CRL-0.md) / [OEL-1](docs/licenses/OEL-1.md)
+8. [License Posture: CRL-0](docs/licenses/CRL-0.md) / [OEL-1](docs/licenses/OEL-1.md) / [Kinetics Labs OEL-1](docs/licenses/KINETICS-LABS-OEL-1.md)
 9. [FAQ](docs/faq.md) — boundary-first answers
 
 ## What this is not

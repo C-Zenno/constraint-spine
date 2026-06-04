@@ -7,6 +7,11 @@ All notable changes to the public spine are documented here.
 ### Changed
 - `docs/glossary.md` — added Structural continuity (#12a) as the public non-operational rendering of controlled Coherence; tightened Regime (#11) and Continuation regime (#29) definitions to prefer structurally continuous language on public surfaces.
 - `docs/foundation-notes/CG-FN-4_TRANSITION_AND_CARRY.md`, `docs/foundation-notes/CG-FN-4-5_BOUNDED_TRANSFER_DISTORTION_AS_CARRY_DISCIPLINE.md` — clarified CG-FN-4 and CG-FN-4.5 section 0.5 non-claims for Stage-0 public reading.
+- `docs/foundation-notes/CG-FN-4_TRANSITION_AND_CARRY.md`, `docs/foundation-notes/CG-FN-4-5_BOUNDED_TRANSFER_DISTORTION_AS_CARRY_DISCIPLINE.md` — compressed Governance Guardrails sections to paragraph form preserving substance; removed amplified excluded-object phrasing.
+- `docs/licenses/CRL-0.md` — Stage-0 posture made visible in title and posture line.
+- `docs/licenses/KINETICS-LABS-OEL-1.md` — added as plain-language posture pointer (not a legal license) for the Kinetics Labs downstream surface under OEL-1.
+- `index.html` — Kinetics Labs surface card wording tightened ("empirical research posture; no operational or capability license"); CRL-0 deep-link sublabel notes Stage-0; KL posture pointer surfaced in license deep-link list.
+- `README.md`, `docs/index.md` — KL posture pointer exposed in license posture line and docs file list.
 
 ## [public-spine-v0.32-draft] — 2026-06-03
 

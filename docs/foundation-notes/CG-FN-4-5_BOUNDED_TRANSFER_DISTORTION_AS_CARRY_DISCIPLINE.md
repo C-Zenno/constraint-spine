@@ -217,18 +217,7 @@ Bounded transfer distortion defines claimability limits only.
 
 ## Governance Guardrails (Stage-0)
 
-- No methods
-- No thresholds
-- No evaluators or scoring
-- No benchmark design
-- No model/API authorization
-- No retrieval or memory architecture
-- No deployment procedure
-- No endpoint, topology, or route disclosure
-- No public claim that private structures have been exposed
-- No ranking, leaderboard, or capability claim
-
-This note defines vocabulary and refusal boundaries only.
+Governance guardrails are unchanged in substance: this note is vocabulary and refusal discipline only. It may name transfer-adjacent boundaries; it must not be read as an implementation, evaluation, deployment, access, ranking, capability, or authority-widening surface.
 
 ---
 

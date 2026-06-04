@@ -6,7 +6,9 @@ Authority: Observer-only | Non-authoritative | No directives
 Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes
 ---
 
-# CRL-0 (Plain-language Posture Summary)
+# CRL-0 (Stage-0 Plain-language Posture Summary)
+
+**Posture:** Stage-0 · CRL-0 · Observer-only · Non-authoritative.
 
 CRL-0 is a **boundary posture** for public surfaces.
 

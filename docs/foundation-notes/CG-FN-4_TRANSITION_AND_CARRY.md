@@ -204,20 +204,7 @@ Transition and carry define claimability limits only.
 
 ## Governance Guardrails (Stage-0)
 
-- No methods
-- No thresholds
-- No evaluators or scoring
-- No authorization mechanisms
-- No decision procedures
-- No runtime architecture
-- No endpoint, topology, or route disclosure
-- No agent orchestration
-- No control doctrine
-- No enforcement mechanisms
-- No claim that carried structure preserves identity by default
-- No claim that transition produces legitimacy
-
-This note defines vocabulary and refusal boundaries only.
+Governance guardrails are unchanged in substance: this note is vocabulary and refusal discipline only. It may name transition and carry boundaries; it must not be read as an implementation, evaluation, orchestration, enforcement, control, route, or authority-widening surface. Carried structure does not preserve identity or confer legitimacy by default.
 
 ---
 

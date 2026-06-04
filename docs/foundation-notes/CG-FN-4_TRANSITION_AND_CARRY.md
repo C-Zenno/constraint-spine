@@ -38,19 +38,7 @@ This note remains Stage-0: refusal-first, vocabulary-bound, non-mechanistic.
 
 ## 0.5 Non-Claims and Refusals (Stage-0)
 
-This note does not:
-
-- define a transfer mechanism,
-- define a deployment architecture,
-- define a migration procedure,
-- define a learning algorithm,
-- specify an endpoint, topology, runtime, or route,
-- claim that carried structure preserves identity,
-- claim that transition causes continuation,
-- license prediction, optimization, control, or intervention,
-- create an authorization mechanism or decision procedure.
-
-Transition and carry language defines claimability limits only.
+This note is conceptual only. It does not define a transfer mechanism, deployment architecture, migration procedure, learning algorithm, endpoint, topology, runtime, or route. Transition and carry language defines claimability limits only; it does not claim that carried structure preserves identity, authority, capability, intent, interpretation, legitimacy, or continuation.
 
 ---
 

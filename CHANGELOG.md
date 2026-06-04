@@ -6,6 +6,7 @@ All notable changes to the public spine are documented here.
 
 ### Changed
 - `docs/glossary.md` — added Structural continuity (#12a) as the public non-operational rendering of controlled Coherence; tightened Regime (#11) and Continuation regime (#29) definitions to prefer structurally continuous language on public surfaces.
+- `docs/foundation-notes/CG-FN-4_TRANSITION_AND_CARRY.md`, `docs/foundation-notes/CG-FN-4-5_BOUNDED_TRANSFER_DISTORTION_AS_CARRY_DISCIPLINE.md` — clarified CG-FN-4 and CG-FN-4.5 section 0.5 non-claims for Stage-0 public reading.
 
 ## [public-spine-v0.32-draft] — 2026-06-03
 

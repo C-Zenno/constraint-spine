@@ -38,13 +38,7 @@ This note remains Stage-0: refusal-first, vocabulary-bound, non-mechanistic.
 
 ## 0.5 Non-Claims and Refusals (Stage-0)
 
-This note is a public conceptual release. It defines bounded transfer distortion as a claimability hazard, not as an operational method.
-
-This note does not define a transfer algorithm, model architecture, retrieval or memory method, benchmark, rubric, metric, leaderboard, deployment procedure, synchronization procedure, or procedure for converting private material into public release material.
-
-It does not authorize model/API use, operational implementation, or disclosure of private mechanisms.
-
-Bounded transfer distortion language defines claimability limits only. It does not claim that all distortion is harmful, or that transfer preserves identity, intent, source authority, or admissibility in the receiving frame.
+This note is conceptual only. It does not define a model architecture, transfer algorithm, retrieval or memory method, benchmark, deployment procedure, or private-to-public release path. Bounded transfer distortion language defines claimability limits only; it does not claim that all distortion is harmful or that transfer preserves identity, intent, or authority.
 
 ---
 

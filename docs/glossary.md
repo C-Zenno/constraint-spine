@@ -190,3 +190,93 @@ The portion of an observation window in which multiplicity must resolve into a s
 
 52) **Admissible manifold** — **[PUBLIC]** **[D]** *(see CG-PN-3.5)*
 The set of trajectories permitted under current admissibility constraints within an observation window. Multiplicity describes the geometry of this manifold prior to settlement.
+
+---
+
+## Stack-aligned terms
+
+Vocabulary tokens made publicly visible by the Admissibility Stack view. Section headers in the stack remain section headers and are not promoted into doctrine primitives here.
+
+53) **Identity** — **[PUBLIC]** **[P]**
+A primitive distinction the program tracks across admissible evolution. Identity is a continuation property characterized at the level of an observation window; it is not pointwise resemblance or instantaneous match. See also #8 Identity claim.
+
+54) **Memory** — **[PUBLIC]** **[P]**
+A primitive distinction describing the structural condition under which past content remains carryable into a later observation. The term is a vocabulary token; no storage mechanism, retrieval procedure, or capacity claim is implied.
+
+55) **Encoded persistence** — **[PUBLIC]** **[D]**
+A relation governing primitives: the condition under which a primitive distinction is held in a way that survives admissible evolution. Structural condition only; no encoding scheme, format, or measurement is defined here.
+
+56) **Boundary coupling** — **[PUBLIC]** **[D]**
+A relation governing primitives: the way primitive distinctions are coupled to declared boundaries. Structural relation only; no interface specification, protocol, or signaling rule is defined here.
+
+57) **Transport** — **[PUBLIC]** **[D]** *(see CG-FN-4)*
+A transition-and-carry concept: the structural condition for moving a distinction across an observation window without violating admissibility. Names a boundary, not a transfer mechanism or routing procedure.
+
+58) **Carry** — **[PUBLIC]** **[D]** *(see CG-FN-4)*
+A transition-and-carry concept: the structural relation by which a distinction remains receiptable under admissible evolution. Carry is a claimability discipline; it does not assert preservation of identity, authority, capability, intent, interpretation, legitimacy, or continuation by default.
+
+59) **Bounded structural access** — **[PUBLIC]** **[D]** *(see CG-P-0-A)*
+A domain invariant: the declared limit on what structural content is accessible under finite resolution. Names a boundary; not an access protocol, permission system, or query interface.
+
+60) **Universal coupling constraint** — **[PUBLIC]** **[D]**
+A domain invariant: a categorical constraint on how primitives couple under admissibility. Describes structural ordering; not a numerical constant or measurable coupling.
+
+61) **Resolution-depth constraint** — **[PUBLIC]** **[D]**
+A domain invariant: the declared limit on resolution-depth pairs admissible within the boundary. Names a structural exclusion; not a depth setting, sampling rule, or resolution parameter.
+
+62) **Contracted view** — **[PUBLIC]** **[D]** *(see CG-P-VIII)*
+A resolution effect: a view in which observable structure is contracted relative to admissible structure. Categorical; not a parameter setting or filter configuration.
+
+63) **Appearance class** — **[PUBLIC]** **[D]** *(see CG-P-VIII)*
+A resolution effect: a category of how structure appears under a particular contracted view. Descriptive category; not a score, signature, or feature vector.
+
+64) **Projection / coarse-graining** — **[PUBLIC]** **[D]**
+A resolution effect: the structural relation that collapses admissible structure into a contracted view. Names a category of relation; not a transformation, mask, or filter definition.
+
+65) **Apparent irreversibility** — **[PUBLIC]** **[D]**
+A resolution effect: irreversibility observed under a contracted view that may not hold in the admissible substrate. Categorical observation; not a measurement or rate.
+
+66) **Observer window** — **[PUBLIC]** **[D]**
+A bounded subsystem concept: the declared region within which a bounded subsystem observes. Structural; not a temporal duration setting or sampling interval. See also #27 Observation window.
+
+67) **Agency** — **[CONTROLLED]** **[D]**
+A bounded subsystem term describing categorical capacity for admissible action within an observer window. Public surfaces should treat as conceptual posture only; no measurement procedure, scoring, or authority claim is defined here.
+
+68) **Macro freedom** — **[CONTROLLED]** **[D]**
+A bounded subsystem term describing categorical room for variation within admissible constraints. Public surfaces should treat as conceptual posture only; no degrees-of-freedom count, optimization, or capacity claim is defined here.
+
+69) **Ledger cost** — **[CONTROLLED]** **[D]**
+A conceptual cost label for the structural burden of remaining defined. Not an accounting construct, measurement, budget, or rate. No units or thresholds are defined here.
+
+70) **Boundary rent** — **[CONTROLLED]** **[D]**
+A conceptual cost label for the structural burden imposed by maintaining a boundary. Not an accounting construct, measurement, budget, or rate. No units or thresholds are defined here.
+
+71) **Constraint affordability** — **[CONTROLLED]** **[D]**
+A conceptual label for whether a constraint can be sustained under bounded observation. No affordability metric, budget, scoring, or evaluation rule is defined here.
+
+---
+
+## Side-branch terms (Learning Studies)
+
+The following terms are side-branch vocabulary made publicly visible by the Admissibility Stack view. They are not core admissibility primitives; they extend the framework into bounded learning under finite resolution.
+
+72) **Learning Studies** — **[PUBLIC]** **[D]** *(side branch)*
+A side-branch family that examines learning relative to admissibility discipline. Side-branch vocabulary; not a core admissibility primitive.
+
+73) **Object-first learning** — **[PUBLIC]** **[D]** *(side branch; see CG-P-0-B)*
+A side-branch posture treating objects as bounded, receiptable structures before explanation, prediction, or optimization. Claim discipline; not a learning algorithm, training procedure, or representation method.
+
+74) **Situated object** — **[PUBLIC]** **[D]** *(side branch)*
+A side-branch concept for an object considered together with its declared frame and admissibility limits. Categorical; not a data structure or representation format.
+
+75) **Bounded frame** — **[PUBLIC]** **[D]** *(side branch; see CG-P-0-B)*
+A side-branch concept for the declared frame within which a situated object is observed. Structural; not a configuration file, scope variable, or context window.
+
+76) **Frame transit** — **[PUBLIC]** **[D]** *(side branch)*
+A side-branch concept for the structural condition of crossing frames within Learning Studies. Names a boundary; not a transition algorithm or routing rule.
+
+77) **Carried object identity** — **[PUBLIC]** **[D]** *(side branch; see CG-P-0-B, CG-FN-4)*
+A side-branch concept for the condition under which an object's identity is carried across bounded frames. Categorical relation; not an identity-matching, similarity, or verification procedure.
+
+78) **Transfer horizon** — **[PUBLIC]** **[D]** *(side branch; see CG-FN-4.5)*
+A side-branch concept for the declared limit beyond which transfer ceases to be claimable. Structural; not a distance metric, runtime budget, or rate constant.

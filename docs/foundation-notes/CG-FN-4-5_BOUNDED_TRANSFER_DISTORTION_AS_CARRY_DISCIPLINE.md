@@ -1,5 +1,5 @@
 ---
-Status: v0.1-draft
+Status: v0.1.1-draft
 Surface: CC (Declarative)
 Claim Ceiling: vocabulary + refusal boundaries only (no methods)
 Authority: Observer-only | Non-authoritative | No directives
@@ -9,7 +9,7 @@ Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes, m
 # CG-FN-4.5 - Bounded Transfer Distortion as Carry Discipline
 **Foundation Note (Stage-0 / observer-only / non-authoritative)**
 
-**Status:** v0.1-draft
+**Status:** v0.1.1-draft
 **Series:** Constraint Geometry (CG) - Foundation Notes
 **Subtitle:** *Object-first transfer, receiving frames, and disciplined distortion claims*
 
@@ -38,19 +38,13 @@ This note remains Stage-0: refusal-first, vocabulary-bound, non-mechanistic.
 
 ## 0.5 Non-Claims and Refusals (Stage-0)
 
-This note does not:
+This note is a public conceptual release. It defines bounded transfer distortion as a claimability hazard, not as an operational method.
 
-- define a transfer algorithm,
-- define a model architecture,
-- define a retrieval or memory method,
-- define a benchmark, rubric, metric, or leaderboard,
-- define a publication, deployment, or synchronization procedure,
-- define a private-to-public release path,
-- authorize model/API use,
-- claim that all distortion is bad,
-- claim that transfer preserves identity, intent, or authority.
+This note does not define a transfer algorithm, model architecture, retrieval or memory method, benchmark, rubric, metric, leaderboard, deployment procedure, synchronization procedure, or procedure for converting private material into public release material.
 
-Bounded transfer distortion language defines claimability limits only.
+It does not authorize model/API use, operational implementation, or disclosure of private mechanisms.
+
+Bounded transfer distortion language defines claimability limits only. It does not claim that all distortion is harmful, or that transfer preserves identity, intent, source authority, or admissibility in the receiving frame.
 
 ---
 
@@ -269,3 +263,4 @@ Foundation Notes use **CG-FN** identifiers.
 | Version | Changes |
 |---------|---------|
 | v0.1-draft | Initial draft |
+| v0.1.1-draft | Tightened §0.5 non-claims to distinguish public artifact status from any private-to-public release procedure. |

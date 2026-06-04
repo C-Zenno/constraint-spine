@@ -1,5 +1,5 @@
 ---
-Status: v0.1.1-draft
+Status: v0.1-draft
 Surface: CC (Declarative)
 Claim Ceiling: vocabulary + refusal boundaries only (no methods)
 Authority: Observer-only | Non-authoritative | No directives
@@ -9,7 +9,7 @@ Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes, m
 # CG-FN-4.5 - Bounded Transfer Distortion as Carry Discipline
 **Foundation Note (Stage-0 / observer-only / non-authoritative)**
 
-**Status:** v0.1.1-draft
+**Status:** v0.1-draft
 **Series:** Constraint Geometry (CG) - Foundation Notes
 **Subtitle:** *Object-first transfer, receiving frames, and disciplined distortion claims*
 
@@ -263,4 +263,4 @@ Foundation Notes use **CG-FN** identifiers.
 | Version | Changes |
 |---------|---------|
 | v0.1-draft | Initial draft |
-| v0.1.1-draft | Tightened §0.5 non-claims to distinguish public artifact status from any private-to-public release procedure. |
+| v0.44 | tightened §0.5 non-claims to distinguish public artifact status from any private-to-public release procedure. |

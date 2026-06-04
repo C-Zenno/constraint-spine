@@ -31,3 +31,14 @@ This program is jurisdictional before it is explanatory.
 5) Glossary (controlled vocabulary; no method definitions)
 6) Papers index (follow links only; no operational extraction)
 7) [SRL Reference Layer](srl/README.md) (optional — machine-indexable structural projections; representation-only)
+
+## Foundation note sequence
+
+Foundation Notes should be read after the boundary-first paper sequence and license posture:
+
+1) CG-FN-0 — admissible time, claimability, and identity limits
+2) CG-FN-1 — continuation regimes and closure
+3) CG-FN-2 — constraint load and bounded persistence
+4) CG-FN-3 — admissibility as claim discipline
+5) CG-FN-4 — transition and carry
+6) CG-FN-4.5 — bounded transfer distortion as carry discipline

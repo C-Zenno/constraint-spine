@@ -2,6 +2,16 @@
 
 All notable changes to the public spine are documented here.
 
+## [public-spine-v0.32-draft] — 2026-06-03
+
+### Added
+- `docs/foundation-notes/CG-FN-4_TRANSITION_AND_CARRY.md` — Foundation Note 4: transition and carry as bounded claim discipline (Stage-0 / CRL-0).
+- `docs/foundation-notes/CG-FN-4-5_BOUNDED_TRANSFER_DISTORTION_AS_CARRY_DISCIPLINE.md` — Foundation Note 4.5: bounded transfer distortion and object-first carry discipline (Stage-0 / CRL-0).
+
+### Changed
+- `docs/index.md` — Foundation Notes catalog now includes CG-FN-3, CG-FN-4, and CG-FN-4.5.
+- `docs/reading-order.md` — added Foundation Note sequence after boundary-first paper sequence.
+
 ## [public-spine-v0.31] — 2026-03-31
 
 ### Added

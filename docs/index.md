@@ -61,6 +61,9 @@ Jurisdictional clarifications that define vocabulary and interpretive boundaries
 | CG-FN-0 | Admissible Time, Claimability, and Identity Under Bounded Evolution | v0.2-final |
 | CG-FN-1 | Continuation Regimes and Closure Under Admissible Evolution | v0.1-draft |
 | CG-FN-2 | Constraint Load and Bounded Persistence | v0.2 |
+| CG-FN-3 | Admissibility as Claim Discipline | v0.2 |
+| CG-FN-4 | Transition and Carry | v0.1-draft |
+| CG-FN-4.5 | Bounded Transfer Distortion as Carry Discipline | v0.1-draft |
 
 See `docs/foundation-notes/` for full text.
 

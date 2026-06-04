@@ -233,3 +233,5 @@ Foundation Notes use **CG-FN** identifiers.
 | Version | Changes |
 |---------|---------|
 | v0.1-draft | Initial draft |
+| v0.49 | compressed §0.5 non-claims to single paragraph for Stage-0 public reading. |
+| v0.51 | compressed Governance Guardrails to paragraph form; substance preserved. |

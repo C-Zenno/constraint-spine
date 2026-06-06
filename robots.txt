@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spine.constraintphysics.org/sitemap.xml

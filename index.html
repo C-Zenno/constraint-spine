@@ -128,7 +128,6 @@
 <!-- ═══ NAV — inline tabs, not floating dock ═══ -->
 <div style="display:flex;border-bottom:1px solid var(--border);padding:0 24px;flex-shrink:0">
   <div class="nav-tab" data-view="papers">Papers</div>
-  <div class="nav-tab" data-view="reading">Reading Order</div>
   <div class="nav-tab" data-view="flow">Dependencies</div>
   <div class="nav-tab" data-view="stack">Stack</div>
   <div class="nav-tab" data-view="surfaces">Surfaces</div>
@@ -226,7 +225,7 @@
           <span class="mono" style="font-size:9px;color:var(--gold);width:28px;flex-shrink:0">III</span>
           <div style="flex:1;min-width:0">
             <div class="headline" style="font-size:13px;font-weight:600">Finite Resolution, Finite Bandwidth</div>
-            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Coherence thickness as embedding-dependent structural condition.</p>
+            <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Structural continuity under finite resolution and bandwidth. Embedding-dependent.</p>
           </div>
           <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Jan 2026</span>
           <span class="stamp track-cp" style="flex-shrink:0">constraint physics</span>
@@ -296,55 +295,11 @@
     </div>
   </div>
 
-  <!-- ═══ READING ORDER VIEW ═══ -->
-  <div id="view-reading" class="view" style="padding:32px 40px 80px">
-    <div style="max-width:600px;margin:0 auto">
-      <h2 class="headline" style="font-size:22px;font-weight:700;margin-bottom:6px">Reading Order</h2>
-      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:28px">Start with Paper VI. Everything else inherits its exclusions.</p>
-
-      <div style="padding-left:24px;position:relative">
-        <div style="position:absolute;left:7px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--gold-dim),var(--gold-dim) 85%,transparent)"></div>
-
-        <div class="step primary fade-in">
-          <div class="dot"></div>
-          <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:1.5px">BOUNDARY</span>
-          <div class="headline" style="font-size:14px;font-weight:600;margin-top:3px">Paper VI — Scope & Exclusions</div>
-          <p class="mono" style="font-size:8px;color:var(--dim);margin-top:3px">Jurisdictional posture. Read first. Everything else inherits these exclusions.</p>
-        </div>
-
-        <div class="step primary fade-in">
-          <div class="dot"></div>
-          <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:1.5px">CONTINUITY</span>
-          <div class="headline" style="font-size:14px;font-weight:600;margin-top:3px">Paper VII — Structural Condition</div>
-          <p class="mono" style="font-size:8px;color:var(--dim);margin-top:3px">Continuity as admissible extension. Not operational.</p>
-        </div>
-
-        <div class="step primary fade-in">
-          <div class="dot"></div>
-          <span class="mono" style="font-size:8px;color:var(--gold);letter-spacing:1.5px">APPEARANCE</span>
-          <div class="headline" style="font-size:14px;font-weight:600;margin-top:3px">Paper VIII — Contracted View</div>
-          <p class="mono" style="font-size:8px;color:var(--dim);margin-top:3px">Closes the sequence. Appearance under bounded resolution.</p>
-        </div>
-
-        <div class="step fade-in">
-          <div class="dot"></div>
-          <span class="mono" style="font-size:8px;color:var(--faint);letter-spacing:1.5px">POSTURE</span>
-          <div class="headline" style="font-size:14px;font-weight:600;color:var(--dim);margin-top:3px">CRL-0 / OEL-1</div>
-          <p class="mono" style="font-size:8px;color:var(--faint);margin-top:3px">Controlled reading level and observer engagement. Defines what claims this surface makes.</p>
-        </div>
-      </div>
-
-      <div style="border-top:1px solid var(--border);margin-top:32px;padding-top:16px">
-        <p class="mono" style="font-size:8px;color:var(--faint)">Papers 0–V are structural foundations. Read after the boundary sequence if needed — they are reference material, not the entry point.</p>
-      </div>
-    </div>
-  </div>
-
   <!-- ═══ DEPENDENCY VIEW ═══ -->
   <div id="view-flow" class="view" style="padding:32px 40px 80px">
     <div style="max-width:1100px;margin:0 auto">
       <h2 class="headline" style="font-size:22px;font-weight:700;margin-bottom:6px">Paper Dependencies</h2>
-      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:32px">Structural dependencies (centre) · Reading order (left, gold markers) · Side branches (right)</p>
+      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:32px">Structural dependencies (centre) · Reading order (left, flowing up from VIII to 0) · Side branches (right)</p>
 
       <div class="flowchart-wrap" style="position:relative;min-height:1060px;padding-left:80px">
 
@@ -353,11 +308,11 @@
           <span class="mono" style="font-size:7px;color:var(--note);letter-spacing:1px;writing-mode:vertical-lr;transform:rotate(180deg)">READING ORDER</span>
         </div>
 
-        <!-- Down leg: VI → VII → VIII (primary, bright gold) -->
+        <!-- Primary leg: VIII → VII → VI (reading flows up to foundation) -->
         <div class="line-v dashed" style="left:22px;top:630px;height:310px"></div>
-        <!-- Arrows along down leg -->
-        <div class="arrow-down" style="left:19px;top:690px"></div>
-        <div class="arrow-down" style="left:19px;top:820px"></div>
+        <!-- Arrows along primary leg (point up, matching reference leg direction) -->
+        <div class="arrow-up" style="left:19px;top:820px"></div>
+        <div class="arrow-up" style="left:19px;top:690px"></div>
 
         <!-- Primary markers with numbers -->
         <div style="position:absolute;left:18px;top:635px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VI"></div>
@@ -432,7 +387,7 @@
         <div class="dep-node" style="left:90px;top:305px;width:250px">
           <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER III</span>
           <div class="headline" style="font-size:11px;font-weight:600;margin-top:2px">Finite Resolution, Finite Bandwidth</div>
-          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:2px">Coherence thickness, embedding-dependent</div>
+          <div class="mono" style="font-size:7px;color:var(--dim);margin-top:2px">Structural continuity, embedding-dependent</div>
         </div>
 
         <!-- Grouped box → IV -->
@@ -470,7 +425,7 @@
 
         <!-- Paper VII -->
         <div class="dep-node" style="left:80px;top:735px;width:260px">
-          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER VII</span>
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">PAPER VII · CONTINUITY</span>
           <div class="headline" style="font-size:12px;font-weight:600;margin-top:2px">Continuity</div>
           <div class="mono" style="font-size:7px;color:var(--dim);margin-top:3px">Structural condition for persistence</div>
         </div>
@@ -524,15 +479,19 @@
           </div>
           <div style="display:flex;align-items:center;gap:6px">
             <div style="width:20px;height:0;border-top:1px dashed var(--gold-dim)"></div>
-            <span class="mono" style="font-size:7px;color:var(--dim)">reading order / side branch</span>
+            <span class="mono" style="font-size:7px;color:var(--dim)">side branch / reading-order leg</span>
           </div>
           <div style="display:flex;align-items:center;gap:6px">
             <div style="width:9px;height:9px;background:var(--gold)"></div>
-            <span class="mono" style="font-size:7px;color:var(--dim)">primary reading (VI→VII→VIII)</span>
+            <span class="mono" style="font-size:7px;color:var(--dim)">primary papers (VI · VII · VIII)</span>
           </div>
           <div style="display:flex;align-items:center;gap:6px">
             <div style="width:9px;height:9px;background:var(--gold-dim)"></div>
-            <span class="mono" style="font-size:7px;color:var(--dim)">reference reading (V→0)</span>
+            <span class="mono" style="font-size:7px;color:var(--dim)">foundation papers (0 · I · II · III · IV · V)</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-bottom:5px solid var(--gold-dim)"></div>
+            <span class="mono" style="font-size:7px;color:var(--dim)">reading order: VIII → 0</span>
           </div>
         </div>
 
@@ -1056,7 +1015,7 @@
 
 <script>
 (function(){
-  var VIEWS=['view-papers','view-reading','view-flow','view-stack','view-surfaces','view-notes','view-posture'];
+  var VIEWS=['view-papers','view-flow','view-stack','view-surfaces','view-notes','view-posture'];
   var currentView='view-posture';
 
   function showView(viewId){

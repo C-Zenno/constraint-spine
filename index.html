@@ -303,38 +303,27 @@
 
       <div class="flowchart-wrap" style="position:relative;min-height:1060px;padding-left:80px">
 
-        <!-- ═══ READING ORDER — dashed line, far left ═══ -->
+        <!-- ═══ READING ORDER — single dashed line, far left, no arrows ═══ -->
+        <!-- Runs from Paper VIII (Appearance) at bottom up to Paper 0 (Time as Substrate) at top. -->
         <div style="position:absolute;left:4px;top:8px;z-index:2">
           <span class="mono" style="font-size:7px;color:var(--note);letter-spacing:1px;writing-mode:vertical-lr;transform:rotate(180deg)">READING ORDER</span>
         </div>
 
-        <!-- Primary leg: VIII → VII → VI (reading flows up to foundation) -->
-        <div class="line-v dashed" style="left:22px;top:630px;height:310px"></div>
-        <!-- Arrows along primary leg (point up, matching reference leg direction) -->
-        <div class="arrow-up" style="left:19px;top:820px"></div>
-        <div class="arrow-up" style="left:19px;top:690px"></div>
+        <!-- Single vertical line spanning VIII (top:895) up to Paper 0 (top:60), centred on the marker column at left:10. -->
+        <div class="line-v dashed" style="left:10px;top:64px;height:835px"></div>
 
-        <!-- Primary markers with numbers -->
-        <div style="position:absolute;left:18px;top:635px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VI"></div>
-        <div class="line-h dashed" style="left:27px;top:639px;width:53px"></div>
+        <!-- Markers (bottom → top: VIII first, climb up through references to Paper 0) -->
+        <!-- Primary papers (bright gold): VIII, VII, VI -->
+        <div style="position:absolute;left:6px;top:895px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VIII"></div>
+        <div class="line-h dashed" style="left:15px;top:899px;width:65px"></div>
 
-        <div style="position:absolute;left:18px;top:765px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VII"></div>
-        <div class="line-h dashed" style="left:27px;top:769px;width:53px"></div>
+        <div style="position:absolute;left:6px;top:765px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VII"></div>
+        <div class="line-h dashed" style="left:15px;top:769px;width:65px"></div>
 
-        <div style="position:absolute;left:18px;top:895px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VIII"></div>
-        <div class="line-h dashed" style="left:27px;top:899px;width:53px"></div>
+        <div style="position:absolute;left:6px;top:635px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VI"></div>
+        <div class="line-h dashed" style="left:15px;top:639px;width:65px"></div>
 
-        <!-- Turn: bottom hook to up leg -->
-        <div class="line-h dashed" style="left:10px;top:940px;width:12px"></div>
-
-        <!-- Up leg: V → IV → III → II → I → 0 (reference, dim, no numbers) -->
-        <div class="line-v dashed" style="left:10px;top:60px;height:880px"></div>
-        <!-- Arrows along up leg -->
-        <div class="arrow-up" style="left:7px;top:440px"></div>
-        <div class="arrow-up" style="left:7px;top:250px"></div>
-        <div class="arrow-up" style="left:7px;top:100px"></div>
-
-        <!-- Dim markers, no numbers -->
+        <!-- Foundation papers (dim gold): V, IV, III, II, I, 0 -->
         <div style="position:absolute;left:6px;top:565px;width:9px;height:9px;background:var(--gold-dim);z-index:2" title="Paper V"></div>
         <div class="line-h dashed" style="left:15px;top:569px;width:65px"></div>
 
@@ -490,8 +479,8 @@
             <span class="mono" style="font-size:7px;color:var(--dim)">foundation papers (0 · I · II · III · IV · V)</span>
           </div>
           <div style="display:flex;align-items:center;gap:6px">
-            <div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-bottom:5px solid var(--gold-dim)"></div>
-            <span class="mono" style="font-size:7px;color:var(--dim)">reading order: VIII → 0</span>
+            <div style="width:20px;height:0;border-top:1px dashed var(--gold)"></div>
+            <span class="mono" style="font-size:7px;color:var(--dim)">reading order: VIII → 0 (read bottom-up)</span>
           </div>
         </div>
 

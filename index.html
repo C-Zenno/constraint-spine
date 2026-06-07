@@ -312,6 +312,18 @@
         <!-- Single vertical line spanning VIII (top:895) up to Paper 0 (top:60), centred on the marker column at left:10. -->
         <div class="line-v dashed" style="left:10px;top:64px;height:835px"></div>
 
+        <!-- Arrows climbing the reading-order line, all pointing up: VIII → ... → 0 -->
+        <div class="arrow-up" style="left:7px;top:830px"></div>
+        <div class="arrow-up" style="left:7px;top:700px"></div>
+        <div class="arrow-up" style="left:7px;top:520px"></div>
+        <div class="arrow-up" style="left:7px;top:400px"></div>
+        <div class="arrow-up" style="left:7px;top:115px"></div>
+
+        <!-- START HERE label just below the Paper VIII marker (the first box on the climb) -->
+        <div style="position:absolute;left:0;top:914px;width:84px;z-index:2">
+          <span class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px">START HERE ↑</span>
+        </div>
+
         <!-- Markers (bottom → top: VIII first, climb up through references to Paper 0) -->
         <!-- Primary papers (bright gold): VIII, VII, VI -->
         <div style="position:absolute;left:6px;top:895px;width:9px;height:9px;background:var(--gold);z-index:2" title="Paper VIII"></div>
@@ -1028,8 +1040,27 @@
       document.querySelectorAll('.nav-tab').forEach(function(t){t.classList.remove('active')});
       this.classList.add('active');
       showView(viewId);
+      // Reflect the active view in the URL hash so the state is bookmarkable.
+      if(history && history.replaceState){
+        history.replaceState(null,'','#'+this.dataset.view);
+      } else {
+        window.location.hash = '#'+this.dataset.view;
+      }
     });
   });
+
+  // Honour an inbound URL hash (e.g. #papers, #posture, #flow) so deep-links
+  // land on the requested view instead of falling back to the default.
+  (function applyInboundHash(){
+    var raw=(window.location.hash||'').replace('#','').trim();
+    if(!raw)return;
+    var viewId='view-'+raw;
+    if(VIEWS.indexOf(viewId)<0)return;
+    document.querySelectorAll('.nav-tab').forEach(function(t){t.classList.remove('active');});
+    var tab=document.querySelector('.nav-tab[data-view="'+raw+'"]');
+    if(tab)tab.classList.add('active');
+    showView(viewId);
+  })();
 })();
 </script>
 

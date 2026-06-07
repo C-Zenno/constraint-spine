@@ -50,6 +50,8 @@
   .stamp.gold{border-color:var(--gold-dim);color:var(--gold)}
   .stamp.track-cp{border-color:rgba(123,77,255,0.25);color:var(--note)}
   .stamp.track-as{border-color:rgba(201,162,39,0.2);color:var(--gold)}
+  .stamp.canon{border-color:var(--gold);color:var(--gold);background:rgba(0,168,137,0.07)}
+  .stamp.entry-newcomer{border-color:var(--note);color:var(--note);background:rgba(123,77,255,0.06)}
 
   /* ═══ THIN CONNECTORS — registry lines, not neon ═══ */
   .line-v{position:absolute;width:1px;pointer-events:none;background:var(--gold-dim)}
@@ -128,6 +130,7 @@
 <!-- ═══ NAV — inline tabs, not floating dock ═══ -->
 <div style="display:flex;border-bottom:1px solid var(--border);padding:0 24px;flex-shrink:0">
   <div class="nav-tab" data-view="papers">Papers</div>
+  <div class="nav-tab" data-view="entry">Entry Paths</div>
   <div class="nav-tab" data-view="flow">Dependencies</div>
   <div class="nav-tab" data-view="stack">Stack</div>
   <div class="nav-tab" data-view="surfaces">Surfaces</div>
@@ -169,6 +172,8 @@
           <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Apr 2026</span>
           <span class="stamp track-as" style="flex-shrink:0">admissibility studies</span>
           <span class="stamp gold" style="flex-shrink:0">closer</span>
+          <span class="stamp canon" style="flex-shrink:0">canon closer</span>
+          <span class="stamp entry-newcomer" style="flex-shrink:0">entry (newcomers)</span>
         </div>
       </a>
 
@@ -181,6 +186,7 @@
           </div>
           <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Feb 2026</span>
           <span class="stamp track-cp" style="flex-shrink:0">constraint physics</span>
+          <span class="stamp canon" style="flex-shrink:0">canon</span>
         </div>
       </a>
 
@@ -193,6 +199,7 @@
           </div>
           <span class="mono" style="font-size:8px;color:var(--faint);flex-shrink:0">Jan 2026</span>
           <span class="stamp gold" style="flex-shrink:0">boundary</span>
+          <span class="stamp canon" style="flex-shrink:0">canon start</span>
         </div>
       </a>
 
@@ -292,6 +299,60 @@
         </div>
       </a>
 
+    </div>
+  </div>
+
+  <!-- ═══ ENTRY PATHS VIEW ═══ -->
+  <div id="view-entry" class="view" style="padding:32px 40px 80px">
+    <div style="max-width:760px;margin:0 auto">
+      <h2 class="headline" style="font-size:22px;font-weight:700;margin-bottom:6px">Entry Paths</h2>
+      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:28px">Choose an entry point. <strong style="color:var(--cream-dim)">Canon order remains VI → VII → VIII.</strong></p>
+
+      <!-- ─── Paper VIII banner: doctrine-bound entry framing ─── -->
+      <div style="border-left:2px solid var(--gold);padding:14px 18px;margin-bottom:28px;background:var(--surface-raised)">
+        <div class="mono" style="font-size:7px;color:var(--gold);letter-spacing:2px;margin-bottom:6px">PAPER VIII · APPEARANCE</div>
+        <h3 class="headline" style="font-size:15px;font-weight:600;margin-bottom:10px">Start here (Appearance), but read the boundary first</h3>
+        <p style="font-size:12px;color:var(--cream-dim);line-height:1.65;margin-bottom:12px">
+          Paper VIII is a <strong style="color:var(--cream)">claim-discipline</strong> paper about what remains legitimate to say when view contracts. It does not provide procedures, thresholds, evaluators, or operational guidance. <strong style="color:var(--cream)">Before interpreting any terms here, read Paper VI — Scope &amp; Exclusions.</strong>
+        </p>
+        <p class="mono" style="font-size:9px;color:var(--gold);margin-bottom:14px;letter-spacing:0.3px;line-height:1.5">
+          Scope governs interpretation. If you skip Paper VI, you will misread the series as a method.
+        </p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <a href="https://doi.org/10.5281/zenodo.18446867" target="_blank" rel="noopener noreferrer" class="entry" style="padding:8px 14px;font-size:10px;font-weight:600;color:var(--gold);border-color:var(--gold);margin:0">
+            Read Paper VI — Scope &amp; Exclusions ↗
+          </a>
+          <a href="https://doi.org/10.5281/zenodo.19486536" target="_blank" rel="noopener noreferrer" class="entry" style="padding:8px 14px;font-size:10px;color:var(--cream-dim);margin:0">
+            Continue in Paper VIII — Contracted View ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- ─── 3 Entry Paths cards ─── -->
+      <div style="display:flex;flex-direction:column;gap:8px">
+
+        <div class="entry" style="border-left:2px solid var(--gold)">
+          <div class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px;margin-bottom:4px">CARD A · FAST ENTRY (NEWCOMERS)</div>
+          <div class="headline" style="font-size:13px;font-weight:600;margin-bottom:6px">Start with Appearance (fastest intuition)</div>
+          <div class="mono" style="font-size:9px;color:var(--gold);margin-bottom:6px">VIII → VI → VII → 0 / 0-A</div>
+          <p style="font-size:11px;color:var(--dim);line-height:1.55">Learn why appearance misleads under contracted view, then inherit scope and continuity.</p>
+        </div>
+
+        <div class="entry" style="border-left:2px solid var(--gold)">
+          <div class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px;margin-bottom:4px">CARD B · CANON (SAFEST READING)</div>
+          <div class="headline" style="font-size:13px;font-weight:600;margin-bottom:6px">Canon boundary sequence</div>
+          <div class="mono" style="font-size:9px;color:var(--gold);margin-bottom:6px">VI → VII → VIII</div>
+          <p style="font-size:11px;color:var(--dim);line-height:1.55">Jurisdiction first. Everything else inherits its exclusions.</p>
+        </div>
+
+        <div class="entry" style="border-left:2px solid var(--gold-dim)">
+          <div class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px;margin-bottom:4px">CARD C · FOUNDATIONS (REFERENCE-FIRST)</div>
+          <div class="headline" style="font-size:13px;font-weight:600;margin-bottom:6px">Structural foundations (reference)</div>
+          <div class="mono" style="font-size:9px;color:var(--gold);margin-bottom:6px">0 → I → II → III → IV → V → VI → VII → VIII</div>
+          <p style="font-size:11px;color:var(--dim);line-height:1.55">Full dependency chain (not required for the boundary sequence).</p>
+        </div>
+
+      </div>
     </div>
   </div>
 
@@ -1016,7 +1077,7 @@
 
 <script>
 (function(){
-  var VIEWS=['view-papers','view-flow','view-stack','view-surfaces','view-notes','view-posture'];
+  var VIEWS=['view-papers','view-entry','view-flow','view-stack','view-surfaces','view-notes','view-posture'];
   var currentView='view-posture';
 
   function showView(viewId){

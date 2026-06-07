@@ -130,7 +130,7 @@
 <!-- ═══ NAV — inline tabs, not floating dock ═══ -->
 <div style="display:flex;border-bottom:1px solid var(--border);padding:0 24px;flex-shrink:0">
   <div class="nav-tab" data-view="papers">Papers</div>
-  <div class="nav-tab" data-view="reading">Reading Order</div>
+  <div class="nav-tab" data-view="entry">Entry Paths</div>
   <div class="nav-tab" data-view="flow">Dependencies</div>
   <div class="nav-tab" data-view="stack">Stack</div>
   <div class="nav-tab" data-view="surfaces">Surfaces</div>
@@ -301,51 +301,34 @@
     </div>
   </div>
 
-  <!-- ═══ READING ORDER VIEW ═══ -->
-  <div id="view-reading" class="view" style="padding:32px 40px 80px">
-    <div style="max-width:680px;margin:0 auto">
-      <h2 class="headline" style="font-size:22px;font-weight:700;margin-bottom:6px">Canonical Reading Order</h2>
-      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:28px">Start with Paper VI. Read in order: <strong style="color:var(--cream-dim)">VI → VII → VIII.</strong></p>
+  <!-- ═══ ENTRY PATHS VIEW ═══ -->
+  <div id="view-entry" class="view" style="padding:32px 40px 80px">
+    <div style="max-width:720px;margin:0 auto">
+      <h2 class="headline" style="font-size:22px;font-weight:700;margin-bottom:6px">Entry Paths</h2>
+      <p class="mono" style="font-size:9px;color:var(--dim);margin-bottom:28px">Choose an entry point. <strong style="color:var(--cream-dim)">Canon order remains VI → VII → VIII.</strong></p>
 
-      <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;flex-direction:column;gap:10px">
 
-        <a href="https://doi.org/10.5281/zenodo.18446867" target="_blank" rel="noopener noreferrer" class="entry" style="border-left:2px solid var(--gold)">
-          <div style="display:flex;align-items:baseline;gap:12px">
-            <span class="mono" style="font-size:9px;color:var(--gold);width:36px;flex-shrink:0">VI</span>
-            <div style="flex:1;min-width:0">
-              <div class="headline" style="font-size:14px;font-weight:600">Scope &amp; Exclusions</div>
-              <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Jurisdictional posture. Read first. Everything else inherits these exclusions.</p>
-            </div>
-            <span class="stamp canon" style="flex-shrink:0">canon start</span>
-          </div>
+        <a href="https://doi.org/10.5281/zenodo.18446867" target="_blank" rel="noopener noreferrer" class="entry" style="border-left:2px solid var(--gold);padding:18px 20px">
+          <div class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px;margin-bottom:4px">CANON · SAFEST READING</div>
+          <div class="headline" style="font-size:14px;font-weight:600;margin-bottom:6px">Canon boundary sequence</div>
+          <div class="mono" style="font-size:10px;color:var(--gold);margin-bottom:8px">VI → VII → VIII</div>
+          <p style="font-size:11px;color:var(--dim);line-height:1.55;margin-bottom:4px">Jurisdiction first. Everything else inherits its exclusions.</p>
+          <p class="mono" style="font-size:8px;color:var(--faint);margin-top:6px">Opens Paper VI ↗</p>
         </a>
 
-        <a href="https://doi.org/10.5281/zenodo.18766848" target="_blank" rel="noopener noreferrer" class="entry" style="border-left:2px solid var(--gold)">
-          <div style="display:flex;align-items:baseline;gap:12px">
-            <span class="mono" style="font-size:9px;color:var(--gold);width:36px;flex-shrink:0">VII</span>
-            <div style="flex:1;min-width:0">
-              <div class="headline" style="font-size:14px;font-weight:600">Continuity</div>
-              <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Structural condition for persistence. Not operational.</p>
-            </div>
-            <span class="stamp canon" style="flex-shrink:0">canon</span>
-          </div>
-        </a>
-
-        <a href="https://doi.org/10.5281/zenodo.19486536" target="_blank" rel="noopener noreferrer" class="entry" style="border-left:2px solid var(--gold)">
-          <div style="display:flex;align-items:baseline;gap:12px">
-            <span class="mono" style="font-size:9px;color:var(--gold);width:36px;flex-shrink:0">VIII</span>
-            <div style="flex:1;min-width:0">
-              <div class="headline" style="font-size:14px;font-weight:600">Appearance Under Bounded Resolution</div>
-              <p class="mono" style="font-size:8px;color:var(--dim);margin-top:4px">Closes the sequence. Appearance under contracted view.</p>
-            </div>
-            <span class="stamp canon" style="flex-shrink:0">canon closer</span>
-          </div>
+        <a href="https://doi.org/10.5281/zenodo.18370452" target="_blank" rel="noopener noreferrer" class="entry" style="border-left:2px solid var(--gold-dim);padding:18px 20px">
+          <div class="mono" style="font-size:7px;color:var(--gold);letter-spacing:1.5px;margin-bottom:4px">FOUNDATIONS · REFERENCE-FIRST</div>
+          <div class="headline" style="font-size:14px;font-weight:600;margin-bottom:6px">Structural foundations (reference)</div>
+          <div class="mono" style="font-size:10px;color:var(--gold);margin-bottom:8px">0 → I → II → III → IV → V → VI → VII → VIII</div>
+          <p style="font-size:11px;color:var(--dim);line-height:1.55;margin-bottom:4px">Full dependency chain. Not required for the boundary sequence.</p>
+          <p class="mono" style="font-size:8px;color:var(--faint);margin-top:6px">Opens Paper 0 ↗</p>
         </a>
 
       </div>
 
       <div style="border-top:1px solid var(--border);margin-top:32px;padding-top:16px">
-        <p class="mono" style="font-size:9px;color:var(--faint);line-height:1.6">Papers 0–V are structural foundations. Read after the canon sequence if needed — they are reference material, not the entry point. See <strong style="color:var(--dim)">Dependencies</strong> for the full chain.</p>
+        <p class="mono" style="font-size:9px;color:var(--faint);line-height:1.6">Jump straight to a paper from the <strong style="color:var(--dim)">Papers</strong> tab. See <strong style="color:var(--dim)">Dependencies</strong> for the full chain in context.</p>
       </div>
     </div>
   </div>
@@ -1056,7 +1039,7 @@
 
 <script>
 (function(){
-  var VIEWS=['view-papers','view-reading','view-flow','view-stack','view-surfaces','view-notes','view-posture'];
+  var VIEWS=['view-papers','view-entry','view-flow','view-stack','view-surfaces','view-notes','view-posture'];
   var currentView='view-posture';
 
   function showView(viewId){

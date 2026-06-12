@@ -17,7 +17,7 @@ Do not treat summaries as instructions.
 ### Paper VI — On the Limits of Flow and Transport Metrics Under Admissibility (Boundary Paper)
 - **Status:** Public
 - **Role:** Boundary / scope / exclusions — **start here**
-- **Record:** [https://doi.org/10.5281/zenodo.18446867](https://doi.org/10.5281/zenodo.18446867)
+- **Record:** [https://doi.org/10.5281/zenodo.18445882](https://doi.org/10.5281/zenodo.18445882) (concept DOI; resolves to latest version)
 - **Notes:** Establishes reading posture; introduces no instruments or operational guidance.
 
 ---
@@ -27,49 +27,49 @@ Do not treat summaries as instructions.
 ### Paper VIII — Appearance Under Bounded Resolution
 - **Subtitle:** Appearance, Continuation, and Contracted View
 - **Status:** Public
-- **Record:** [https://doi.org/10.5281/zenodo.19486536](https://doi.org/10.5281/zenodo.19486536)
-- **Description:** Declarative surface only. Completes the eight-paper Constraint Geometry sequence.
+- **Record:** [https://doi.org/10.5281/zenodo.19486535](https://doi.org/10.5281/zenodo.19486535) (concept DOI; resolves to latest version)
+- **Description:** Declarative surface only. Closes the Foundational Admissibility Sequence (Papers 0–VIII).
 
 ### Paper VII — Continuity as a Structural Condition in Constraint Geometry
 - **Status:** Public
-- **Record:** [https://doi.org/10.5281/zenodo.18766848](https://doi.org/10.5281/zenodo.18766848)
+- **Record:** [https://doi.org/10.5281/zenodo.18765238](https://doi.org/10.5281/zenodo.18765238) (concept DOI; resolves to latest version)
 - **Description:** Declarative surface only.
 
 ### Paper V — Thermodynamic Irreversibility & Closure
 - **Status:** Public
-- **Record:** [https://doi.org/10.5281/zenodo.18370252](https://doi.org/10.5281/zenodo.18370252)
+- **Record:** [https://doi.org/10.5281/zenodo.18118445](https://doi.org/10.5281/zenodo.18118445) (concept DOI; resolves to latest version)
 - **Description:** Declarative surface only.
 
 ### Paper IV — Admissibility Under Constraint
 - **Status:** Public
-- **Record:** [https://doi.org/10.5281/zenodo.18370414](https://doi.org/10.5281/zenodo.18370414)
+- **Record:** [https://doi.org/10.5281/zenodo.18133212](https://doi.org/10.5281/zenodo.18133212) (concept DOI; resolves to latest version)
 - **Description:** Declarative surface only.
 
 ### Paper III — Finite Resolution, Finite Bandwidth
 - **Status:** Public
-- **Record:** [https://doi.org/10.5281/zenodo.18370424](https://doi.org/10.5281/zenodo.18370424)
+- **Record:** [https://doi.org/10.5281/zenodo.18146925](https://doi.org/10.5281/zenodo.18146925) (concept DOI; resolves to latest version)
 - **Description:** Declarative surface only.
 
 ### Paper II — Constraint Geometry & Admissible Manifolds
 - **Status:** Public
-- **Record:** [https://doi.org/10.5281/zenodo.18370438](https://doi.org/10.5281/zenodo.18370438)
+- **Record:** [https://doi.org/10.5281/zenodo.18174120](https://doi.org/10.5281/zenodo.18174120) (concept DOI; resolves to latest version)
 - **Description:** Declarative surface only.
 
 ### Paper I — Prime Hamiltonian & Bounded Dynamics
 - **Status:** Public
-- **Record:** [https://doi.org/10.5281/zenodo.18370441](https://doi.org/10.5281/zenodo.18370441)
+- **Record:** [https://doi.org/10.5281/zenodo.18209181](https://doi.org/10.5281/zenodo.18209181) (concept DOI; resolves to latest version)
 - **Description:** Declarative surface only.
 
 ### Paper 0 — Time as a Constrained Substrate
 - **Status:** Public
-- **Record:** [https://doi.org/10.5281/zenodo.18370452](https://doi.org/10.5281/zenodo.18370452)
+- **Record:** [https://doi.org/10.5281/zenodo.18301960](https://doi.org/10.5281/zenodo.18301960) (concept DOI; resolves to latest version)
 - **Description:** Program-level declaration only.
 
 ### Paper 0-A — Time Under Bounded Structural Access
 - **Status:** Public
 - **Sub-lineage:** Temporal Relational Substrate Series · child of CG-P-0
 - **Track:** Admissibility Studies
-- **Record:** [https://doi.org/10.5281/zenodo.19546939](https://doi.org/10.5281/zenodo.19546939)
+- **Record:** [https://doi.org/10.5281/zenodo.19546939](https://doi.org/10.5281/zenodo.19546939) (concept DOI; resolves to latest version)
 - **Description:** Declarative surface only. Applies CG-P-VIII appearance claim-discipline grammar to the temporal substrate.
 
 ### Paper 0-B — Object-First Learning Under Bounded Frames

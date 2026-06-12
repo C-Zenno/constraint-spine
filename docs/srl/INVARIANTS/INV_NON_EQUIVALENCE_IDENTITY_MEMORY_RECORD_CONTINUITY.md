@@ -19,6 +19,6 @@ Non-operative. Non-procedural. No detection logic, no test for category errors, 
 
 ## Source references
 
-- Paper VII — Continuity as a Structural Condition ([DOI](https://doi.org/10.5281/zenodo.18766848))
+- Paper VII — Continuity as a Structural Condition ([DOI](https://doi.org/10.5281/zenodo.18765238))
 - CG-FN-0 — Admissible Time, Claimability, and Identity (docs/foundation-notes/CG-FN-0_ADMISSIBLE_TIME_CLAIMABILITY_IDENTITY.md)
 - Glossary terms #8 (Identity claim), #38 (Record), #42 (Continuity)

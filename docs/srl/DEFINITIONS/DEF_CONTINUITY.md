@@ -32,7 +32,7 @@ Continuity is a claim condition on composability. It is not a smoothness assumpt
 
 ## Source references
 
-- Paper VII — Continuity as a Structural Condition in Constraint Geometry ([DOI](https://doi.org/10.5281/zenodo.18766848))
+- Paper VII — Continuity as a Structural Condition in Constraint Geometry ([DOI](https://doi.org/10.5281/zenodo.18765238))
 - Glossary term #42 (docs/glossary.md)
 - Hierarchy ordering: Continuity sits between Boundary+Admissibility and Energy (docs/HIERARCHY.md)
 

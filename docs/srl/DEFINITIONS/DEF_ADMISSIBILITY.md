@@ -30,7 +30,7 @@ A condition that restricts what can be asserted or continued under finite resolu
 
 ## Source references
 
-- Paper IV — Admissibility Under Constraint ([DOI](https://doi.org/10.5281/zenodo.18370414))
+- Paper IV — Admissibility Under Constraint ([DOI](https://doi.org/10.5281/zenodo.18133212))
 - Glossary term #1 (docs/glossary.md)
 - Hierarchy ordering: Admissibility sits at the Boundary layer (docs/HIERARCHY.md)
 

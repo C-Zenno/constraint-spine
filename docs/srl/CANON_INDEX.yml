@@ -5,7 +5,7 @@
 # If this index conflicts with canonical documents, canonical documents prevail.
 
 srl_version: v0
-spine_tag: public-spine-v0.61
+spine_tag: public-spine-v0.64
 scope: CRL-0
 posture: observer-only / non-authoritative
 exclusions:
@@ -29,7 +29,7 @@ documents:
       type: paper
       status: published
       source_path: null
-      record: "https://doi.org/10.5281/zenodo.18370452"
+      record: "https://doi.org/10.5281/zenodo.18301960"
       scope: CRL-0
       anchors: [time, constrained-substrate, finite-resolution]
 
@@ -38,7 +38,7 @@ documents:
       type: paper
       status: published
       source_path: null
-      record: "https://doi.org/10.5281/zenodo.18370441"
+      record: "https://doi.org/10.5281/zenodo.18209181"
       scope: CRL-0
       anchors: [hamiltonian, bounded-dynamics]
 
@@ -47,7 +47,7 @@ documents:
       type: paper
       status: published
       source_path: null
-      record: "https://doi.org/10.5281/zenodo.18370438"
+      record: "https://doi.org/10.5281/zenodo.18174120"
       scope: CRL-0
       anchors: [constraint-geometry, admissible-manifolds]
 
@@ -56,7 +56,7 @@ documents:
       type: paper
       status: published
       source_path: null
-      record: "https://doi.org/10.5281/zenodo.18370424"
+      record: "https://doi.org/10.5281/zenodo.18146925"
       scope: CRL-0
       anchors: [finite-resolution, finite-bandwidth]
 
@@ -65,7 +65,7 @@ documents:
       type: paper
       status: published
       source_path: null
-      record: "https://doi.org/10.5281/zenodo.18370414"
+      record: "https://doi.org/10.5281/zenodo.18133212"
       scope: CRL-0
       anchors: [admissibility, constraint]
 
@@ -74,7 +74,7 @@ documents:
       type: paper
       status: published
       source_path: null
-      record: "https://doi.org/10.5281/zenodo.18370252"
+      record: "https://doi.org/10.5281/zenodo.18118445"
       scope: CRL-0
       anchors: [irreversibility, closure, thermodynamic]
 
@@ -84,7 +84,7 @@ documents:
       status: published
       role: boundary
       source_path: null
-      record: "https://doi.org/10.5281/zenodo.18446867"
+      record: "https://doi.org/10.5281/zenodo.18445882"
       scope: CRL-0
       anchors: [boundary, scope, exclusions, flow-metrics, transport-metrics]
       notes: "Boundary paper. Start here. Establishes reading posture."
@@ -94,7 +94,7 @@ documents:
       type: paper
       status: published
       source_path: null
-      record: "https://doi.org/10.5281/zenodo.18766848"
+      record: "https://doi.org/10.5281/zenodo.18765238"
       scope: CRL-0
       anchors: [continuity, identity, recoverability, persistence, admissible-extension]
       sequencing: "Must precede Kernel in all index projections."

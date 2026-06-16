@@ -3,13 +3,13 @@ Status: Published
 Surface: CC (Declarative)
 ID: CG-PN-3
 Track: Admissibility Studies (AS)
-Claim Ceiling: structural map only (no mechanisms, no evaluators, no new claims)
+Claim Ceiling: reading posture only (no mechanisms, no evaluators, no new claims)
 Authority: Observer-only | Non-authoritative | No directives
 Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes
 Date: March 2026
 ---
 
-# Program Note #3 — The Admissibility Stack
+# Program Note #3 — Admissibility Reading Posture
 
 *Permission, not inertia.*
 
@@ -35,15 +35,15 @@ What makes a continuation claim structurally admissible?
 
 ## Scope of this note
 
-This Program Note introduces the Admissibility Stack — a minimal structural map describing the conditions under which continuation claims remain coherent.
+This Program Note introduces the Admissibility Reading Posture: a minimal reading discipline describing the conditions under which continuation claims remain coherent.
 
-The stack does not evaluate systems. It disciplines the conditions under which structural claims remain coherent.
+This reading posture does not evaluate systems. It disciplines the conditions under which structural claims remain coherent.
 
 ---
 
 ## 1. Primitive distinctions
 
-The stack begins by fixing three primitives that must not be collapsed:
+The reading posture begins by fixing three primitives that must not be collapsed:
 
 **Identity** — A claim about admissible continuation of a system.
 
@@ -89,7 +89,7 @@ Together these invariants define the limits within which persistence can remain 
 
 ## 4. Admissible claim classes
 
-Within those limits, the stack disciplines the claims that may be asserted.
+Within those limits, the reading posture disciplines the claims that may be asserted.
 
 **Continuation** — Continuation is primitive and binary: either continuation is permitted or it is not.
 
@@ -149,7 +149,7 @@ Persistence therefore selects for affordable boundaries.
 
 ## Closing
 
-The Admissibility Stack does not evaluate systems, prescribe dynamics, or propose methods.
+The Admissibility Reading Posture does not evaluate systems, prescribe dynamics, or propose methods.
 
 It simply clarifies the structural conditions under which claims of persistence remain well-formed.
 

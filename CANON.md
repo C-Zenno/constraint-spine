@@ -33,7 +33,7 @@ license posture, and governance decisions.
 | Repo | Role |
 |------|------|
 | `constraint-spine` (this) | Public canon — source of truth |
-| `constraint-vocabulary` | Bundle/release channel (e.g., trf-vocabulary-v0) |
+| `constraint-vocabulary` | Bundle/release channel |
 | `cc-website` | Rendered brochure — presentation layer, not canon |
 | (private staging) | Drafting/staging — never public |
 

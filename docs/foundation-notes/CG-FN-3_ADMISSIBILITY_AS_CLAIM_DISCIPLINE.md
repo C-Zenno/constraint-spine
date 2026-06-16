@@ -27,13 +27,11 @@ This note remains Stage-0: refusal-first, vocabulary-bound, non-mechanistic.
 
 ## Purpose
 
-1. Define Admissibility Studies as a discipline of claim legitimacy, not control.
-2. Establish the minimal grammar: Record → Receipt → Refusal → Continuation.
-3. Define continuation as binary at the level of claim discipline.
-4. Define multiplicity as pre-settlement admissible geometry.
-5. Define settlement as claim fixation from within admissible multiplicity.
-6. Establish refusal as constitutive of admissibility, not ancillary to it.
-7. Separate admissibility from ontology, implementation, and governance policy.
+This note establishes admissibility as public claim discipline.
+
+A claim is admissible only when it remains tied to a bounded record, states its limits, refuses unsupported expansion, and continues only within the scope already made available.
+
+This is a reading discipline, not a method, evaluator, procedure, or authority layer.
 
 ---
 
@@ -84,23 +82,13 @@ Admissibility therefore governs claimability, not ontology and not implementatio
 
 ---
 
-## 3. The Minimal Grammar
+## 3. Public Claim Discipline
 
-Admissibility Studies proceeds through a minimal sequence:
+A public claim under CRL-0 must remain bounded by what has been made available.
 
-**Record → Receipt → Refusal → Continuation**
+It may describe a record, name a limit, refuse an unsupported expansion, or continue a prior claim within its stated bounds. It may not convert limited observation into authority, prediction, ranking, compliance, or operational instruction.
 
-This sequence names a **dependency structure for claim legitimacy**, not a temporal procedure or execution flow.
-
-**Record** — A bounded trace attached to a claim.
-
-**Receipt** — A carryable record sufficient to constrain what may be claimed.
-
-**Refusal** — A permitted structural outcome in which continuation is not carried.
-
-**Continuation** — The binary allowance for a claim to remain within a declared regime.
-
-This is a grammar of observer legitimacy, not a mechanism of world-behavior.
+The discipline is not sequential, procedural, or exhaustive. It is a constraint on public language.
 
 ---
 
@@ -232,7 +220,7 @@ Stage-0 claims invoking admissibility, continuation, settlement, or refusal must
 - Continuation claims must be binary and explicit.
 - Settlement must yield singular, receiptable claims.
 
-This note does not mandate a specific receipt schema. It mandates that admissibility language cannot be used without declared observation bounds.
+This note does not mandate a specific record form. It mandates that admissibility language cannot be used without declared observation bounds.
 
 ---
 
@@ -294,4 +282,4 @@ Foundation Notes use **CG-FN** identifiers.
 | Version | Changes |
 |---------|---------|
 | v0.1 | Initial draft |
-| v0.2 | Opening axiom tightened to claim-level; minimal grammar framed as dependency structure rather than procedure; refusal language tightened; Related Documents, How to Cite, and Changelog sections added |
+| v0.2 | Opening axiom tightened to claim-level; refusal language tightened; Related Documents, How to Cite, and Changelog sections added |

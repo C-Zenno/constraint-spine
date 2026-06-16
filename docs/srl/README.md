@@ -64,7 +64,6 @@ SRL units are **derived projections**, not authoritative sources. The canonical 
 - [Foundation Notes](../foundation-notes/)
 - [Glossary](../glossary.md)
 - [Claim Rules](../CLAIM_RULES.md)
-- [Signature Map](../SIGNATURE_MAP.md)
 - [Hierarchy](../HIERARCHY.md)
 
 If SRL content conflicts with canon, canon prevails. SRL units should be regenerated from canon, not edited independently.

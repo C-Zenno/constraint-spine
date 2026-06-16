@@ -18,7 +18,7 @@ They are **distinct from the Five Axioms**, which are structural statements pres
    No methods, thresholds, tuning rules, playbooks, calibration procedures, scoring mechanics, enforcement mechanisms, or recipes of application.
 
 2. **No authority claims.**
-   No certification of systems, people, or compliance. No approvals. No "pass/fail."
+   No claims of approval over systems, people, or compliance. No "pass/fail."
 
 3. **No predictive claims.**
    No promises of outcomes, performance, safety, alignment, controllability, or future behavior.

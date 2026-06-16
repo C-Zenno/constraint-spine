@@ -174,10 +174,10 @@ documents:
       anchors: [jurisdiction, surface-separation, cc, zoa, routing]
 
     - id: PN-3
-      title: "The Admissibility Stack"
+      title: "Admissibility Reading Posture"
       type: pn
       status: published
-      source_path: docs/program-notes/CG-PN-3_THE_ADMISSIBILITY_STACK.md
+      source_path: docs/program-notes/CG-PN-3_ADMISSIBILITY_READING_POSTURE.md
       scope: CRL-0
       track: admissibility-studies
       anchors: [identity, memory, record, continuity, persistence, boundary-coupling, domain-invariants, claim-classes, resolution-effects, agency, affordability]
@@ -220,12 +220,6 @@ documents:
       source_path: docs/CLAIM_RULES.md
       anchors: [7 rules]
 
-    - id: SIGNATURE_MAP
-      title: "Signature Map"
-      type: spine
-      source_path: docs/SIGNATURE_MAP.md
-      anchors: [claim, receipt, refusal, continuation]
-
     - id: HIERARCHY
       title: "Hierarchy (Constraint Physics)"
       type: spine
@@ -241,15 +235,6 @@ documents:
       title: "Spine Map"
       type: spine
       source_path: docs/SPINE_MAP.md
-
-  schema_documents:
-    - id: CG-SR-0
-      title: "Descriptive Claim Schema"
-      type: schema
-      status: published
-      source_path: docs/schema/CG-SR-0_DESCRIPTIVE_CLAIM_SCHEMA.md
-      scope: CRL-0
-      anchors: [claim-form, regime-label, clarity-envelope, view-family, refusal, receipt, descriptive-coordinate-space]
 
 # ============================================================
 # SRL Units
@@ -268,7 +253,7 @@ srl_units:
       type: definition
       status: published
       source_path: docs/srl/DEFINITIONS/DEF_RECORD.md
-      source_refs: [SIGNATURE_MAP, GLOSSARY, CLAIM_RULES]
+      source_refs: [GLOSSARY, CLAIM_RULES]
 
     - id: DEF_ADMISSIBILITY
       type: definition

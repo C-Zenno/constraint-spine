@@ -32,7 +32,6 @@ A record is not an argument. It is the irreducible residue of a governed observa
 
 ## Source references
 
-- Signature Map: Claim → Receipt → Refusal → Continuation (docs/SIGNATURE_MAP.md)
 - Glossary term #38 (docs/glossary.md)
 - Claim Rules, Rule 5: "Receipts before expansion" (docs/CLAIM_RULES.md)
 

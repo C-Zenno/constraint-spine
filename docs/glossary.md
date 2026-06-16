@@ -135,10 +135,10 @@ A statement that hardens into implied authority or downstream dependence. Claims
 36) **Stop condition** — **[PUBLIC]** **[G]** *(see Claim Rules)*
 The explicit point at which claims must stop. Stop conditions are required language, not optional caution.
 
-37) **Narrative** — **[PUBLIC]** **[D]** *(see Signature Map)*
+37) **Narrative** — **[PUBLIC]** **[D]**
 Interpretation offered around a record. Narrative may exist, but governance does not depend on it.
 
-38) **Record** — **[PUBLIC]** **[P]** *(see Signature Map)*
+38) **Record** — **[PUBLIC]** **[P]**
 A bounded trace attached to a claim, preserving scope and absences without persuasion.
 
 39) **Governance primitive** — **[PUBLIC]** **[G]** *(see Claim Rules)*
@@ -195,7 +195,7 @@ The set of trajectories permitted under current admissibility constraints within
 
 ## Stack-aligned terms
 
-Vocabulary tokens made publicly visible by the Admissibility Stack view. Section headers in the stack remain section headers and are not promoted into doctrine primitives here.
+Vocabulary tokens made publicly visible by the Admissibility Reading Posture view. Section headers in the stack remain section headers and are not promoted into doctrine primitives here.
 
 53) **Identity** — **[PUBLIC]** **[P]**
 A primitive distinction the program tracks across admissible evolution. Identity is a continuation property characterized at the level of an observation window; it is not pointwise resemblance or instantaneous match. See also #8 Identity claim.
@@ -258,7 +258,7 @@ A conceptual label for whether a constraint can be sustained under bounded obser
 
 ## Side-branch terms (Learning Studies)
 
-The following terms are side-branch vocabulary made publicly visible by the Admissibility Stack view. They are not core admissibility primitives; they extend the framework into bounded learning under finite resolution.
+The following terms are side-branch vocabulary made publicly visible by the Admissibility Reading Posture view. They are not core admissibility primitives; they extend the framework into bounded learning under finite resolution.
 
 72) **Learning Studies** — **[PUBLIC]** **[D]** *(side branch)*
 A side-branch family that examines learning relative to admissibility discipline. Side-branch vocabulary; not a core admissibility primitive.

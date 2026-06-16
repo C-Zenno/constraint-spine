@@ -1,13 +1,13 @@
 ---
 Status: DRAFT
 Surface: CC (Declarative)
-Claim Ceiling: structural map only — no methods, no derivations
+Claim Ceiling: reading posture only — no methods, no derivations
 Authority: Observer-only | Non-authoritative | No directives
 ---
 
 # Spine Map
 
-Full structural map of the Constraint Spine repository.
+Full reading-posture index of the Constraint Spine repository.
 
 CRL-0 posture: this document is a **navigation aid**. It describes document
 relationships and reading dependencies. It does not introduce new claims,
@@ -23,7 +23,7 @@ methods, or authority.
 |---------|------|---------|-------|
 | Constraint Physics | Field front door | CRL-0 | Navigation pointers only — links to CC canon |
 | CC Lab (Compressed Consciousness Laboratory) | Upstream doctrine | CRL-0 | Scope, exclusions, vocabulary, reading order, papers, foundation notes |
-| ZOA (Zone of Avoidance) | Downstream application | OEL-1 | Use permissions, staged licensing, contracts, diagnostics |
+| ZOA (Zone of Avoidance) | Downstream application | OEL-1 | Use permissions, use-boundary posture, contracts, diagnostics |
 
 ## Governance principle
 

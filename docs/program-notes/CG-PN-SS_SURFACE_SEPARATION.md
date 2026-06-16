@@ -23,7 +23,7 @@ This note defines jurisdictional boundaries between surfaces. It introduces no m
 - Claim ceilings
 - Receiptable forms
 
-CC does not publish evaluators, rankings, or certification schemes.
+CC does not publish evaluators or rankings.
 
 ### ZOA Industries (ZOA) publishes:
 
@@ -37,9 +37,8 @@ ZOA does not publish standards, classifications, or ontological claims.
 
 ## 2. Explicit Negatives
 
-- No ZOA essay is a certification claim.
+- No ZOA essay is an authority claim.
 - No CC schema is a consciousness classifier.
-- No spectrum of minds is defined.
 - No ranking is implied.
 - No standard is proposed.
 

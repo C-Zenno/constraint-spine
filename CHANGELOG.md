@@ -9,7 +9,7 @@ All notable changes to the public spine are documented here.
 - `docs/foundation-notes/CG-FN-4_TRANSITION_AND_CARRY.md`, `docs/foundation-notes/CG-FN-4-5_BOUNDED_TRANSFER_DISTORTION_AS_CARRY_DISCIPLINE.md` — clarified CG-FN-4 and CG-FN-4.5 section 0.5 non-claims for Stage-0 public reading.
 - `docs/foundation-notes/CG-FN-4_TRANSITION_AND_CARRY.md`, `docs/foundation-notes/CG-FN-4-5_BOUNDED_TRANSFER_DISTORTION_AS_CARRY_DISCIPLINE.md` — compressed Governance Guardrails sections to paragraph form preserving substance; removed amplified excluded-object phrasing.
 - `docs/licenses/CRL-0.md` — Stage-0 posture made visible in title and posture line.
-- `docs/licenses/KINETICS-LABS-OEL-1.md` — added as plain-language posture pointer (not a legal license) for the Kinetics Labs downstream surface under OEL-1.
+- Added a downstream-surface posture pointer document (not a legal license).
 - `index.html` — Kinetics Labs surface card wording tightened ("empirical research posture; no operational or capability license"); CRL-0 deep-link sublabel notes Stage-0; KL posture pointer surfaced in license deep-link list.
 - `README.md`, `docs/index.md` — KL posture pointer exposed in license posture line and docs file list.
 - `docs/glossary.md` — aligned glossary with public Stack view by adding standalone definitions for newly visible core (#53-66), controlled (#67-71), and Learning Studies side-branch (#72-78) terms. No existing terms renumbered. No methods, thresholds, or operational definitions introduced.
@@ -59,7 +59,7 @@ All notable changes to the public spine are documented here.
 ## [public-spine-v0.10] — 2026-02-11
 
 ### Added
-- `docs/SPINE_MAP.md` — full structural map with PNG diagrams (rendered from Mermaid; source not included), subgraph legend, and dependency rule (CRL-0; navigation only)
+- `docs/SPINE_MAP.md` — reading-posture index with PNG diagrams (rendered from Mermaid; source not included), subgraph legend, and dependency rule (CRL-0; navigation only)
 - `README.md` — reader-flow PNG diagram (LR: README → index → posture/vocabulary/speech → ordering/canon)
 - `docs/index.md` — Spine Map added to start-here list (#7) and spine map file list
 
@@ -87,15 +87,14 @@ All notable changes to the public spine are documented here.
 - `docs/HIERARCHY.md` — claim-discipline ordering of primitives and dependent terms (CRL-0; vocabulary, not derivation)
 - `docs/glossary.md` — new term #41: "Hierarchy (Constraint Physics)"
 - `docs/index.md` — Hierarchy in start-here list and spine map
-- `README.md` — updated start-here list (9 items; added Claim Rules, Signature Map, Hierarchy; term count 21 → 41)
+- `README.md` — updated start-here list (term count 21 → 41).
 
 ## [public-spine-v0.5] — 2026-02-06
 
 ### Added
 - `docs/CLAIM_RULES.md` — 7 CRL-0 speech constraints (canonical home for claim rules)
-- `docs/SIGNATURE_MAP.md` — Claim → Receipt → Refusal → Continuation legibility map
-- `docs/glossary.md` — 8 new terms (#33–40): bounded observability, irreversibility, claim, stop condition, narrative, record, governance primitive, archive edition
-- `docs/index.md` — Claim Rules + Signature Map in start-here list and spine map
+- `docs/glossary.md` — 8 new terms (#33–40): bounded observability, irreversibility, claim, stop condition, narrative, record, governance primitive, archive edition.
+- `docs/index.md` — updated start-here list and spine map.
 
 ## [public-spine-v0.4] — 2026-02-06
 

@@ -141,7 +141,7 @@ This program explicitly refuses the following upgrades:
 
 - Recursion ≠ substrate
 - Recursion ≠ semantic awareness
-- Recursion ≠ verification or truth certification
+- Recursion ≠ verification or warrant of truth
 - Recursion ≠ prediction or determinism
 - Attractor language ≠ mechanism
 - Resolution ≠ probability, truth-likelihood, or consciousness scaling

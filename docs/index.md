@@ -18,12 +18,11 @@ This is not a product, not a control system, and not an operational playbook.
 2) **LICENSE POSTURE** — what is permitted and what is forbidden.
 3) **GLOSSARY** — controlled vocabulary (definitions without methods).
 4) **CLAIM RULES** — CRL-0 speech constraints governing what this channel will and will not publish.
-5) **SIGNATURE MAP** — the recurring legibility map (Claim → Receipt → Refusal → Continuation).
-6) **HIERARCHY** — claim-discipline ordering of primitives and dependent terms (vocabulary, not derivation).
-7) **SPINE MAP** — full structural map with document relationships and dependency edges.
-8) **PAPERS** — paper index linking to records (not rehosting instructions).
-9) **FOUNDATION NOTES** — jurisdictional clarifications (vocabulary + refusals only).
-10) **[SRL (Surface Readability Layer)](srl/README.md)** — machine-indexable canon overlay (definitions, invariants, refusals). Representation-only.
+5) **HIERARCHY** — claim-discipline ordering of primitives and dependent terms (vocabulary, not derivation).
+6) **SPINE MAP** — reading-posture index with document relationships and dependency edges.
+7) **PAPERS** — paper index linking to records (not rehosting instructions).
+8) **FOUNDATION NOTES** — jurisdictional clarifications (vocabulary + refusals only).
+9) **[SRL (Surface Readability Layer)](srl/README.md)** — machine-indexable canon overlay (definitions, invariants, refusals). Representation-only.
 
 ## What this repo is
 
@@ -47,7 +46,7 @@ Jurisdictional clarifications and interpretive constraints. No procedures, thres
 | CG-PN-2 | Hidden Structure, Projection, and Observable Boundaries | Published |
 | CG-PN-2.5 | Snapshot Resemblance, Persistence, and Identity Claims | Published |
 | CG-PN-SS | Surface Separation (CC ↔ ZOA) | Published |
-| CG-PN-3 | The Admissibility Stack | Published |
+| CG-PN-3 | Admissibility Reading Posture | Published |
 | CG-PN-3.5 | Constraint Load and Multiplicity | Published |
 
 See `docs/program-notes/` for full text.
@@ -67,30 +66,17 @@ Jurisdictional clarifications that define vocabulary and interpretive boundaries
 
 See `docs/foundation-notes/` for full text.
 
-## Schema
-
-Citeable claim forms and receipt requirements. No methods, no thresholds, no evaluators.
-
-| ID | Title | Status |
-|----|-------|--------|
-| CG-SR-0 | Descriptive Claim Schema | v0.1 |
-
-See `docs/schema/` for full text.
-
 ## Spine map
 
 - `docs/reading-order.md`
 - `docs/glossary.md`
 - `docs/CLAIM_RULES.md`
-- `docs/SIGNATURE_MAP.md`
 - `docs/HIERARCHY.md`
 - `docs/SPINE_MAP.md`
 - `docs/papers.md`
 - `docs/program-notes/` — Program Notes (jurisdictional clarifications)
 - `docs/foundation-notes/` — Foundation Note placeholders
 - `docs/licenses/CRL-0.md`
-- `docs/licenses/OEL-1.md`
-- `docs/licenses/KINETICS-LABS-OEL-1.md` — Kinetics Labs posture pointer (not a legal license)
 - `docs/faq.md`
 - `docs/srl/` — Surface Readability Layer (machine-indexable canon overlay)
 - `registry/DECISIONS/ADR-0008.md`

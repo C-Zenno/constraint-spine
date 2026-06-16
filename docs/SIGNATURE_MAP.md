@@ -1,20 +1,9 @@
----
-Status: DRAFT
-Surface: CC (Declarative)
-Claim Ceiling: legibility map only (no methods)
-Authority: Observer-only | Non-authoritative | No directives
-Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes
----
+# Reading Aid Placeholder
 
-# Signature Map (Non-technical)
+This path is not part of the current public CRL-0 reading surface.
 
-Constraint Physics uses one recurring map for legibility:
+The public Constraint Spine is narrowed for readability and contains papers, notes, controlled vocabulary, hierarchy, claim rules, and reading posture only.
 
-**Claim → Receipt → Refusal → Continuation**
+No additional public material is provided at this path.
 
-- **Claim** is constrained speech.
-- **Receipt** anchors the claim to bounded observability.
-- **Refusal** protects the boundary when pressure arrives.
-- **Continuation** remains conditional, never automatic.
-
-This map is descriptive. It is not a procedure.
+This placeholder exists only to preserve link continuity.

@@ -31,7 +31,7 @@ This note remains Stage-0: refusal-first, vocabulary-bound, non-mechanistic.
 2. Define **carry** as bounded preservation of receiptable structure across transition.
 3. Separate carry from identity, control, optimization, prediction, and authority.
 4. Establish irreversibility as a receipt constraint, not a metaphysical claim.
-5. Place transition and carry after Record -> Receipt -> Refusal -> Continuation.
+5. Place transition and carry within the public claim discipline established in CG-FN-3.
 6. Preserve the public-spine rule: receipts before reasons.
 
 ---

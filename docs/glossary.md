@@ -256,27 +256,27 @@ A conceptual label for whether a constraint can be sustained under bounded obser
 
 ---
 
-## Side-branch terms (Learning Studies)
+## Sub-lineage terms (Temporal Relational Substrate Series)
 
-The following terms are side-branch vocabulary made publicly visible by the Admissibility Reading Posture view. They are not core admissibility primitives; they extend the framework into bounded learning under finite resolution.
+The following terms are sub-lineage vocabulary for the Temporal Relational Substrate Series, made publicly visible by the Admissibility Reading Posture view. They present bounded-learning placement vocabulary under finite resolution.
 
-72) **Learning Studies** — **[PUBLIC]** **[D]** *(side branch)*
-A side-branch family that examines learning relative to admissibility discipline. Side-branch vocabulary; not a core admissibility primitive.
+72) **Temporal Relational Substrate Series** — **[PUBLIC]** **[G]** *(sub-lineage)*
+A sub-lineage family that examines learning relative to admissibility discipline. The series name controls catalog placement.
 
-73) **Object-first learning** — **[PUBLIC]** **[D]** *(side branch; see CG-P-0-B)*
-A side-branch posture treating objects as bounded, receiptable structures before explanation, prediction, or optimization. Claim discipline; not a learning algorithm, training procedure, or representation method.
+73) **Object-first learning** — **[PUBLIC]** **[D]** *(TRS sub-lineage; see CG-P-0-B)*
+A sub-lineage posture treating objects as bounded, receiptable structures before downstream explanation or prediction. It frames learning claims through object placement and admissibility discipline.
 
-74) **Situated object** — **[PUBLIC]** **[D]** *(side branch)*
-A side-branch concept for an object considered together with its declared frame and admissibility limits. Categorical; not a data structure or representation format.
+74) **Situated object** — **[PUBLIC]** **[D]** *(TRS sub-lineage)*
+A sub-lineage concept for an object considered together with its declared frame and admissibility limits.
 
-75) **Bounded frame** — **[PUBLIC]** **[D]** *(side branch; see CG-P-0-B)*
-A side-branch concept for the declared frame within which a situated object is observed. Structural; not a configuration file, scope variable, or context window.
+75) **Bounded frame** — **[PUBLIC]** **[D]** *(TRS sub-lineage; see CG-P-0-B)*
+A sub-lineage concept for the declared frame within which a situated object is observed.
 
-76) **Frame transit** — **[PUBLIC]** **[D]** *(side branch)*
-A side-branch concept for the structural condition of crossing frames within Learning Studies. Names a boundary; not a transition algorithm or routing rule.
+76) **Frame transit** — **[PUBLIC]** **[D]** *(TRS sub-lineage)*
+A sub-lineage concept for the structural condition of crossing frames within the Temporal Relational Substrate Series.
 
-77) **Carried object identity** — **[PUBLIC]** **[D]** *(side branch; see CG-P-0-B, CG-FN-4)*
-A side-branch concept for the condition under which an object's identity is carried across bounded frames. Categorical relation; not an identity-matching, similarity, or verification procedure.
+77) **Carried object identity** — **[PUBLIC]** **[D]** *(TRS sub-lineage; see CG-P-0-B, CG-FN-4)*
+A sub-lineage concept for the condition under which an object's identity is carried across bounded frames.
 
-78) **Transfer horizon** — **[PUBLIC]** **[D]** *(side branch; see CG-FN-4.5)*
-A side-branch concept for the declared limit beyond which transfer ceases to be claimable. Structural; not a distance metric, runtime budget, or rate constant.
+78) **Transfer horizon** — **[PUBLIC]** **[D]** *(TRS sub-lineage; see CG-FN-4.5)*
+A sub-lineage concept for the declared limit beyond which transfer ceases to be claimable.

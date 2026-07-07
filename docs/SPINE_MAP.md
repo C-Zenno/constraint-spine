@@ -32,3 +32,9 @@ Constraint Physics provides **field orientation** and points to CC as the
 authoritative source.
 
 Arrow directions indicate reading/inheritance dependencies, not authority flow.
+
+## Classification rules
+
+Artifact placement is described in
+[CLASSIFICATION_RULES.md](CLASSIFICATION_RULES.md): public-facing placement
+vocabulary for main-sequence and scoped-extension placement.

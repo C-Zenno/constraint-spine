@@ -4,6 +4,10 @@ All notable changes to the public spine are documented here.
 
 ## [vNext]
 
+### Added
+- `docs/foundation-notes/CG-FN-5_IDENTITY_AS_BOUNDED_SAMENESS_CLAIM.md` (new) - identity as the admissible sameness-claim receiptable under bounded passage.
+- `docs/index.md`, `docs/reading-order.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - FN-5 candidate navigation/index entries.
+
 ### Changed
 - `docs/CLASSIFICATION_RULES.md` (new) — public-facing placement vocabulary for main-sequence and scoped-extension placement.
 - `docs/SPINE_MAP.md` — classification-rules pointer section added after the governance principle.

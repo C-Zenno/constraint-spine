@@ -5,7 +5,7 @@
 # If this index conflicts with canonical documents, canonical documents prevail.
 
 srl_version: v0
-spine_tag: public-spine-v0.64
+spine_tag: public-spine-v0.67
 scope: CRL-0
 posture: observer-only / non-authoritative
 exclusions:
@@ -147,6 +147,14 @@ documents:
       source_path: docs/foundation-notes/CG-FN-4-5_BOUNDED_TRANSFER_DISTORTION_AS_CARRY_DISCIPLINE.md
       scope: CRL-0
       anchors: [bounded-transfer-distortion, object-first, receiving-frame, carry-discipline, refusal-grammar]
+
+    - id: CG-FN-5
+      title: "Identity as Bounded Sameness Claim"
+      type: fn
+      status: draft
+      source_path: docs/foundation-notes/CG-FN-5_IDENTITY_AS_BOUNDED_SAMENESS_CLAIM.md
+      scope: CRL-0
+      anchors: [identity, bounded-sameness-claim, passage, holder, custodian, projection-non-transfer, receipt-envelope, refusal]
 
   program_notes:
     - id: PN-2

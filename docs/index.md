@@ -63,6 +63,7 @@ Jurisdictional clarifications that define vocabulary and interpretive boundaries
 | CG-FN-3 | Admissibility as Claim Discipline | v0.2 |
 | CG-FN-4 | Transition and Carry | v0.1-draft |
 | CG-FN-4.5 | Bounded Transfer Distortion as Carry Discipline | v0.1-draft |
+| CG-FN-5 | Identity as Bounded Sameness Claim | foundation-note-seed |
 
 See `docs/foundation-notes/` for full text.
 

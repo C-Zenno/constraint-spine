@@ -7,8 +7,16 @@ All notable changes to the public spine are documented here.
 ### Added
 - `docs/foundation-notes/CG-FN-5_IDENTITY_AS_BOUNDED_SAMENESS_CLAIM.md` (new) - identity as the admissible sameness-claim receiptable under bounded passage.
 - `docs/index.md`, `docs/reading-order.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - FN-5 candidate navigation/index entries.
+- `docs/foundation-notes/CG-FN-6_PERSISTENCE_BEFORE_IDENTITY.md` (new, `v0.1-draft`) - persistence-before-identity claim dependency and persistence/receipt distinction.
+- `docs/index.md`, `docs/reading-order.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - FN-6 navigation/index entries.
 
 ### Changed
+- `CG-FN-0` through `CG-FN-5`, `CG-PN-2.5`, `CG-PN-3`, `CG-PN-3.5`, and `CG-PN-4` - disclosed canonical alignment separating continuation, carry, continuity, persistence, and identity.
+- `CG-FN-5` and `CG-FN-6` - normalized public Foundation Note status metadata to `v0.1-draft`.
+- `docs/CLAIM_RULES.md` - made continuation settlement explicitly claim-level and preserved the refusal that continuation does not establish carry.
+- `docs/glossary.md` and `docs/HIERARCHY.md` - aligned controlled vocabulary and claim-dependency ordering.
+- `docs/srl/DEFINITIONS/DEF_CONTINUITY.md` and `docs/srl/INVARIANTS/INV_CONTINUITY_AS_ADMISSIBLE_EXTENSION.md` - continuity projection advanced to SRL v1 and separated from persistence.
+- `docs/srl/CANON_INDEX.yml` and `index.html` - public spine tag pin advanced to `public-spine-v0.68`.
 - `docs/CLASSIFICATION_RULES.md` (new) — public-facing placement vocabulary for main-sequence and scoped-extension placement.
 - `docs/SPINE_MAP.md` — classification-rules pointer section added after the governance principle.
 - `docs/glossary.md` — sub-lineage section retitled from "Side-branch terms (Learning Studies)" to "Sub-lineage terms (Temporal Relational Substrate Series)"; #72 normalized under the series name; #73–#78 carried under TRS sub-lineage labels with public-facing placement wording.

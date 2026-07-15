@@ -53,9 +53,9 @@ Admissibility Studies defines claimability limits only.
 
 ## 1. Opening Axiom
 
-**Continuation claims do not carry by default. They carry by permission.**
+**Continuation is not carry. At the level of claim discipline, a continuation claim is permitted or refused.**
 
-Here, "permission" names the condition under which a continuation claim may remain legitimately carried under bounded observation. It does not name command, control, enforcement, or runtime authorization.
+Here, "permission" names the claim that sufficient declared structure remains available for carry through bounded passage. It does not establish that carry occurred, and it does not name command, control, enforcement, or runtime authorization.
 
 This note concerns the discipline under which such permission may be claimed.
 
@@ -76,7 +76,7 @@ It asks:
 - what may be asserted,
 - what must precede assertion,
 - what must remain receiptable,
-- and when continuation must be refused.
+- and when a continuation claim must be refused.
 
 Admissibility therefore governs claimability, not ontology and not implementation.
 
@@ -92,9 +92,9 @@ The discipline is not sequential, procedural, or exhaustive. It is a constraint 
 
 ---
 
-## 4. Continuation Is Binary
+## 4. Continuation Claims Are Binary
 
-Continuation, at the level of claim discipline, is binary: **carried or refused**.
+At the level of claim discipline, a continuation claim is **permitted or refused**. Continuation does not establish that carry occurred.
 
 Gradation belongs to record quality, observation limits, or regime description — not to continuation itself.
 
@@ -118,7 +118,7 @@ A continuation may therefore remain permitted while multiple admissible trajecto
 
 Multiplicity may exist before settlement. The claim does not.
 
-The decision of continuation is binary. The resulting claim is singular.
+The continuation-claim decision is binary. The resulting claim is singular.
 
 Only singular claims can be receipted.
 
@@ -204,7 +204,7 @@ This note defines the discipline under which continuation claims remain legitima
 Together:
 
 - FN-0: What can be claimed.
-- FN-1: How persistence is structured.
+- FN-1: When a continuation claim is permitted or refused.
 - FN-2: What bounds persistence.
 - FN-3: When claims remain legitimate.
 
@@ -283,3 +283,4 @@ Foundation Notes use **CG-FN** identifiers.
 |---------|---------|
 | v0.1 | Initial draft |
 | v0.2 | Opening axiom tightened to claim-level; refusal language tightened; Related Documents, How to Cite, and Changelog sections added |
+| v0.3 | Canonical terminology alignment: a continuation claim is permitted or refused; continuation does not establish carry. |

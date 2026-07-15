@@ -1,5 +1,5 @@
 ---
-Status: foundation-note-seed
+Status: v0.1-draft
 Surface: CC (Declarative)
 Claim Ceiling: vocabulary + refusal boundaries only (no methods)
 Authority: Observer-only | Non-authoritative | No directives
@@ -9,9 +9,9 @@ Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes, m
 # CG-FN-5 - Identity as Bounded Sameness Claim
 **Foundation Note (Stage-0 / observer-only / non-authoritative)**
 
-**Status:** Foundation Note
+**Status:** v0.1-draft
 **Series:** Constraint Geometry (CG) - Foundation Notes
-**Subtitle:** *Continuity, passage, and refusal under bounded observation*
+**Subtitle:** *Persistence, passage, and refusal under bounded observation*
 
 ---
 
@@ -27,7 +27,7 @@ Defines identity as the admissible sameness-claim that remains receiptable under
 
 CG-FN-5 depends on CG-FN-4 for transition and carry vocabulary, and is constrained by CG-FN-4.5 where receiving frames may distort what becomes visible, omitted, emphasized, named, or claimable.
 
-CG-FN-5 does not revise CG-PN-2.5. PN-2.5 remains the program-level refusal of snapshot resemblance as identity. FN-5 defines the foundation-level sameness-claim discipline required after passage.
+CG-FN-5 inherits the program-level refusal of snapshot resemblance as identity from CG-PN-2.5. Under the 2026-07 canonical alignment, both notes treat identity as depending on supported persistence rather than as a continuation claim.
 
 ---
 
@@ -35,19 +35,19 @@ CG-FN-5 does not revise CG-PN-2.5. PN-2.5 remains the program-level refusal of s
 
 Identity is not continuity itself.
 
-Continuity may survive beyond view. Identity is the admissible sameness-claim that remains receiptable from continuity after bounded passage.
+Continuity may relate states across passage without establishing persistence. Identity is the admissible sameness-claim that may be supported over receipted persistence after bounded passage.
 
-Identity does not ask what the object ultimately is. Identity asks what sameness claim remains admissible after passage.
+An identity claim does not settle what the object ultimately is. It concerns what bounded distinction may still legitimately be called the same after passage.
 
 ---
 
 ## Seed Definition
 
-Identity is the admissible sameness-claim that remains receiptable from continuity after bounded passage.
+Identity is the admissible sameness-claim that may be supported over receipted persistence after bounded passage.
 
 Expanded form:
 
-Identity is the bounded sameness-claim that can still be carried after continuity passes through a bounded view, transition, custody path, record surface, role surface, receiving frame, or projection surface.
+Identity is the bounded sameness-claim that may become admissible over supported persistence after passage under declared bounds.
 
 ---
 
@@ -55,7 +55,7 @@ Identity is the bounded sameness-claim that can still be carried after continuit
 
 Identity is not persistence alone.
 
-Identity is persistence under claim discipline.
+Identity is a bounded sameness-claim over supported persistence.
 
 The word "same" is admissible only inside declared receipt bounds.
 
@@ -80,7 +80,7 @@ A sameness claim is bounded by what remains same, under what passage envelope, a
 
 ## Holder / Custodian Distinction
 
-Holder names the continuity-bearing layer to which the identity claim is attributed.
+Holder names the bounded object to which the identity claim is attributed.
 
 Custodian names a temporary or bounded carrier of the surface, record, role, artifact, custody path, or projection through which identity evidence may pass.
 
@@ -108,13 +108,13 @@ Projection is not transfer. An identity may appear through another surface witho
 Record supports identity claims but does not exhaust identity.
 
 **A6. Holder Non-Substitution**
-Holder continuity is not substituted by witness, role, custodian, surface, audience, file, institution, model, or projection.
+Holder attribution is not substituted by witness, role, custodian, surface, audience, file, institution, model, or projection.
 
 **A7. Refusal Closure**
 When the receipt envelope no longer supports the sameness claim at the asserted strength, the admissible stance is demotion, non-settlement, or refusal.
 
 **A8. Continuity Distinction**
-Identity is not the survival of total continuity. Identity is the admissible sameness-claim that remains bounded after passage.
+Identity is not continuity. Continuity relates states across passage; identity is the bounded sameness-claim that may be supported over persistence after passage.
 
 ---
 
@@ -165,7 +165,7 @@ Collapse is reached only when no bounded sameness-claim remains receiptable unde
 | Not identity               | Relation to identity                                                            |
 | -------------------------- | ------------------------------------------------------------------------------- |
 | Appearance                 | Surface through which identity becomes visible; not the identity-system.        |
-| Continuity                 | Broader persistence field; identity is the bounded sameness-claim made from it. |
+| Continuity                 | Bounded relation across passage; it does not itself establish persistence.      |
 | Memory                     | Support record; not the whole identity.                                         |
 | Record                     | Carries identity claims; does not exhaust identity.                             |
 | Role                       | Function assigned during passage; role-change is not collapse.                  |
@@ -238,6 +238,14 @@ Listing a surface here records non-activation only. It is not a roadmap, depende
 
 ---
 
+## Revision History
+
+| Revision | Changes |
+|---|---|
+| 2026-07 canonical alignment | Replaced identity-from-continuity wording with identity over supported persistence; preserved passage, receipt, and refusal boundaries. |
+
+---
+
 ## Catalog Hygiene Lock
 
 Reserve:
@@ -259,11 +267,11 @@ Do not:
 
 Identity is not continuity itself.
 
-Continuity may survive beyond view. Identity is the admissible sameness-claim that remains receiptable from continuity after bounded passage.
+Continuity may relate states across passage without establishing persistence. Identity is the admissible sameness-claim that may be supported over receipted persistence after bounded passage.
 
-Identity does not ask what the object ultimately is.
+An identity claim does not settle what the object ultimately is.
 
-Identity asks what sameness claim remains admissible after passage.
+It concerns what bounded distinction may still legitimately be called the same after passage.
 
 Projection is not transfer.
 Custody is not holder-substitution.

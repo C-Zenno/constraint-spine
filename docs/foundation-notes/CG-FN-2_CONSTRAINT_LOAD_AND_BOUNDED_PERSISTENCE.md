@@ -97,7 +97,7 @@ Constraint load bounds:
 
 - which distinctions remain reassertable,
 - which continuation regimes remain admissible,
-- which identity claims can persist under evolution.
+- which identity claims can remain admissible over supported persistence.
 
 Increasing constraint load narrows admissible continuation classes.
 
@@ -130,8 +130,8 @@ Governance systems may instantiate these patterns.
 Together:
 
 - **FN-0:** What can be claimed.
-- **FN-1:** How persistence is structured.
-- **FN-2:** What bounds persistence.
+- **FN-1:** When a continuation claim is permitted or refused.
+- **FN-2:** What bounds reassertable structure and persistence claims.
 
 ---
 
@@ -191,3 +191,4 @@ This note defines vocabulary and refusal boundaries only.
 |---------|---------|
 | v0.1 | Initial upstream-locked draft |
 | v0.2 | Vocabulary aligned with FN-0 ("reassertable"); causal language tightened; Receipts + Related + Changelog sections added |
+| v0.3 | Canonical terminology alignment: continuation remains distinct from persistence; identity depends on supported persistence. |

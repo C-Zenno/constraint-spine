@@ -18,7 +18,7 @@ They continue by permission.**
 Continuation is therefore not an assumption about the world.
 It is a **claim class** about whether a trajectory may be extended.
 
-In earlier notes we established that continuation is binary:
+In earlier notes we established that a continuation claim is binary:
 
 * continuation permitted
 * continuation refused
@@ -68,7 +68,7 @@ where admissible continuation depends on the system's current ability to:
 * retain structural continuity
 * route interaction
 * preserve authority boundaries
-* maintain continuity of identity
+* maintain the support required for bounded identity claims
 
 Admissible space therefore expands or contracts with continuity capacity rather than with component count.
 
@@ -141,9 +141,9 @@ Multiplicity does not alter the fundamental rule.
 
 A manifold of admissible trajectories may exist prior to settlement.
 
-**The decision of continuation is binary: permitted or refused.**
+**At the level of claim discipline, a continuation claim is permitted or refused. Continuation does not establish that carry occurred.**
 
-When continuation is permitted, settlement selects one trajectory.
+When a continuation claim is permitted, settlement selects one trajectory.
 
 **The resulting claim remains singular.**
 
@@ -155,7 +155,7 @@ Only singular claims can be receipted.
 
 Constraint load reveals the boundaries of admissibility before those boundaries move.
 
-Multiplicity appears when continuation remains permitted but no longer remains unique at the active resolution.
+Multiplicity appears when a continuation claim remains permitted but no longer remains unique at the active resolution.
 
 Settlement occurs when the manifold collapses into a trajectory that can be claimed.
 
@@ -178,8 +178,8 @@ It is a governed act.**
 
 ## Relationship to Prior Notes
 
-- **CG-FN-0** — What can be claimed (claimability, admissible time, identity)
-- **CG-FN-1** — How persistence is structured (continuation regimes, closure)
+- **CG-FN-0** — What can be claimed (claimability, admissible time, identity over supported persistence)
+- **CG-FN-1** — When a continuation claim is permitted or refused (continuation regimes, closure)
 - **CG-FN-2** — What bounds persistence (constraint load, capacity, burden)
 - **This note** — How admissible space changes under constraint load (dynamic region, multiplicity, disturbance projection)
 
@@ -195,3 +195,4 @@ It is a governed act.**
 | v0.4 | Vocabulary tightening: "pressure" → "constraint load" throughout. Title updated. Removes instrumentation connotation while preserving structural meaning. |
 | v0.5 | Vocabulary tightening: "coherence/coherent" → "structural continuity/continuity capacity" throughout. Removes measurability connotation. |
 | v0.6 | Section 7 rewritten: three-layer separation (multiplicity / binary decision / singular claim). Added "Only singular claims can be receipted." Resolves binary/singular paradox. |
+| v0.7 | Canonical terminology alignment: removed continuity-of-identity wording and aligned FN-1 with availability-for-carry continuation. |

@@ -18,33 +18,41 @@ This Program Note is jurisdictional. It clarifies how identity and persistence c
 
 ## Purpose
 
-To prevent a common interpretive error: upgrading **snapshot resemblance** into **identity**. This note formalizes the program's stance that identity is a continuation claim, not a pointwise claim.
+To prevent a common interpretive error: upgrading **snapshot resemblance** into **identity**. This note formalizes the program's stance that identity depends on supported persistence under declared bounds, not pointwise resemblance.
 
 ---
 
 ## Interpretive Distinctions
 
-**Identity / Persistence (Continuation Claim)** — an identity claim asserts that a system's structure is carried across admissible evolution, not merely matched at an instant.
+**Identity Over Supported Persistence** — an identity claim is the bounded sameness-claim that may become admissible where a declared distinction remains supportable after passage under stated bounds.
 
-**Snapshot / Pointwise Resemblance (Instant Claim)** — a snapshot claim asserts resemblance at a time index. It may preserve apparent structure, but it does not, by itself, carry continuation.
+**Snapshot / Pointwise Resemblance (Instant Claim)** — a snapshot claim asserts resemblance at a time index. It may preserve apparent structure, but it does not, by itself, establish continuation, persistence, or identity.
 
 ---
 
 ## Interpretive Constraint
 
-Pointwise resemblance is **not sufficient** to establish identity. Identity is characterized as a property of persistence over observation windows, not as proximity at a single time.
+Pointwise resemblance is **not sufficient** to establish identity. Identity is a bounded sameness-claim over supported persistence, not proximity at a single time.
 
 ---
 
 ## Refusal (Non-negotiable)
 
-The program refuses any interpretation that upgrades snapshot similarity into identity, continuity, or persistence. When continuation cannot be carried, snapshot fidelity is treated as **undefined for identity purposes**.
+The program refuses any interpretation that upgrades snapshot similarity into identity, continuity, or persistence. When persistence cannot be supported under declared bounds, snapshot fidelity remains **insufficient for identity purposes**.
 
 ---
 
 ## Interpretive Significance
 
-Many downstream confusions originate from treating "nearby state," "matched magnitude," or "projected back into a library" as equivalent to persistence. This note does not evaluate those moves; it only clarifies the jurisdictional rule: identity is characterized at the level of continuation, not at the level of instantaneous resemblance.
+Many downstream confusions originate from treating "nearby state," "matched magnitude," or "projected back into a library" as equivalent to persistence. This note does not evaluate those moves; it only clarifies the jurisdictional rule: identity depends on supported persistence, not instantaneous resemblance.
+
+---
+
+## Revision History
+
+| Revision | Changes |
+|---|---|
+| 2026-07 canonical alignment | Removed identity-as-continuation wording; aligned identity with supported persistence while preserving the snapshot refusal. |
 
 ---
 
@@ -54,4 +62,4 @@ This note belongs to **CC** because it constrains interpretation and claim meani
 
 ---
 
-**Identity claims require persistence under admissible evolution; pointwise resemblance alone is insufficient.**
+**Identity claims require supported persistence under declared bounds; pointwise resemblance alone is insufficient.**

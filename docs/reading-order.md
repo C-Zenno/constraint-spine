@@ -42,4 +42,7 @@ Foundation Notes should be read after the boundary-first paper sequence and lice
 4) CG-FN-3 - admissibility as claim discipline
 5) CG-FN-4 - transition and carry
 6) CG-FN-4.5 - bounded transfer distortion as carry discipline
-7) CG-FN-5 - identity as bounded sameness claim
+7) CG-FN-6 - persistence before identity
+8) CG-FN-5 - identity as bounded sameness claim
+
+FN-6 is numbered after FN-5 because it was published later. It is read first here because publication order does not determine claim dependency.

@@ -32,5 +32,5 @@ They are **distinct from the Five Axioms**, which are structural statements pres
 6. **Refusal is not negotiable.**
    If a boundary is declared, refusal must remain available without exception.
 
-7. **Continuation is conditional.**
-   Continuation is allowed only within declared bounds and with an explicit stop condition.
+7. **Continuation claims are conditional.**
+   A continuation claim is permitted only within declared bounds and with an explicit stop condition.

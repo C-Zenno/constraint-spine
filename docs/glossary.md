@@ -40,19 +40,19 @@ A statement that observation and representation occur with limited granularity (
 A declared exclusion region: what claims are forbidden, what is refused, and what cannot be upgraded.
 
 6) **Continuation** — **[PUBLIC]** **[P]**
-The binary allowance for a claim to remain within a declared regime without expanding scope. Continuation is permitted or refused.
+The claim that sufficient declared structure remains available for carry through bounded passage. At the level of claim discipline, a continuation claim is permitted or refused. Continuation does not establish that carry occurred.
 
 7) **Refusal** — **[PUBLIC]** **[P]**
 A permitted outcome where the system declines to produce an output or declines to extend claims beyond allowed scope.
 
-8) **Identity claim** — **[PUBLIC]** **[D]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
-A continuation claim: it asserts that a declared distinction remains repeatable across an observation window under admissible evolution (within declared bounds and view perturbations), rather than being matched at a single index. Identity is persistence under bounds, not proximity at an instant.
+8) **Identity claim** — **[PUBLIC]** **[D]** *(see CG-PN-2.5; see also CG-FN-5 and CG-FN-6)*
+A bounded sameness-claim that may become admissible over supported persistence under declared bounds. Identity is not pointwise resemblance, continuation, continuity, or persistence alone.
 
 9) **Snapshot** — **[PUBLIC]** **[D]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
-An instant claim. A snapshot may exhibit pointwise resemblance at a time index under a particular view, but it does not, by itself, carry continuation across a window.
+An instant claim. A snapshot may exhibit pointwise resemblance at a time index under a particular view, but it does not, by itself, establish continuation, persistence, or identity.
 
 10) **Snapshot-to-identity prohibition** — **[PUBLIC]** **[D]** *(see CG-PN-2.5; see also CG-FN-1 for continuation regimes)*
-The program refuses any interpretation that upgrades snapshot resemblance into identity, continuity, or persistence. When continuation cannot be carried (or cannot be made receiptable within declared bounds), snapshot resemblance is undefined for identity purposes.
+The program refuses any interpretation that upgrades snapshot resemblance into identity, continuity, or persistence. When persistence cannot be supported under declared bounds, snapshot resemblance remains insufficient for identity purposes.
 
 11) **Regime** — **[PUBLIC]** **[P]**
 A region of behavior or stability defined by what remains structurally continuous under finite resolution, without specifying the underlying mechanism.
@@ -61,7 +61,7 @@ A region of behavior or stability defined by what remains structurally continuou
 A controlled technical parent term for how strongly a system holds together under perturbation and limited observation. Public surfaces should generally use *structural continuity* as the non-operational synonym unless a bounded technical bridge is explicitly required. No operational measure is defined here.
 
 12a) **Structural continuity** — **[PUBLIC]** **[D]**
-The public, non-operational rendering of controlled coherence language. Structural continuity describes whether a structure remains held together, carryable, or persistence-compatible under perturbation and limited observation. It defines no metric, score, threshold, or measurement procedure. Use this term on public doctrine and ZOA framework surfaces when no operational definition is intended.
+The public, non-operational rendering of controlled coherence language. Structural continuity describes whether relations among states or configurations remain composable across bounded passage under perturbation and limited observation. It does not by itself establish persistence. It defines no metric, score, threshold, or measurement procedure. Use this term on public doctrine and ZOA framework surfaces when no operational definition is intended.
 
 13) **Deviation** — **[CONTROLLED]** **[D]**
 A categorical notion of drift relative to a reference structure. No computation rules are defined here.
@@ -103,16 +103,16 @@ Any change that could expand scope, weaken exclusions, or enable operational inf
 Evolution of a system that remains within declared admissibility constraints. Identity and persistence are defined with respect to admissible evolution, not arbitrary state change.
 
 26) **Persistence** — **[PUBLIC]** **[P]** *(see CG-PN-2.5)*
-The structural property of being carried across admissible evolution over an observation window. Persistence is what distinguishes an identity claim from a snapshot claim. It is not proximity, similarity, or matching at an instant.
+A declared distinction that remains supportable and reassertable after passage under stated bounds. Persistence is not proximity, similarity, matching at an instant, or identity.
 
 27) **Observation window** — **[PUBLIC]** **[P]** *(see CG-PN-2.5)*
-A declared interval (temporal, sequential, or parametric) over which continuation and persistence are evaluated. Identity claims are characterized at the level of observation windows, not at single time indices.
+A declared interval (temporal, sequential, or parametric) within which passage claims are bounded. Identity claims depend on supported persistence across such bounds, not on a single time index.
 
 28) **Pointwise resemblance** — **[PUBLIC]** **[D]** *(see CG-PN-2.5)*
-Resemblance at a single time index or instant. Pointwise resemblance may preserve apparent structure but does not, by itself, carry continuation. Synonym: snapshot resemblance. See *Snapshot* (#9) and *Snapshot-to-identity prohibition* (#10).
+Resemblance at a single time index or instant. Pointwise resemblance may preserve apparent structure but does not, by itself, establish continuation, persistence, or identity. Synonym: snapshot resemblance. See *Snapshot* (#9) and *Snapshot-to-identity prohibition* (#10).
 
 29) **Continuation regime** — **[PUBLIC]** **[D]** *(see CG-FN-1)*
-A declared region of behavior within which continuation is permitted. Regimes are characterized by what remains structurally continuous, not by what is computed or optimized.
+A declared region of behavior within which sufficient declared structure may remain available for carry and a continuation claim may be permitted. A continuation regime does not establish carry, continuity, persistence, or identity.
 
 30) **Closure (under admissible iteration)** — **[PUBLIC]** **[D]** *(see CG-FN-1)*
 The property that repeated application of admissible evolution does not exit the declared regime. Closure is a structural constraint, not a verification procedure.
@@ -152,14 +152,14 @@ A field-level ordering of primitives and dependent terms used to discipline clai
 - **Time** (constrained substrate; bookkeeps admissible ordering under finite resolution)
 - **Space / geometry** (relational structure)
 - **Boundary + admissibility** (constraints on persistence/change under finite resolution)
-- **Continuity** (minimal persistence condition under which ordering remains composable across admissible evolution)
+- **Continuity** (bounded relation among states or configurations through which ordering remains composable across admissible passage)
 - **Energy** (cost label for admissible change)
 - **Mass** (stable persistence mode; non-primitive label)
 - **Gravity / curvature** (effective geometric response associated with stable persistence)
 - **Measurement / record** (boundary-coupling event; finite resolution; irreversibility of record)
 
 42) **Continuity** — **[PUBLIC]** **[P]** *(see docs/HIERARCHY.md)*
-The minimal persistence condition under which admissible ordering remains composable across admissible evolution. Continuity is a claim condition on composability, not a smoothness assumption or a mechanism.
+The bounded relation among states or configurations across passage under which admissible ordering remains composable. Continuity does not by itself establish persistence, identity, smoothness, or a mechanism.
 
 43) **Boundary Fixture** — **[PUBLIC]** **[D]**
 A domain where admissibility boundaries are known to exist, used as a structural stress test for claim language. No solving posture. Not a target; a reference fixture.
@@ -198,7 +198,7 @@ The set of trajectories permitted under current admissibility constraints within
 Vocabulary tokens made publicly visible by the Admissibility Reading Posture view. Section headers in the stack remain section headers and are not promoted into doctrine primitives here.
 
 53) **Identity** — **[PUBLIC]** **[P]**
-A primitive distinction the program tracks across admissible evolution. Identity is a continuation property characterized at the level of an observation window; it is not pointwise resemblance or instantaneous match. See also #8 Identity claim.
+A bounded sameness-claim that may become admissible over supported persistence under declared bounds. Identity is not pointwise resemblance, continuation, continuity, or persistence alone. See also #8 Identity claim.
 
 54) **Memory** — **[PUBLIC]** **[P]**
 A primitive distinction describing the structural condition under which past content remains carryable into a later observation. The term is a vocabulary token; no storage mechanism, retrieval procedure, or capacity claim is implied.
@@ -276,7 +276,15 @@ A sub-lineage concept for the declared frame within which a situated object is o
 A sub-lineage concept for the structural condition of crossing frames within the Temporal Relational Substrate Series.
 
 77) **Carried object identity** — **[PUBLIC]** **[D]** *(TRS sub-lineage; see CG-P-0-B, CG-FN-4)*
-A sub-lineage concept for the condition under which an object's identity is carried across bounded frames.
+A sub-lineage concept for the condition under which a bounded identity claim remains supportable across bounded frames.
 
 78) **Transfer horizon** — **[PUBLIC]** **[D]** *(TRS sub-lineage; see CG-FN-4.5)*
 A sub-lineage concept for the declared limit beyond which transfer ceases to be claimable.
+
+---
+
+## Revision History
+
+| Revision | Changes |
+|---|---|
+| 2026-07 canonical alignment | Aligned continuation, continuity, persistence, and identity with the claim-dependency separation consolidated in CG-FN-6. |

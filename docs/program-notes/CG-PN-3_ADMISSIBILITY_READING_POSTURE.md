@@ -13,7 +13,7 @@ Date: March 2026
 
 *Permission, not inertia.*
 
-This note is not a paper. It introduces no evaluators, thresholds, methods, or operational criteria. It maps the structural conditions under which claims of continuation remain well-formed.
+This note is not a paper. It introduces no evaluators, thresholds, methods, or operational criteria. It maps the structural conditions under which sufficient declared structure may remain available for carry and a continuation claim may be permitted.
 
 **Track:** Admissibility Studies (AS)
 **Program:** The Constraint Program
@@ -45,7 +45,7 @@ This reading posture does not evaluate systems. It disciplines the conditions un
 
 The reading posture begins by fixing three primitives that must not be collapsed:
 
-**Identity** — A claim about admissible continuation of a system.
+**Identity** — A bounded sameness-claim that may become admissible over supported persistence.
 
 **Memory** — Persistence of encoded state.
 
@@ -53,7 +53,7 @@ The reading posture begins by fixing three primitives that must not be collapsed
 
 These primitives are structurally distinct.
 
-Identity requires continuity. Memory requires encoded persistence. Record requires boundary coupling.
+Identity requires supported persistence. Memory requires encoded persistence. Record requires boundary coupling.
 
 A system may retain traces without possessing memory, emit records without preserving identity, or preserve identity while exchanging its constituents.
 
@@ -65,7 +65,7 @@ None of the three are equivalent.
 
 Each primitive is governed by a distinct relation.
 
-**Continuity** governs identity. Identity is not sameness of material components but the admissible extension of a trajectory.
+**Persistence** governs identity claims. Identity is not sameness of material components but a bounded sameness-claim over what remains supportable after passage.
 
 **Encoded persistence** governs memory. Memory concerns the stability of internal state under coupling.
 
@@ -91,9 +91,9 @@ Together these invariants define the limits within which persistence can remain 
 
 Within those limits, the reading posture disciplines the claims that may be asserted.
 
-**Continuation** — Continuation is primitive and binary: either continuation is permitted or it is not.
+**Continuation** — Continuation concerns whether sufficient declared structure remains available for carry through bounded passage. At the level of claim discipline, a continuation claim is permitted or refused. Continuation does not establish that carry occurred.
 
-**Unitarity** — If continuation is permitted, unitarity asks whether the admissible extension is unique.
+**Unitarity** — If a continuation claim is permitted, unitarity asks whether the admissible extension is unique.
 
 **Ontic vs epistemic order** — The order of receipts does not determine ontic precedence. What can be observed does not exhaust what may exist.
 
@@ -144,6 +144,14 @@ Two costs appear:
 **Constraint affordability** — A system remains defined at a given resolution only insofar as it can sustain the costs required to maintain its boundary and internal state.
 
 Persistence therefore selects for affordable boundaries.
+
+---
+
+## Revision History
+
+| Revision | Changes |
+|---|---|
+| 2026-07 canonical alignment | Aligned continuation with availability for carry and identity with supported persistence. |
 
 ---
 

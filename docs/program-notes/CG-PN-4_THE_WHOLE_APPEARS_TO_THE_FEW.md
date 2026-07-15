@@ -174,7 +174,7 @@ A constrained projection may appear continuous across a bounded window.
 
 That does not establish continuity of the whole.
 
-Continuity claims require admissible evolution and receiptable persistence under declared bounds.
+A continuity claim concerns the bounded relation among states or configurations across passage. It does not establish persistence of the whole.
 
 A projected appearance may support a local continuity claim.
 It does not automatically support a global one.
@@ -187,7 +187,7 @@ A constrained projection may resemble the whole or resemble another projection.
 
 Resemblance is not identity.
 
-Identity requires persistence under admissible evolution, not pointwise similarity or surface likeness.
+Identity requires supported persistence under declared bounds, not pointwise similarity or surface likeness.
 
 This note therefore inherits the snapshot-to-identity refusal established in CG-FN-0.
 
@@ -252,3 +252,4 @@ Program Notes use **CG-PN** identifiers.
 | Version | Changes |
 |---------|---------|
 | v0.1 | Initial draft; defines constrained projection, "the few," and refusal against whole-claim inflation |
+| v0.2 | Canonical terminology alignment: continuity is relational across passage; identity depends on supported persistence. |

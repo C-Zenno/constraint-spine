@@ -29,7 +29,7 @@ This note remains Stage-0: refusal-first, vocabulary-bound, non-mechanistic.
 
 1. Define **transition** as a boundary-crossing claim, not an action primitive.
 2. Define **carry** as bounded preservation of receiptable structure across transition.
-3. Separate carry from identity, control, optimization, prediction, and authority.
+3. Separate continuation, carry, continuity, persistence, and identity while preserving the refusal of control, optimization, prediction, and authority upgrades.
 4. Establish irreversibility as a receipt constraint, not a metaphysical claim.
 5. Place transition and carry within the public claim discipline established in CG-FN-3.
 6. Preserve the public-spine rule: receipts before reasons.
@@ -76,7 +76,7 @@ Transition is therefore not movement-as-authority. It is a receiptable boundary-
 
 Carry names the bounded preservation of a structure across transition.
 
-Carry is not identity. It does not mean that the same system, person, object, authority, or capability persists. It means that a declared structure remains sufficiently receiptable, under declared bounds, for a limited continuation claim to be made.
+Carry is not identity. It does not mean that the same system, person, object, authority, or capability persists. It means that bounded evidence supports a claim that declared structure remained receiptable across the crossing. Any further persistence or identity claim remains separately bounded by its own support.
 
 A carry claim minimally requires:
 
@@ -108,22 +108,32 @@ Irreversibility is why transition requires bounded receipt at the point of claim
 
 ---
 
-## 5. Carry Is Not Continuation by Default
+## 5. Continuation Is Not Carry
 
-Continuation claims do not carry by default. They carry by permission under admissibility discipline.
+Continuation concerns whether sufficient declared structure remains available for carry through bounded passage. At the level of claim discipline, a continuation claim is permitted or refused. Continuation does not establish that carry occurred.
 
-Carry may support a continuation claim, but it does not guarantee one. A structure can be carried without preserving identity, authority, capability, intent, interpretation, or legitimacy.
+Carry concerns what remains receiptable across a claimed crossing. Availability for carry is not evidence that carry occurred.
 
 The program therefore separates:
 
 | Term | Claim |
 |------|-------|
 | Transition | A boundary crossing is being claimed |
-| Carry | A bounded structure remains receiptable across the crossing |
-| Continuation | A claim of persistence remains legitimate |
-| Identity | A stronger claim that is not granted by carry alone |
+| Continuation | Sufficient declared structure remains available for carry; the claim is permitted or refused |
+| Carry | Bounded structure remains receiptable across the crossing |
+| Continuity | A bounded relation holds among states or configurations across passage |
+| Persistence | A declared distinction remains supportable and reassertable after passage |
+| Identity | A bounded sameness-claim may be admissible over supported persistence |
 
-Carry may be necessary for some continuation claims. It is not sufficient by itself.
+These are claim distinctions, not operational stages.
+
+Continuation does not establish continuity.
+
+Continuity does not establish persistence.
+
+Persistence does not establish identity.
+
+Identity does not retroactively produce what persisted.
 
 ---
 
@@ -179,7 +189,7 @@ Stage-0 transition and carry claims must remain receiptable in principle:
 - carried structure must be bounded,
 - exclusions must be explicit,
 - refusal must remain available,
-- later continuation claims must not exceed the carry receipt.
+- later persistence or identity claims remain bounded by the carry receipt.
 
 This note does not mandate a receipt schema. It mandates that transition and carry language cannot be used without declared observation bounds.
 
@@ -235,3 +245,4 @@ Foundation Notes use **CG-FN** identifiers.
 | v0.1-draft | Initial draft |
 | v0.49 | compressed §0.5 non-claims to single paragraph for Stage-0 public reading. |
 | v0.51 | compressed Governance Guardrails to paragraph form; substance preserved. |
+| v0.52 | Canonical terminology alignment: continuation is availability for carry; continuity, persistence, and identity remain distinct downstream claims. |

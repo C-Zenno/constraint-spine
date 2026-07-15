@@ -5,7 +5,7 @@
 **Posture:** Stage-0 / observer-only / non-authoritative / non-predictive
 **Claim Ceiling:** admissibility classes + refusal boundaries only
 **Authority:** vocabulary + exclusions; no procedures, no scoring, no verification methods
-**Exclusions:** no domain anchoring; no mechanism import; no semantic authority; no identity upgrades without bounded continuation
+**Exclusions:** no domain anchoring; no mechanism import; no semantic authority; no identity upgrades from continuation alone
 
 ---
 
@@ -25,10 +25,10 @@ Compatible with Stage-0 posture: **observer-only, refusal-first, non-authoritati
 
 ## Purpose
 
-1. Define continuation as a claim class carried across admissible evolution.
+1. Define continuation as a permitted-or-refused availability-for-carry claim under bounded evolution.
 2. Define recursion as closure under admissible iteration (not ontology).
 3. Introduce resolution as a granularity constraint on admissible discrimination.
-4. Define grounding/anchoring as receiptable continuity constraints.
+4. Define grounding/anchoring as provenance support for declared continuation bounds.
 5. Specify disallowed conflations (recursion ≠ substrate, semantics, or verification).
 
 ---
@@ -41,7 +41,7 @@ This note does **not**:
 - define tests, detectors, evaluators, or enforcement recipes
 - import mechanism language as explanation (metaphor is permitted; mechanism is refused)
 - grant semantic authority (meaning is not extracted or adjudicated here)
-- authorize identity upgrades without bounded continuation + receiptable anchoring
+- authorize identity upgrades from continuation alone
 
 This note defines **admissibility classes** and **refusal boundaries** only.
 
@@ -51,17 +51,15 @@ This note defines **admissibility classes** and **refusal boundaries** only.
 
 ### 1.1 Continuation
 
-A **continuation claim** asserts that a declared distinction remains repeatable across an
-observation window under admissible evolution (within declared bounds and view perturbations).
+A **continuation claim** concerns whether sufficient declared structure remains available for carry through bounded passage.
 
-Continuation is not sameness at an instant. It is persistence under bounded evolution.
+At the level of claim discipline, a continuation claim is permitted or refused. Continuation does not establish that carry occurred, that continuity holds across passage, or that persistence remains supportable afterward.
 
 ### 1.2 Continuation Regime
 
-A **continuation regime** is a class of admissible evolution in which some structural
-distinctions remain repeatable across bounded perturbations.
+A **continuation regime** is a class of admissible evolution within which sufficient declared structure may remain available for bounded passage.
 
-Continuation regimes describe the conditions under which identity claims remain admissible.
+Continuation regimes describe the conditions under which a continuation claim may be permitted. They do not establish continuity, persistence, or identity.
 
 They do not imply determinism, prediction, or ontological permanence.
 
@@ -118,7 +116,7 @@ Resolution refines bounds, not verdicts.
 
 ### 4.1 Anchors (Receiptable Weight Classes)
 
-Anchors are carriers of receiptable continuity constraints.
+Anchors are provenance-bearing supports for declared continuation bounds.
 
 They differ only in **provenance hardness** and **spoof-cost**, not in metaphysical truth status.
 
@@ -128,7 +126,7 @@ It does not define scoring, thresholds, enforcement, or verification procedures.
 ### 4.2 Grounded Continuation
 
 Continuation claims require admissible anchors.
-Unconstrained iteration does not license identity claims.
+Unconstrained iteration does not license continuation or identity claims.
 
 If custody, provenance, or bounded evolution cannot be maintained, continuation claims are not
 admissible.
@@ -146,7 +144,7 @@ This program explicitly refuses the following upgrades:
 - Attractor language ≠ mechanism
 - Resolution ≠ probability, truth-likelihood, or consciousness scaling
 - Anchors ≠ "proof" (anchors constrain admissibility; they do not certify ontology)
-- Continuation ≠ identity at an instant
+- Continuation ≠ carry, continuity, persistence, or identity
 
 Closure authorizes refusal statements only.
 It does not authorize claims of correctness, permanence, or phenomenology.
@@ -159,7 +157,7 @@ CG-FN-0 defines:
 
 - claimability,
 - admissible time,
-- identity vs snapshot prohibition,
+- identity over supported persistence and the snapshot-to-identity prohibition,
 - geometry closure as refusal.
 
 This note extends those primitives to continuation regimes, iteration closure, and resolution as
@@ -189,9 +187,17 @@ cite this note (CG-FN-1) and CG-FN-0 as the vocabulary anchors.
 - No semantic authority
 - No domain anchoring
 - No ontology claims
-- No identity upgrade without bounded continuation + receiptable anchoring
+- No identity upgrade from continuation alone
 
 This note defines admissibility classes and refusal boundaries only.
+
+---
+
+## Revision History
+
+| Revision | Changes |
+|---|---|
+| 2026-07 canonical alignment | Replaced repeatability-as-continuation with availability-for-carry; separated continuation from carry, continuity, persistence, and identity. |
 
 ---
 

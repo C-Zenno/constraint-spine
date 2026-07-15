@@ -29,7 +29,7 @@ This note is compatible with Stage-0 posture: **observer-only, refusal-first, no
 2. Define information as a claim class (receiptable distinction), not a substance.
 3. Define admissible time as a coordinate setting that supports receiptable claims without importing mechanisms.
 4. Define geometry closure as a way to certify the shape of admissibility/refusal, not the presence of structure.
-5. Lock identity as a continuation claim, and prohibit upgrading snapshot similarity into persistence.
+5. Define identity as a bounded sameness-claim over supported persistence, and prohibit upgrading snapshot similarity into persistence or identity.
 
 ---
 
@@ -117,19 +117,21 @@ Failure to persist licenses refusal, not denial: structure may be absent or may 
 
 ### Identity and Snapshot Claims (Definition + Refusal)
 
-#### Identity / Persistence (Continuation claim)
-An identity claim is a continuation claim: it asserts that a declared distinction remains repeatable across an observation window under admissible evolution (within declared bounds and perturbations), rather than being matched at a single index.
+#### Identity Over Supported Persistence
+An identity claim is the bounded sameness-claim that may become admissible over supported persistence under declared bounds.
+
+Persistence names a declared distinction that remains supportable and reassertable after bounded passage. Identity depends on supported persistence but is not established by persistence alone.
 
 #### Snapshot / Pointwise resemblance
-A snapshot claim is an instant claim. It may resemble the system at a single index but does not, by itself, carry continuation.
+A snapshot claim is an instant claim. It may resemble the system at a single index but does not, by itself, establish continuation, persistence, or identity.
 
 #### Interpretive Constraint (Locked)
-Pointwise resemblance is not sufficient to establish identity. Identity is treated as persistence across windows under declared bounds, not proximity at an instant.
+Pointwise resemblance is not sufficient to establish identity. Identity requires supported persistence under declared bounds, not proximity at an instant.
 
 #### Refusal (Non-negotiable)
-The program refuses any interpretation that upgrades snapshot similarity into identity, continuity, or persistence. When continuation cannot be carried, snapshot fidelity is treated as undefined for identity purposes.
+The program refuses any interpretation that upgrades snapshot similarity into identity, continuity, or persistence. When persistence cannot be supported under declared bounds, snapshot fidelity remains insufficient for identity purposes.
 
-> Identity is not a state; it is persistence under admissible evolution.
+> Identity is not a state; it is a bounded sameness-claim over supported persistence.
 
 ---
 
@@ -169,6 +171,14 @@ Such statements, when encountered, are treated as interpretive metaphors unless 
 - No snapshot-to-identity upgrade
 
 This note defines admissibility and refusal boundaries only.
+
+---
+
+## Revision History
+
+| Revision | Changes |
+|---|---|
+| 2026-07 canonical alignment | Replaced identity-as-continuation wording with identity over supported persistence; preserved the snapshot-to-identity refusal. |
 
 ---
 

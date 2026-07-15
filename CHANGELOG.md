@@ -11,6 +11,9 @@ All notable changes to the public spine are documented here.
 - `docs/index.md`, `docs/reading-order.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - FN-6 navigation/index entries.
 
 ### Changed
+- `CG-PN-4.5` - promoted from Draft to Published after separate re-admission review; aligned carry and distortion language to claim discipline while preserving the five named axes and five named root subtypes.
+- `docs/srl/CANON_INDEX.yml` and `index.html` - advanced the PN-4.5 catalog entry to the non-Draft path and Published posture.
+- `docs/HIERARCHY.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - public spine tag pin advanced to `public-spine-v0.70`.
 - `CG-FN-0` through `CG-FN-5`, `CG-PN-2.5`, `CG-PN-3`, `CG-PN-3.5`, and `CG-PN-4` - disclosed canonical alignment separating continuation, carry, continuity, persistence, and identity.
 - `CG-FN-5` and `CG-FN-6` - normalized public Foundation Note status metadata to `v0.1-draft`.
 - `CG-FN-5` and `CG-FN-6` - removed redundant `Final Lock` recap sections; the canonical claims remain in their substantive sections.

@@ -260,23 +260,3 @@ Do not:
 * promote identity to Paper
 * route to ZOA translation
 * open ethics, consciousness, personhood, or legal ownership doctrine
-
----
-
-## Final Lock
-
-Identity is not continuity itself.
-
-Continuity may relate states across passage without establishing persistence. Identity is the admissible sameness-claim that may be supported over receipted persistence after bounded passage.
-
-An identity claim does not settle what the object ultimately is.
-
-It concerns what bounded distinction may still legitimately be called the same after passage.
-
-Projection is not transfer.
-Custody is not holder-substitution.
-Record is not total identity.
-Memory is not total continuity.
-Role-change is not collapse.
-Distortion is not collapse.
-Collapse requires loss of receiptable sameness under declared bounds.

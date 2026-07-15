@@ -288,23 +288,3 @@ Do not:
 | Version | Changes |
 |---|---|
 | v0.1-draft | Initial canonical-alignment draft; distinguishes continuation, continuity, persistence, identity, and supporting evidence; discloses the revision from earlier tagged definitions |
-
----
-
-## Final Lock
-
-Persistence is not identity.
-
-Persistence is not its receipt.
-
-Continuation, continuity, persistence, and identity use the aligned meanings recorded across the canon.
-
-Persistence is upstream of identity as a claim dependency.
-
-An identity claim depends on bounded support for persistence beyond snapshot resemblance.
-
-Causal inheritance does not establish sameness.
-
-Refusal applies only to the claim under review.
-
-> **Persistence names what remained supportable after passage. Identity names what may still be called the same.**

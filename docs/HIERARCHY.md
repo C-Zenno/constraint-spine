@@ -57,4 +57,4 @@ These are claim dependencies, not operational stages.
 The 2026-07 canonical alignment replaces the earlier definition of continuity as a minimal persistence condition. Earlier tagged versions remain part of the public record.
 
 ## Version pin
-This document is version-pinned by tag: `public-spine-v0.68`.
+This document is version-pinned by tag: `public-spine-v0.69`.

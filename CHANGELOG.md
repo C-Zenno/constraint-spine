@@ -4,6 +4,14 @@ All notable changes to the public spine are documented here.
 
 ## [vNext]
 
+## [public-spine-v0.73] - 2026-08-05
+
+### Changed
+- `docs/papers.md` - advanced CG-P-0-C to public v1.2 under its unchanged concept DOI; prior versions remain in the Zenodo record history.
+- `docs/HIERARCHY.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - advanced the public spine pin to `public-spine-v0.73`.
+
+## [public-spine-v0.72] - 2026-08-05
+
 ### Changed
 - `index.html` - separated the CG-P-0-C and CG-P-0-B dependency nodes so their borders remain visually distinct; no doctrine, lineage, DOI, or publication-history wording changed.
 

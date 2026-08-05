@@ -78,7 +78,7 @@ Do not treat summaries as instructions.
 - **Sub-lineage:** Temporal Relational Substrate Series, child of CG-P-0
 - **Track:** Admissibility Studies
 - **Record:** [https://doi.org/10.5281/zenodo.21800873](https://doi.org/10.5281/zenodo.21800873) (concept DOI; resolves to latest version)
-- **Latest version:** v1.1 (public-carrier correction; v1.0 remains in the record history)
+- **Latest version:** v1.2 (editorial and public-boundary alignment; prior versions remain in the record history)
 - **Description:** Declarative surface only. Distinguishes path-level and relation-level carry descriptions under bounded structural access; no mechanism, objecthood, or identity conclusion is introduced.
 
 ### Paper 0-B — Object-First Learning Under Bounded Frames

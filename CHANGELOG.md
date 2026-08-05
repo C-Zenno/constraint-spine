@@ -4,6 +4,11 @@ All notable changes to the public spine are documented here.
 
 ## [vNext]
 
+### Changed
+- `index.html` - separated the CG-P-0-C and CG-P-0-B dependency nodes so their borders remain visually distinct; no doctrine, lineage, DOI, or publication-history wording changed.
+
+## [public-spine-v0.71] - 2026-08-05
+
 ### Added
 - `docs/papers.md` and `index.html` - pointer-only public entry for CG-P-0-C, *Carry Modes at the Transport Junction*, using concept DOI `10.5281/zenodo.21800873`.
 

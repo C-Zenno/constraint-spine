@@ -1,8 +1,8 @@
 ---
-Status: DRAFT
+Status: PUBLISHED
 Surface: CC (Declarative)
 Claim Ceiling: paper existence + reading order + links only
-Last Updated: 2026-04-12
+Last Updated: 2026-08-05
 Authority: Observer-only | Non-authoritative | No directives
 Exclusions: methods, algorithms, thresholds, calibration, procedures, recipes
 ---
@@ -72,12 +72,22 @@ Do not treat summaries as instructions.
 - **Record:** [https://doi.org/10.5281/zenodo.19546939](https://doi.org/10.5281/zenodo.19546939) (concept DOI; resolves to latest version)
 - **Description:** Declarative surface only. Applies CG-P-VIII appearance claim-discipline grammar to the temporal substrate.
 
+### Paper 0-C - Carry Modes at the Transport Junction
+- **Subtitle:** Path, Relation, and Continuation Under Bounded Structural Access
+- **Status:** Public
+- **Sub-lineage:** Temporal Relational Substrate Series, child of CG-P-0
+- **Track:** Admissibility Studies
+- **Record:** [https://doi.org/10.5281/zenodo.21800873](https://doi.org/10.5281/zenodo.21800873) (concept DOI; resolves to latest version)
+- **Latest version:** v1.1 (public-carrier correction; v1.0 remains in the record history)
+- **Description:** Declarative surface only. Distinguishes path-level and relation-level carry descriptions under bounded structural access; no mechanism, objecthood, or identity conclusion is introduced.
+
 ### Paper 0-B — Object-First Learning Under Bounded Frames
 - **Status:** Public
 - **Sub-lineage:** child of CG-P-0
 - **Track:** Object-first learning / bounded-frame doctrine
 - **Record:** [https://doi.org/10.5281/zenodo.20357441](https://doi.org/10.5281/zenodo.20357441) (concept DOI; resolves to latest version)
 - **Latest version:** v1.1 (revised §11 to Bounded Transfer Distortion taxonomy; companion Program Note CG-PN-4.5)
+- **Relationship:** Conceptually downstream of CG-P-0-C for carry and transition vocabulary. This pointer records conceptual dependency, not publication chronology; CG-P-0-B's DOI history is unchanged.
 - **Description:** Declarative surface only. Frames object-first learning as a bounded admission discipline; no methods, thresholds, or procedures are introduced here.
 
 ---

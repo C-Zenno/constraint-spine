@@ -5,25 +5,53 @@ All notable changes to the public spine are documented here.
 ## [vNext]
 
 ### Added
-- `docs/foundation-notes/CG-FN-5_IDENTITY_AS_BOUNDED_SAMENESS_CLAIM.md` (new) - identity as the admissible sameness-claim receiptable under bounded passage.
-- `docs/index.md`, `docs/reading-order.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - FN-5 candidate navigation/index entries.
-- `docs/foundation-notes/CG-FN-6_PERSISTENCE_BEFORE_IDENTITY.md` (new, `v0.1-draft`) - persistence-before-identity claim dependency and persistence/receipt distinction.
-- `docs/index.md`, `docs/reading-order.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - FN-6 navigation/index entries.
+- `docs/papers.md` and `index.html` - pointer-only public entry for CG-P-0-C, *Carry Modes at the Transport Junction*, using concept DOI `10.5281/zenodo.21800873`.
+
+### Changed
+- `docs/papers.md` - current public-index status and date; CG-P-0-C v1.1 status; and a conceptual relationship pointer from CG-P-0-C to already-public CG-P-0-B without changing publication chronology or DOI history.
+- `index.html` - CG-P-0-C paper and dependency entries, bounded CG-P-0-B relationship pointer, visible version badge, and source links aligned to `public-spine-v0.71`.
+- `docs/HIERARCHY.md` and `docs/srl/CANON_INDEX.yml` - public spine tag pin advanced to `public-spine-v0.71`.
+- `CHANGELOG.md` - shipped v0.66 through v0.70 changes moved from the pooled pending section into dated release sections.
+
+## [public-spine-v0.70] - 2026-07-15
 
 ### Changed
 - `CG-PN-4.5` - promoted from Draft to Published after separate re-admission review; aligned carry and distortion language to claim discipline while preserving the five named axes and five named root subtypes.
 - `docs/srl/CANON_INDEX.yml` and `index.html` - advanced the PN-4.5 catalog entry to the non-Draft path and Published posture.
 - `docs/HIERARCHY.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - public spine tag pin advanced to `public-spine-v0.70`.
+
+## [public-spine-v0.69] - 2026-07-14
+
+### Changed
+- `CG-FN-5` and `CG-FN-6` - removed redundant closing recap sections; the canonical claims remain in their substantive sections.
+- `docs/HIERARCHY.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - public spine tag pin advanced to `public-spine-v0.69`.
+
+## [public-spine-v0.68] - 2026-07-14
+
+### Added
+- `docs/foundation-notes/CG-FN-6_PERSISTENCE_BEFORE_IDENTITY.md` (new, `v0.1-draft`) - persistence-before-identity claim dependency and persistence/receipt distinction.
+- `docs/index.md`, `docs/reading-order.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - FN-6 navigation/index entries.
+
+### Changed
 - `CG-FN-0` through `CG-FN-5`, `CG-PN-2.5`, `CG-PN-3`, `CG-PN-3.5`, and `CG-PN-4` - disclosed canonical alignment separating continuation, carry, continuity, persistence, and identity.
 - `CG-FN-5` and `CG-FN-6` - normalized public Foundation Note status metadata to `v0.1-draft`.
-- `CG-FN-5` and `CG-FN-6` - removed redundant `Final Lock` recap sections; the canonical claims remain in their substantive sections.
 - `docs/CLAIM_RULES.md` - made continuation settlement explicitly claim-level and preserved the refusal that continuation does not establish carry.
 - `docs/glossary.md` and `docs/HIERARCHY.md` - aligned controlled vocabulary and claim-dependency ordering.
 - `docs/srl/DEFINITIONS/DEF_CONTINUITY.md` and `docs/srl/INVARIANTS/INV_CONTINUITY_AS_ADMISSIBLE_EXTENSION.md` - continuity projection advanced to SRL v1 and separated from persistence.
-- `docs/HIERARCHY.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - public spine tag pin advanced to `public-spine-v0.69`.
-- `docs/CLASSIFICATION_RULES.md` (new) — public-facing placement vocabulary for main-sequence and scoped-extension placement.
-- `docs/SPINE_MAP.md` — classification-rules pointer section added after the governance principle.
-- `docs/glossary.md` — sub-lineage section retitled from "Side-branch terms (Learning Studies)" to "Sub-lineage terms (Temporal Relational Substrate Series)"; #72 normalized under the series name; #73–#78 carried under TRS sub-lineage labels with public-facing placement wording.
+- `docs/srl/CANON_INDEX.yml` and `index.html` - public spine tag pin advanced to `public-spine-v0.68`.
+
+## [public-spine-v0.67] - 2026-07-10
+
+### Added
+- `docs/foundation-notes/CG-FN-5_IDENTITY_AS_BOUNDED_SAMENESS_CLAIM.md` (new) - identity as the admissible sameness-claim receiptable under bounded passage.
+- `docs/index.md`, `docs/reading-order.md`, `docs/srl/CANON_INDEX.yml`, and `index.html` - FN-5 candidate navigation/index entries.
+
+## [public-spine-v0.66] - 2026-07-07
+
+### Changed
+- `docs/CLASSIFICATION_RULES.md` (new) - public-facing placement vocabulary for main-sequence and scoped-extension placement.
+- `docs/SPINE_MAP.md` - classification-rules pointer section added after the governance principle.
+- `docs/glossary.md` - sub-lineage section retitled from "Side-branch terms (Learning Studies)" to "Sub-lineage terms (Temporal Relational Substrate Series)"; #72 normalized under the series name; #73-#78 carried under TRS sub-lineage labels with public-facing placement wording.
 
 ## [public-spine-v0.65] - 2026-06-16
 
